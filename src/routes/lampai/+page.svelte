@@ -1,0 +1,53 @@
+<script>
+	import Navbar from '../components/Navbar.svelte';
+</script>
+
+<main>
+	<h2>Lampai</h2>
+	<Navbar info={`./lampai`} sectores={`./lampai/sectores`} />
+	<div class="descripcion">
+		<p>
+			Zona con un número considerable de liñas abertas, ainda que na maioría dos casos os bloques
+			están dispersos. En xeral a calidade da pedra é excepcional, con un gran fino e compacto.
+			Podemos atopar placas, desplomes, adherencias e incluso algún teito.
+		</p>
+		<p>
+			A orientación é maiormente sur e oeste, aínda que hai sectores como Mangui ou Fortaleza nos
+			que podemos atopar sombra todo o día.
+		</p>
+		<p>As aproximacións van dende 1 minuto, caso do Mirador, ata 25 minutos no caso do Mangui.</p>
+		<p>
+			En canto o grado hai bloques para todos os públicos, incluso de máxima dificultade como é o
+			caso do Gaia.
+		</p>
+	</div>
+	<div class="mapa">
+		<img src="mapa_lampai.avif" alt="Mapa de sectores lampai" />
+	</div>
+</main>
+
+<style>
+	h2 {
+		font-size: 35px;
+		font-weight: 800;
+		text-align: center;
+		margin: 20px 0;
+	}
+
+	.descripcion {
+		max-width: 90%;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+
+	p {
+		margin-bottom: 10px;
+		font-size: 1.1rem;
+	}
+
+	.mapa {
+		display: flex;
+        justify-content: center;
+		max-width: 90%;
+	}
+</style>
