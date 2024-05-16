@@ -1,7 +1,10 @@
 <script>
     import Header from "./components/Header.svelte";
+    import Popup from "./components/Popup.svelte";
 </script>
 
+
+<Popup/>
 <Header/>
 <slot/>
 
