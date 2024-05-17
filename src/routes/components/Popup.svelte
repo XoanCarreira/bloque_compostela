@@ -36,7 +36,7 @@
 <style>
 	.popup {
 		background-color: rgba(0, 0, 0, 0.521);
-		position: absolute;
+		position: fixed;
 		width: 100%;
 		height: 100%;
 		top: 0;

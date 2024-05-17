@@ -59,12 +59,13 @@
 
 	.grid {
 		margin: 0 auto;
-		max-width: 400px;
+		max-width: 500px;
 		min-height: 500px;
 	}
 
 	img {
-		max-width: 350px;
+		max-width: 500px;
+		width: 90%;
 		margin: 0 auto;
 	}
 

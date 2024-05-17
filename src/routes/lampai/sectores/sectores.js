@@ -32,7 +32,7 @@ export default[
         descripcion: "Varios bloques abertos con liñas en xeral de grado medio-baixo. Mais posibilidades.",
         aproximacion: "10 minutos",
         orientacion: "Oeste",
-        src: ["/Ladeira_01.jpg"],
+        src: ["/Ladeira_01.jpg", "/ladeira_02.jpg", "/ladeira_03.jpg"],
         ubicacion: "https://maps.app.goo.gl/yU2Fwu9MC62vx1h4A",
         cordenadas:`42°47'31.6"N 8°38'02.6"W`
     },
