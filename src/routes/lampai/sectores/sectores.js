@@ -1,11 +1,11 @@
-//Creo un array coa info dos sectores
+//Array coa info dos sectores
 export default[
     {
         sector: "Campo",
         descripcion: "Gran concentración de bloques con variedade de grados",
         aproximacion: "5 minutos",
         orientacion: "Todas",
-        src: ["/congrio_01.jpg"],
+        src: ["/campo_01.jpg", "/campo_02.jpg", "/campo_03.jpg", "/campo_04.jpg", "/campo_05.jpg"],
         ubicacion: "https://maps.app.goo.gl/78zD2reLPzufME6h7",
         cordenadas:`42°46'49.9"N 8°37'34.0"W`
     },
@@ -50,7 +50,7 @@ export default[
         descripcion: "Bloque xunto o aparcadoiro e outro baixando polo camiño direción oeste. Mais posibilidades",
         aproximacion: "1 minuto",
         orientacion: "Todas",
-        src: ["/congrio_01.jpg"],
+        src: ["/mirador_01.jpg"],
         ubicacion: "https://maps.app.goo.gl/bL9YWKLgP2xE2zE3A",
         cordenadas:`42°47'09.9"N 8°37'23.3"W`
     },
@@ -70,7 +70,7 @@ export default[
         descripcion: "Bloque principal con varias liñas de calidade. Mais posibilidades",
         aproximacion: "5 minutos",
         orientacion: "Sur",
-        src: ["/congrio_01.jpg"],
+        src: ["/oriente_01.jpg", "/oriente_02.jpg"],
         ubicacion: "https://maps.app.goo.gl/TtpgYd3LT4B45Jpy9",
         cordenadas:`42°46'58.3"N 8°37'34.1"W`
     },

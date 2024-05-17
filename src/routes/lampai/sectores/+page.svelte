@@ -23,9 +23,11 @@
 					<p><strong>Orientación:</strong>{sector.orientacion}</p>
 					<p><strong>Aproximación:</strong>{sector.aproximacion}</p>
 					<a target="_blank" href={sector.ubicacion}>{sector.cordenadas}</a>
-                    {#each sector.src as imaxe }
-                        <img src={imaxe} alt="Sector {sector.sector}">
-                    {/each}
+					<div class="sector__croquis">
+						{#each sector.src as imaxe}
+							<img src={imaxe} alt="Sector {sector.sector}" />
+						{/each}
+					</div>
 				</div>
 			{/if}
 		{/each}
@@ -62,6 +64,13 @@
 		max-width: 500px;
 		min-height: 500px;
 	}
+	
+	.sector__croquis{
+		margin-top: 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 
 	img {
 		max-width: 500px;
@@ -74,9 +83,8 @@
 		font-size: 1.5rem;
 	}
 
-    a{
-        color:#000;
-        text-decoration: none;
-    }
-
+	a {
+		color: #000;
+		text-decoration: none;
+	}
 </style>
