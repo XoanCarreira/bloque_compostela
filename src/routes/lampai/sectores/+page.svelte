@@ -30,7 +30,7 @@
 					<p><strong>Orientación: </strong>{sector.orientacion}</p>
 					<p><strong>Aproximación: </strong>{sector.aproximacion}</p>
 					<a target="_blank" href={sector.ubicacion}>{sector.cordenadas}</a>
-					<div>
+					<div class="mapa__sector">
 						<label>
 							<input type="checkbox" bind:checked={visible} />
 							Mostrar mapa
@@ -97,6 +97,10 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 10px;
+	}
+
+	.mapa__sector{
+		margin-top: 10px;
 	}
 
 	img {
