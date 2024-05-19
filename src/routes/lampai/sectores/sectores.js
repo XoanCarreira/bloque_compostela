@@ -7,7 +7,8 @@ export default[
         orientacion: "Todas",
         src: ["/campo_01.jpg", "/campo_02.jpg", "/campo_03.jpg", "/campo_04.jpg", "/campo_05.jpg"],
         ubicacion: "https://maps.app.goo.gl/78zD2reLPzufME6h7",
-        cordenadas:`42°46'49.9"N 8°37'34.0"W`
+        cordenadas:`42°46'49.9"N 8°37'34.0"W`,
+        mapa:"/mapa_oriente.jpg"
     },
     {
         sector: "Congrio",
@@ -16,7 +17,8 @@ export default[
         orientacion: "Sur",
         src: ["/congrio_01.jpg", "/congrio_02.jpg"],
         ubicacion: "https://maps.app.goo.gl/ZKWaUhAN2mdiXkuc7",
-        cordenadas:`42°45'56.9"N 8°37'38.5"W`
+        cordenadas:`42°45'56.9"N 8°37'38.5"W`,
+        mapa:"/mapa_mangui.jpg"
     },
     {
         sector: "Gaia",
@@ -25,7 +27,8 @@ export default[
         orientacion: "Sur",
         src: ["/congrio_01.jpg"],
         ubicacion: "https://maps.app.goo.gl/qPxyxRD6aHLuDyvf6",
-        cordenadas:`42°47'10.1"N 8°38'04.6"W`
+        cordenadas:`42°47'10.1"N 8°38'04.6"W`,
+        mapa:"/mapa_mole.jpg"
     },
     {
         sector: "Ladeira",
@@ -34,7 +37,8 @@ export default[
         orientacion: "Oeste",
         src: ["/Ladeira_01.jpg", "/ladeira_02.jpg", "/ladeira_03.jpg"],
         ubicacion: "https://maps.app.goo.gl/yU2Fwu9MC62vx1h4A",
-        cordenadas:`42°47'31.6"N 8°38'02.6"W`
+        cordenadas:`42°47'31.6"N 8°38'02.6"W`,
+        mapa:"/mapa_ladeira.jpg"
     },
     {
         sector: "Mangui",
@@ -43,7 +47,8 @@ export default[
         orientacion: "Todas",
         src:[ "/congrio_01.jpg"],
         ubicacion: "https://maps.app.goo.gl/4aAogHw9658esDeh8",
-        cordenadas:`42°45'47.0"N 8°37'46.5"W`
+        cordenadas:`42°45'47.0"N 8°37'46.5"W`,
+        mapa:"/mapa_mangui.jpg"
     },
     {
         sector: "Mirador",
@@ -52,7 +57,8 @@ export default[
         orientacion: "Todas",
         src: ["/mirador_01.jpg"],
         ubicacion: "https://maps.app.goo.gl/bL9YWKLgP2xE2zE3A",
-        cordenadas:`42°47'09.9"N 8°37'23.3"W`
+        cordenadas:`42°47'09.9"N 8°37'23.3"W`,
+        mapa:"/mapa_mirador.jpg"
     },
     {
         sector: "Mole",
@@ -63,7 +69,8 @@ export default[
             "/Mole_01.jpg", "/Mole_02.jpg"
         ],
         ubicacion: "https://maps.app.goo.gl/PoXnF9rB7HdU5Mrt9",
-        cordenadas:`42°47'18.9"N 8°37'57.3"W`
+        cordenadas:`42°47'18.9"N 8°37'57.3"W`,
+        mapa:"/mapa_mole.jpg"
     },
     {
         sector: "Oriente",
@@ -72,7 +79,8 @@ export default[
         orientacion: "Sur",
         src: ["/oriente_01.jpg", "/oriente_02.jpg"],
         ubicacion: "https://maps.app.goo.gl/TtpgYd3LT4B45Jpy9",
-        cordenadas:`42°46'58.3"N 8°37'34.1"W`
+        cordenadas:`42°46'58.3"N 8°37'34.1"W`,
+        mapa:"/mapa_oriente.jpg"
     },
     {
         sector: "Teito",
@@ -81,7 +89,8 @@ export default[
         orientacion: "Oeste",
         src: ["/congrio_01.jpg"],
         ubicacion: "https://maps.app.goo.gl/wdsyyAbGuz5Ymx6GA",
-        cordenadas:`42°47'33.2"N 8°37'58.7"W`
+        cordenadas:`42°47'33.2"N 8°37'58.7"W`,
+        mapa:"/mapa_ladeira.jpg"
     },
     {
         sector: "Verme",
@@ -90,6 +99,7 @@ export default[
         orientacion: "Noroeste",
         src: ["/Verme_01.jpg"],
         ubicacion: "https://maps.app.goo.gl/SwwFZN2JhyLKU8LQA",
-        cordenadas:`42°47'24.1"N 8°37'58.6"W`
+        cordenadas:`42°47'24.1"N 8°37'58.6"W`,
+        mapa:"/mapa_mole.jpg"
     }    
 ]

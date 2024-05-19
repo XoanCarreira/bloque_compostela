@@ -1,9 +1,16 @@
 <script>
 	import Navbar from '../../components/Navbar.svelte';
-	import sectores from './sectores';
+	import sectores from './sectores.js';
 
+	//Mostrar mapa zona
+	import { fade } from 'svelte/transition';
+	let visible = false;
+
+	//Selector sector
 	let sectorSelect = sectores[0].sector;
 </script>
+
+
 
 <div class="container">
 	<h2>Lampai</h2>
@@ -19,10 +26,19 @@
 			{#if sector.sector === sectorSelect}
 				<div class="sector__box">
 					<h4>{sector.sector}</h4>
-					<p>{sector.descripcion}</p>
-					<p><strong>Orientación:</strong>{sector.orientacion}</p>
-					<p><strong>Aproximación:</strong>{sector.aproximacion}</p>
+					<!-- <p>{sector.descripcion}</p> -->
+					<p><strong>Orientación: </strong>{sector.orientacion}</p>
+					<p><strong>Aproximación: </strong>{sector.aproximacion}</p>
 					<a target="_blank" href={sector.ubicacion}>{sector.cordenadas}</a>
+					<div>
+						<label>
+							<input type="checkbox" bind:checked={visible} />
+							Mostrar mapa
+						</label>
+						{#if visible}
+							<img in:fade out:fade src={sector.mapa} alt="Mapa" />
+						{/if}
+					</div>
 					<div class="sector__croquis">
 						{#each sector.src as imaxe}
 							<img src={imaxe} alt="Sector {sector.sector}" />
@@ -33,6 +49,8 @@
 		{/each}
 	</div>
 </div>
+
+
 
 <style>
 	.container {
@@ -56,14 +74,14 @@
 	}
 
 	button {
-		/* padding: 5px 10px; */
 		width: 80px;
 		height: 40px;
 		background-color: #000;
 		color: #fff;
 		font-weight: 700;
 		letter-spacing: 1.2px;
-		border: 1px solid #fff;
+		border: none;
+		box-shadow: 5px 5px 5px #0000008e, inset 0px 0px 3px white;
 		border-radius: 8px;
 	}
 
@@ -72,8 +90,8 @@
 		max-width: 500px;
 		min-height: 500px;
 	}
-	
-	.sector__croquis{
+
+	.sector__croquis {
 		margin-top: 15px;
 		display: flex;
 		flex-direction: column;
@@ -85,6 +103,7 @@
 		max-width: 90%;
 		width: 500px;
 		margin: 0 auto;
+		box-shadow: 0px 0px 10px 2px #000;
 	}
 
 	h4 {

@@ -48,6 +48,6 @@
 	.mapa {
 		display: flex;
         justify-content: center;
-		max-width: 90%;
+		overflow-x: scroll;
 	}
 </style>

@@ -34,6 +34,7 @@
 
 <style>
 	footer {
+        margin-top: 15px;
 		padding: 15px;
 		background-color: #000;
 	}
