@@ -50,13 +50,21 @@
 
 	.selector {
 		display: flex;
-		gap: 15px;
+		gap: 5px;
 		justify-content: center;
 		flex-wrap: wrap;
 	}
 
 	button {
-		padding: 5px 10px;
+		/* padding: 5px 10px; */
+		width: 80px;
+		height: 40px;
+		background-color: #000;
+		color: #fff;
+		font-weight: 700;
+		letter-spacing: 1.2px;
+		border: 1px solid #fff;
+		border-radius: 8px;
 	}
 
 	.grid {
@@ -70,11 +78,12 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		gap: 10px;
 	}
 
 	img {
-		max-width: 500px;
-		width: 90%;
+		max-width: 90%;
+		width: 500px;
 		margin: 0 auto;
 	}
 

@@ -3,17 +3,17 @@
 </script>
 
 <main>
-    <a href="/eucaliptos"><Card tittle="Eucaliptos-free"/></a>
-    <a href="/figueiras"><Card tittle="Figueiras"/></a>
+    <a href="/"><Card tittle="Eucaliptos-free"/></a>
+    <a href="/"><Card tittle="Figueiras"/></a>
     <a href="/lampai"><Card tittle="Lampai"/></a>
-    <a href="/sura"><Card tittle="Sura"/></a>
-    <a href="/vilas"><Card tittle="Vilas"/></a>
+    <a href="/"><Card tittle="Sura"/></a>
+    <a href="/"><Card tittle="Vilas"/></a>
 
 </main>
 
 <style>
     main{
-        background-color: rgb(219, 217, 217);
+        background-color: #5DACA3;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -22,7 +22,7 @@
     }
 
     a{
-        background-color: rgb(72, 82, 221);
+        background-color: rgb(0, 0, 0);
         border-radius: 10px;
         text-decoration: none;
         color: #ffffff;
