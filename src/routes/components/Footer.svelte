@@ -1,0 +1,82 @@
+<script>
+	import { fade } from 'svelte/transition';
+	let visible = false;
+</script>
+
+<footer>
+	<label>
+		<input type="checkbox" bind:checked={visible} />
+		Ten en conta que os grados son aproximados
+	</label>
+
+	{#if visible}
+		<!-- <p class="titulo">Ten en conta que os grados son aproximados</p> -->
+		<div>
+			<p>
+				<span class="azul">-</span>
+				6a+ ou inferior
+			</p>
+			<p>
+				<span class="amarelo">-</span>
+				6b a 6c+
+			</p>
+			<p>
+				<span class="verde">-</span>
+				7a a 7b+
+			</p>
+			<p>
+				<span class="vermello">-</span>
+				7c ou superior
+			</p>
+		</div>
+	{/if}
+</footer>
+
+<style>
+	footer {
+		padding: 15px;
+		background-color: #000;
+	}
+
+	div {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		align-items: center;
+		column-gap: 10px;
+	}
+
+	span {
+		font-size: 4rem;
+		font-weight: 800;
+		line-height: 30px;
+	}
+
+	.azul {
+		color: #0000ff;
+	}
+
+	.amarelo {
+		color: #ffff00;
+	}
+
+	.verde {
+		color: #00ff00;
+	}
+
+	.vermello {
+		color: #ff0000;
+	}
+
+	p {
+		color: #fff;
+		font-size: 1.4rem;
+	}
+
+	label {
+		width: 100%;
+		text-align: center;
+        color: #fff;
+	}
+</style>
