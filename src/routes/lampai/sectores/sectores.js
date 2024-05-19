@@ -35,7 +35,7 @@ export default[
         descripcion: "Varios bloques abertos con liñas en xeral de grado medio-baixo. Mais posibilidades.",
         aproximacion: "10 minutos",
         orientacion: "Oeste",
-        src: ["/Ladeira_01.jpg", "/ladeira_02.jpg", "/ladeira_03.jpg"],
+        src: ["/ladeira_01.jpg", "/ladeira_02.jpg", "/ladeira_03.jpg"],
         ubicacion: "https://maps.app.goo.gl/yU2Fwu9MC62vx1h4A",
         cordenadas:`42°47'31.6"N 8°38'02.6"W`,
         mapa:"/mapa_ladeira.jpg"
@@ -45,7 +45,7 @@ export default[
         descripcion: "Numerosas liñas en bloques de non mais de 3,5 metros de altura.",
         aproximacion: "25 minutos",
         orientacion: "Todas",
-        src:[ "/congrio_01.jpg"],
+        src:[ "/mangui_00.jpg", "/mangui_01.jpg", "/mangui_02.jpg","/mangui_03.jpg", "/mangui_04.jpg"],
         ubicacion: "https://maps.app.goo.gl/4aAogHw9658esDeh8",
         cordenadas:`42°45'47.0"N 8°37'46.5"W`,
         mapa:"/mapa_mangui.jpg"
@@ -66,7 +66,7 @@ export default[
         aproximacion: "10 minutos",
         orientacion: "Oeste",
         src:[
-            "/Mole_01.jpg", "/Mole_02.jpg"
+            "/mole_01.jpg", "/mole_02.jpg"
         ],
         ubicacion: "https://maps.app.goo.gl/PoXnF9rB7HdU5Mrt9",
         cordenadas:`42°47'18.9"N 8°37'57.3"W`,
@@ -87,7 +87,7 @@ export default[
         descripcion: "Bloque con varias liñas de desplome.",
         aproximacion: "10 minutos",
         orientacion: "Oeste",
-        src: ["/congrio_01.jpg"],
+        src: ["/teito_01.jpg", "/teito_02.jpg"],
         ubicacion: "https://maps.app.goo.gl/wdsyyAbGuz5Ymx6GA",
         cordenadas:`42°47'33.2"N 8°37'58.7"W`,
         mapa:"/mapa_ladeira.jpg"
@@ -97,7 +97,7 @@ export default[
         descripcion: "Bloque con un par de liñas de grado medio-baixo. Pode sair algunha mais.",
         aproximacion: "5 minutos",
         orientacion: "Noroeste",
-        src: ["/Verme_01.jpg"],
+        src: ["/verme_01.jpg"],
         ubicacion: "https://maps.app.goo.gl/SwwFZN2JhyLKU8LQA",
         cordenadas:`42°47'24.1"N 8°37'58.6"W`,
         mapa:"/mapa_mole.jpg"
