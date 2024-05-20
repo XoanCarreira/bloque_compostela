@@ -6,7 +6,7 @@
 <footer>
 	<label>
 		<input type="checkbox" bind:checked={visible} />
-		Ten en conta que os grados son aproximados
+		Ten en conta que os grados son orientativos
 	</label>
 
 	{#if visible}
@@ -52,6 +52,8 @@
 		font-size: 4rem;
 		font-weight: 800;
 		line-height: 30px;
+		position: relative;
+		top: 10px;
 	}
 
 	.azul {
@@ -72,7 +74,7 @@
 
 	p {
 		color: #fff;
-		font-size: 1.4rem;
+		font-size: 1.2rem;
 	}
 
 	label {

@@ -22,7 +22,7 @@
 		</p>
 	</div>
 	<div class="mapa">
-		<img src="mapa_lampai.jpg" alt="Mapa de sectores lampai" />
+		<img src="/lampai/mapa_lampai.jpg" alt="Mapa de sectores lampai" />
 	</div>
 </main>
 
