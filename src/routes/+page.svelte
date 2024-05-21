@@ -3,11 +3,11 @@
 </script>
 
 <main>
-    <a href="/"><Card tittle="Eucaliptos-free"/></a>
-    <a href="/"><Card tittle="Figueiras"/></a>
+    <!-- <a href="/"><Card tittle="Eucaliptos-free"/></a>
+    <a href="/"><Card tittle="Figueiras"/></a> -->
     <a href="/lampai"><Card tittle="Lampai"/></a>
-    <a href="/"><Card tittle="Sura"/></a>
-    <a href="/"><Card tittle="Vilas"/></a>
+    <!-- <a href="/"><Card tittle="Sura"/></a>
+    <a href="/"><Card tittle="Vilas"/></a> -->
 
 </main>
 

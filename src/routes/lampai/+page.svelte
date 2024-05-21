@@ -7,7 +7,7 @@
 	<Navbar info={`./lampai`} sectores={`./lampai/sectores`} />
 	<div class="descripcion">
 		<p>
-			Zona con un número considerable de liñas abertas, ainda que na maioría dos casos os bloques
+			Zona con un número considerable de liñas abertas, aínda que na maioría dos casos os bloques
 			están dispersos. En xeral a calidade da pedra é excepcional, con un gran fino e compacto.
 			Podemos atopar placas, desplomes, adherencias e incluso algún teito.
 		</p>
