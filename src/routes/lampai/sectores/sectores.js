@@ -25,7 +25,7 @@ export default [
         descripcion: "Bloque enorme con liñas en xeral duras. Mais posibilades",
         aproximacion: "10 minutos",
         orientacion: "Sur",
-        src: ["/lampai/gaia_01.jpg"],
+        src: ["/lampai/gaia_01.jpg", "/lampai/gaia_02.jpg"],
         ubicacion: "https://maps.app.goo.gl/qPxyxRD6aHLuDyvf6",
         cordenadas: `42°47'10.1"N 8°38'04.6"W`,
         mapa: "/lampai/mapa_mole.jpg"
