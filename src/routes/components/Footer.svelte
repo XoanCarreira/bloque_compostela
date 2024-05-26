@@ -10,7 +10,6 @@
 	</label>
 
 	{#if visible}
-		<!-- <p class="titulo">Ten en conta que os grados son aproximados</p> -->
 		<div>
 			<p>
 				<span class="azul">-</span>

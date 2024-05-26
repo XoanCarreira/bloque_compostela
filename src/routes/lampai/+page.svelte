@@ -3,8 +3,8 @@
 </script>
 
 <main>
-	<h2>Lampai</h2>
-	<Navbar info={`./lampai`} sectores={`./lampai/sectores`} />
+	<!-- <h2>Lampai</h2> -->
+	<Navbar info={`./lampai`} sectores={`./lampai/sectores`} escola={"Lampai"} />
 	<div class="descripcion">
 		<p>
 			Zona con un número considerable de liñas abertas, aínda que na maioría dos casos os bloques
@@ -17,7 +17,7 @@
 		</p>
 		<p>As aproximacións van dende 1 minuto, caso do Mirador, ata 25 minutos no caso do Mangui.</p>
 		<p>
-			En canto o grado hai bloques para todos os públicos, incluso de máxima dificultade como é o
+			En canto o grado hai bloques para todos os públicos, incluso para os mais fortes como é o
 			caso do Gaia.
 		</p>
 	</div>
@@ -27,12 +27,18 @@
 </main>
 
 <style>
-	h2 {
+	main{
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		padding: 0 10px;
+	}
+
+	/* h2 {
 		font-size: 35px;
 		font-weight: 800;
 		text-align: center;
-		margin: 20px 0;
-	}
+	} */
 
 	.descripcion {
 		max-width: 90%;

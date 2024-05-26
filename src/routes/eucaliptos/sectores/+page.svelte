@@ -13,8 +13,8 @@
 
 
 <div class="container">
-	<!-- <h2>Lampai</h2> -->
-	<Navbar info={`/lampai`} sectores={`/lampai/sectores`} escola={"Lampai"} />
+	<!-- <h2>Eucaliptos-free</h2> -->
+	<Navbar info={`/eucaliptos`} sectores={`/eucaliptos/sectores`} escola={"Eucaliptos-free"} />
 	<div class="selector">
 		{#each sectores as sector}
 			<button on:click={() => (sectorSelect = sector.sector)}>{sector.sector}</button>
@@ -25,7 +25,7 @@
 		{#each sectores as sector}
 			{#if sector.sector === sectorSelect}
 				<div class="sector__box">
-					<h4><u>{sector.sector}</u></h4>
+					<h4>{sector.sector}</h4>
 					<!-- <p>{sector.descripcion}</p> -->
 					<p><strong>Orientación: </strong>{sector.orientacion}</p>
 					<p><strong>Aproximación: </strong>{sector.aproximacion}</p>
@@ -54,7 +54,7 @@
 
 <style>
 	.container {
-		padding: 0 10px;
+		padding: 0 20px;
 		display: flex;
 		flex-direction: column;
 		gap: 30px;
@@ -104,9 +104,8 @@
 	}
 
 	img {
-		max-width: 100%;
+		max-width: 90%;
 		width: 500px;
-		min-height: 250px;
 		margin: 0 auto;
 		box-shadow: 0px 0px 10px 2px #000;
 	}

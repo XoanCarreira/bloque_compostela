@@ -4,11 +4,11 @@
 	let showModal = false;
 
 	onMount(() => {
-		// Comprueba si el popup ya se ha mostrado
-		if (!sessionStorage.getItem('popupShown')) {
+		// Comproba se o popup xa se mostrou
+		if (!localStorage.getItem('popupShown')) {
 			showModal = true;
-			// Marca el popup como mostrado
-			sessionStorage.setItem('popupShown', 'true');
+			// Marca o popup como mostrado
+			localStorage.setItem('popupShown', 'true');
 		}
 	});
 
@@ -20,7 +20,7 @@
 {#if showModal}
 	<div class="popup">
 		<div class="popup__box">
-			<!-- Contenido del popup -->
+			<!-- Contido do popup -->
 			<h4>RECORDA</h4>
             <ul>
                 <li>Estás nun medio que merece ser respetado para que tod@s poidamos desfrutalo por igual</li>
