@@ -15,6 +15,8 @@ var urlsToCache = [
     '%sveltekit.assets%/favicon_180.png',
     '%sveltekit.assets%/favicon_192.png',
     '%sveltekit.assets%/favicon_512.png',
+    '/static/',
+    '/src/'
 ];
 
 // Evento install
@@ -23,11 +25,9 @@ var urlsToCache = [
 self.addEventListener('install', e => {
     e.waitUntil(
         caches.open(CACHE_NAME)
-            .then(cache => {
-                return cache.addAll(urlsToCache)
-                        .then(() => {
-                            self.skipWaiting();
-                        })
+            .then(async cache => {
+                await cache.addAll(urlsToCache);
+                self.skipWaiting();
 
             })
             .catch(err => {
