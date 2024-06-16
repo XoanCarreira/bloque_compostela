@@ -3,7 +3,6 @@
 </script>
 
 <main>
-	<!-- <h2>Lampai</h2> -->
 	<Navbar info={`./lampai`} sectores={`./lampai/sectores`} escola={"Lampai"} />
 	<div class="descripcion">
 		<p>
@@ -17,8 +16,7 @@
 		</p>
 		<p>As aproximacións van dende 1 minuto, caso do Mirador, ata 25 minutos no caso do Mangui.</p>
 		<p>
-			En canto o grado hai bloques para todos os públicos, incluso para os mais fortes como é o
-			caso do Gaia.
+			Predomina o grado medio-baixo, aínda que tamén hai algunha liña dura como "Gaia".
 		</p>
 	</div>
 	<div class="mapa">
@@ -33,12 +31,6 @@
 		gap: 30px;
 		padding: 0 10px;
 	}
-
-	/* h2 {
-		font-size: 35px;
-		font-weight: 800;
-		text-align: center;
-	} */
 
 	.descripcion {
 		max-width: 90%;

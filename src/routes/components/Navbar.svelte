@@ -22,7 +22,7 @@
 
     nav{
         display: flex;
-        gap: 15px 30px;
+        gap: 15px 15px;
         justify-content: center;
     }
 
@@ -39,6 +39,7 @@
     }
 
     a:hover{
-        background-color: greenyellow;
+        background-color: rgb(0, 0, 0);
+        color:#5DACA3;
     }
 </style>

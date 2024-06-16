@@ -13,7 +13,6 @@
 
 
 <div class="container">
-	<!-- <h2>Lampai</h2> -->
 	<Navbar info={`/lampai`} sectores={`/lampai/sectores`} escola={"Lampai"} />
 	<div class="selector">
 		{#each sectores as sector}
@@ -60,12 +59,6 @@
 		gap: 30px;
 	}
 
-	/* h2 {
-		font-size: 35px;
-		font-weight: 800;
-		text-align: center;
-	} */
-
 	.selector {
 		display: flex;
 		gap: 5px;
@@ -85,6 +78,11 @@
 		border-radius: 8px;
 	}
 
+	button:hover{
+		opacity: 0.9;
+		transform: translateY(-2px);
+	}
+
 	.grid {
 		margin: 0 auto;
 		max-width: 500px;
@@ -99,8 +97,14 @@
 		gap: 10px;
 	}
 
+	input{
+		margin-bottom: 10px;
+	}
+
 	.mapa__sector{
 		margin-top: 10px;
+		display: flex;
+		flex-direction: column;
 	}
 
 	img {
@@ -119,5 +123,13 @@
 	a {
 		color: #000;
 		text-decoration: none;
+	}
+
+
+	@media (width <=600px) {
+		img{
+			width: 320px;
+			height: min-content;
+		}
 	}
 </style>

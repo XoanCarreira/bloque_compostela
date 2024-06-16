@@ -27,6 +27,10 @@
 				<span class="vermello">-</span>
 				7c ou superior
 			</p>
+			<p>
+				<span class="blanco">-</span>
+				Proxecto
+			</p>
 		</div>
 	{/if}
 </footer>
@@ -69,6 +73,10 @@
 
 	.vermello {
 		color: #ff0000;
+	}
+
+	.blanco{
+		color: #ffffff;
 	}
 
 	p {
