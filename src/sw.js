@@ -15,16 +15,7 @@ var urlsToCache = [
     '%sveltekit.assets%/favicon_180.png',
     '%sveltekit.assets%/favicon_192.png',
     '%sveltekit.assets%/favicon_512.png',
-    './static/',
-    './src/'
 ];
-
-
-var lampaiImages = [];
-for (var i = 0; i < sectores.src.length; i++) {
-  gamesImages.push("./static/lampai/" + sectores.src[i].slug + ".jpg");
-}
-var contentToCache = urlsToCache.concat(lampaiImages);
 
 // Evento install
 //Que la web funcione sin conexiÓN
@@ -32,9 +23,11 @@ var contentToCache = urlsToCache.concat(lampaiImages);
 self.addEventListener('install', e => {
     e.waitUntil(
         caches.open(CACHE_NAME)
-            .then(async cache => {
-                await cache.addAll(contentToCache);
-                self.skipWaiting();
+            .then(cache => {
+                return cache.addAll(urlsToCache)
+                        .then(() => {
+                            self.skipWaiting();
+                        })
 
             })
             .catch(err => {
