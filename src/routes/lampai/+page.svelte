@@ -16,7 +16,7 @@
 		</p>
 		<p>As aproximacións van dende 1 minuto, caso do Mirador, ata 25 minutos no caso do Mangui.</p>
 		<p>
-			Predomina o grado medio-baixo, aínda que tamén hai algunha liña dura como "Gaia".
+			Predomina o grado medio-baixo pero tamén hai liñas duras como por exemplo "Gaia".
 		</p>
 	</div>
 	<div class="mapa">
