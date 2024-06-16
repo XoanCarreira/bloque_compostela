@@ -15,6 +15,8 @@ var urlsToCache = [
     '%sveltekit.assets%/favicon_180.png',
     '%sveltekit.assets%/favicon_192.png',
     '%sveltekit.assets%/favicon_512.png',
+    '/static/',
+    '/src/'
 ];
 
 // Evento install
