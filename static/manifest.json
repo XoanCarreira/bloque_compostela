@@ -4,7 +4,6 @@
     "description": "Guía de distintas zonas na contorna de Compostela para a práctica de boulder",
     "background_color": "#5DACA3",
     "theme_color": "#000",
-    "orientation": "portrait",
     "display": "standalone",
     "start_url": "/",
     "scope":"./",
