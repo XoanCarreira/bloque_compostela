@@ -1,11 +1,31 @@
-<header>
-	<img src="/favicon_limpio.svg" alt="Logo de persoa practicando boulder" />
+<script>
+	import Menu from "./Menu.svelte";
+</script>
 
-	<h1>Boulder Compostela</h1>
+<header>
+	<Menu/>
+	<div class="header">
+		<a href="/">
+			<img src="/favicon_limpio.svg" alt="Logo de persoa practicando boulder" />
+		</a>
+	
+		<h1>Boulder Compostela</h1>
+	</div>
 </header>
 
 <style>
-	header {
+	header{
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+
+	/* Menu{
+		position: relative;
+		
+	} */
+
+	.header {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -15,6 +35,7 @@
 		font-weight: 800;
 		min-height: 80px;
 		background-color: #5daca3;
+		max-width: 85%;
 	}
 
 	h1 {

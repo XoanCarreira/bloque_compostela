@@ -7,7 +7,7 @@
 <Popup />
 <Header />
 <slot />
-<Footer />
+<Footer/>
 
 <style>
 	:global(*) {
