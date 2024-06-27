@@ -1,9 +1,9 @@
 <script>
-	import Novidades from '../components/Novidades.svelte';
+	import Novas from '../components/Novas.svelte';
 </script>
 
 <div>
-	<Novidades />
+	<Novas />
 </div>
 
 <style>
@@ -11,6 +11,5 @@
         max-width: 95%;
         width: 500px;
         margin: 0 auto;
-        padding: 15px 0;
     }
 </style>

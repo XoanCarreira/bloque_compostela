@@ -1,5 +1,4 @@
 <script>
-	import { fade } from 'svelte/transition';
 	let visible = false;
 </script>
 

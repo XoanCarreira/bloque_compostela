@@ -14,6 +14,9 @@
 </div>
 
 <style>
+	div{
+		padding: 0 10px;
+	}
 	h4 {
 		font-size: 28px;
 	}

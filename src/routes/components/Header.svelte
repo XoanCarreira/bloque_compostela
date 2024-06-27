@@ -1,9 +1,13 @@
 <script>
 	import Menu from "./Menu.svelte";
+
+	
 </script>
 
 <header>
+	<!--Boton menú-->
 	<Menu/>
+
 	<div class="header">
 		<a href="/">
 			<img src="/favicon_limpio.svg" alt="Logo de persoa practicando boulder" />
@@ -19,11 +23,6 @@
 		align-items: center;
 		justify-content: space-evenly;
 	}
-
-	/* Menu{
-		position: relative;
-		
-	} */
 
 	.header {
 		display: flex;
@@ -43,30 +42,16 @@
 		font-family: Georgia, 'Times New Roman', Times, serif;
 	}
 
+	@media (width <=800px){
+		h1{
+			font-size: 3rem;
+		}
+	}
+
 	@media (width <= 500px) {
 		h1 {
 			display: none;
-			/* position: absolute;
-			z-index: 0;
-			opacity: 0.7;
-			font-size: 2rem;
-			filter: blur(1px);
-			text-shadow: 0px 0px 15px rgb(0, 0, 0);
-			max-width: 300px;
-			animation: mover 10s linear 0s infinite alternate; */
-		}
-
-		@keyframes mover {
-			0% {
-				/* transform: rotate(-5deg);
-				transform: skew(-5deg); */
-				left: -500px;
-			}
-			100% {
-				/* transform: rotate(5deg);
-				transform: skew(5deg); */
-				left: 500px;
-			}
+			
 		}
 
 		img{

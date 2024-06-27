@@ -17,12 +17,12 @@ export const server_loads = [];
 
 export const dictionary = {
 		"/": [2],
-		"/consellos": [3],
+		"/boulder_compostela": [3],
 		"/eucaliptos": [4],
 		"/eucaliptos/sectores": [5],
 		"/lampai": [6],
 		"/lampai/sectores": [7],
-		"/novidades": [8],
+		"/novas": [8],
 		"/recorda": [9]
 	};
 

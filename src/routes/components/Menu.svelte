@@ -2,27 +2,27 @@
 	import { fly } from 'svelte/transition';
 	import { fade } from 'svelte/transition';
 	let visible = false;
+
 </script>
 
 <div>
+	<!--Botón hamburguesa/X para menú-->
 	<label>
 		<input type="checkbox" bind:checked={visible} />
 		{#if visible}
-		<span class="span__x" in:fade out:fade>X</span>
-		<!-- {:else} -->
+			<span class="span__x" in:fade out:fade>X</span>
 		{/if}
-		<span >&#9776;</span>
+		<span>&#9776;</span>
 	</label>
 
+	<!--Menú despregable-->
 	{#if visible}
-		<nav transition:fly={{ y: -200, duration: 1000 }}>
+		<nav transition:fly={{ y: -200, duration: 800 }}>
 			<ul>
 				<li><a href="./">Inicio</a></li>
 				<li><a href="./recorda">Recorda</a></li>
-				<li><a href="./novidades">Novidades</a></li>
-				<li><a href="./">Consellos</a></li>
-				<li><a href="./">Agradecementos</a></li>
-				<li><a href="./">Boulder Compostela</a></li>
+				<li><a href="./novas">Novas</a></li>
+				<li><a href="./boulder_compostela">Boulder Compostela</a></li>
 			</ul>
 		</nav>
 	{/if}
@@ -30,47 +30,40 @@
 
 <style>
 	div {
-		/* width: 55px;
-		height: 55px; */
 		display: flex;
 		flex-direction: column;
 		position: absolute;
-		top: 10px;
-		left: 10px;
+		top: 25px;
+		left: 15px;
 	}
 
 	span {
-		/* border: 5px solid #fff; */
-		font-size: 3rem;
+		font-size: 2rem;
 		border-radius: 5px;
 		background-color: #000;
 		color: #fff;
 		width: 50px;
 		height: 50px;
-		padding: 0 10px;
+		padding: 5px 10px;
 	}
 
-	.span__x{
-		padding: 0 20px;
+	.span__x {
 		position: absolute;
 		background-color: #000;
-		width: 50px;
-		height: 64px;
+		width: 48px;
+		height: 45px;
 		text-align: center;
 	}
 
-	/* label {
-		height: 50px;
-		width: 50px;
-	
-	} */
+	label{
+		cursor: pointer;
+	}
 
 	input {
 		display: none;
 	}
 
 	nav {
-		/* display: none; */
 		width: 300px;
 		padding: 15px;
 		background-color: #000;
@@ -91,7 +84,7 @@
 		color: #fff;
 	}
 
-	a:hover{
+	a:hover {
 		background-color: #ffffff;
 		color: #000;
 		font-weight: 700;
