@@ -1,7 +1,7 @@
 {
-    "name": "Boulder Compostela || Guía de escalada zona de Compostela",
-    "short_name": "Boulder Compostela",
-    "description": "Guía de distintas zonas na contorna de Compostela para a práctica de boulder",
+    "name": "Boulder Compostela",
+    "short_name": "BoulderCompos",
+    "description": "Reseñas das distintas zonas de boulder na contorna de Compostela",
     "background_color": "#5DACA3",
     "theme_color": "#000",
     "display": "standalone",
