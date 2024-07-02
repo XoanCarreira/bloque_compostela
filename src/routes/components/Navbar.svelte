@@ -7,10 +7,16 @@
 
 
 <h2>{escola}</h2>
-<nav>
+<nav class="nav__grande">
     <a href="/">Inicio</a>
     <a href={info}>Info</a>
     <a href={sectores}>Sectores</a>
+</nav>
+
+<nav class="nav__pequeno">
+    <a href="/"><img src="/home.svg" alt="Icono inicio"></a>
+    <a href={info}><img src="/info.svg" alt="Icono info"></a>
+    <a href={sectores}><img src="/sectores.svg" alt="Icono sectores"></a>
 </nav>
 
 <style>
@@ -20,13 +26,13 @@
 		font-weight: 800;
     }
 
-    nav{
-        display: flex;
+    .nav__grande{
+        display: none;
         gap: 15px 15px;
         justify-content: center;
     }
 
-    a{
+    .nav__grande a{
         text-decoration: none;
         color: black;
         font-weight: 800;
@@ -42,4 +48,36 @@
         background-color: rgb(0, 0, 0);
         color:#5DACA3;
     }
+
+    .nav__pequeno{
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.788);
+        border-radius: 0 0 0 15px;
+        display: flex;
+        flex-direction: column;
+        z-index: 500;
+    }
+
+
+    .nav__pequeno a{
+        margin: 5px;
+    }
+
+    .nav__pequeno a img{
+        width: 35px;
+        height: 35px;
+    }
+
+    @media (width >= 500px){
+        .nav__grande{
+            display:flex;
+        }
+
+        .nav__pequeno{
+            display: none;
+        }
+    }
+
 </style>
