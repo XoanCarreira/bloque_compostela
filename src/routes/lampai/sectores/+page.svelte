@@ -53,7 +53,6 @@
 
 <style>
 	.container {
-		padding: 0 10px;
 		display: flex;
 		flex-direction: column;
 		gap: 30px;

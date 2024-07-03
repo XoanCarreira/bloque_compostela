@@ -36,9 +36,15 @@
 
 <style>
 	footer {
-        margin-top: 15px;
+        margin-top:15px;
 		padding: 15px;
 		background-color: #000;
+	}
+
+	@media (width < 500px){
+		footer{
+			min-height:120px;
+		}
 	}
 
 	div {
@@ -48,6 +54,7 @@
 		justify-content: space-evenly;
 		align-items: center;
 		column-gap: 10px;
+		padding-bottom: 50px;
 	}
 
 	span {

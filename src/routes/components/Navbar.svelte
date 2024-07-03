@@ -44,30 +44,34 @@
         border-radius: 5px;
     }
 
-    a:hover{
+    .nav__grande a:hover{
         background-color: rgb(0, 0, 0);
         color:#5DACA3;
     }
 
     .nav__pequeno{
         position: fixed;
-        top: 0;
-        right: 0;
+        bottom: 0;
         background-color: rgba(0, 0, 0, 0.788);
-        border-radius: 0 0 0 15px;
         display: flex;
-        flex-direction: column;
-        z-index: 500;
+        justify-content: space-evenly;
+        width: 100%;
+        z-index: 100;
+        padding: 5px 0;
     }
 
 
     .nav__pequeno a{
-        margin: 5px;
+        padding:5px 20px;
     }
 
     .nav__pequeno a img{
         width: 35px;
         height: 35px;
+    }
+
+    .nav__pequeno a:hover{
+        transform: scale(1.3);
     }
 
     @media (width >= 500px){

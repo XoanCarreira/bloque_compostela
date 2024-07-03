@@ -19,10 +19,10 @@
 	{#if visible}
 		<nav transition:fly={{ y: -200, duration: 800 }}>
 			<ul>
-				<li><a href="./">Inicio</a></li>
-				<li><a href="./recorda">Recorda</a></li>
-				<li><a href="./novas">Novas</a></li>
-				<li><a href="./boulder_compostela">Boulder Compostela</a></li>
+				<li><a href="../">Inicio</a></li>
+				<li><a href="../recorda">Recorda</a></li>
+				<li><a href="../novas">Novas</a></li>
+				<li><a href="../boulder_compostela">Boulder Compostela</a></li>
 			</ul>
 		</nav>
 	{/if}
