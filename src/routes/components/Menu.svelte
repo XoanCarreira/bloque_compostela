@@ -49,10 +49,13 @@
 
 	.span__x {
 		position: absolute;
-		background-color: #000;
-		width: 48px;
-		height: 45px;
+		background-color: #ffffff;
+		width: 50px;
+		height: 50px;
 		text-align: center;
+		font-weight: 600;
+		color: #000;
+		transform: translateY(-6px);
 	}
 
 	label{

@@ -55,7 +55,7 @@
 	.container {
 		display: flex;
 		flex-direction: column;
-		gap: 30px;
+		gap: 15px;
 	}
 
 	.selector {

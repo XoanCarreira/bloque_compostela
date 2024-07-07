@@ -51,7 +51,7 @@
 
     .nav__pequeno{
         position: fixed;
-        bottom: 0;
+        bottom: -1px;
         background-color: rgba(0, 0, 0, 0.788);
         display: flex;
         justify-content: space-evenly;
