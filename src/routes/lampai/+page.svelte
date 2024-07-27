@@ -1,5 +1,5 @@
 <script>
-	import Navbar from '../components/Navbar.svelte';
+	import Info from '../components/Info.svelte';
 	import sectores from './sectores.js';
 
 	//Mostrar mapa zona
@@ -10,11 +10,10 @@
 	let sectorSelect = sectores[0].sector;
 </script>
 
-
-
 <div class="container">
 	<h3>Lampai</h3>
-	<!-- <Navbar info={`/lampai`} sectores={`/lampai/sectores`} escola={"Lampai"} /> -->
+
+	<Info/>
 	<div class="selector">
 		{#each sectores as sector}
 			<button on:click={() => (sectorSelect = sector.sector)}>{sector.sector}</button>
@@ -32,8 +31,12 @@
 					<a target="_blank" href={sector.ubicacion}>{sector.cordenadas}</a>
 					<div class="mapa__sector">
 						<label>
-							<input type="checkbox" bind:checked={visible} />
-							Mostrar mapa
+							<input type="checkbox" bind:checked={visible}/>
+							{#if (visible == true) }
+								Ocultar mapa
+							{:else}
+								Mostar mapa
+							{/if}
 						</label>
 						{#if visible}
 							<img in:fade out:fade src={sector.mapa} alt="Mapa" />
@@ -50,8 +53,6 @@
 	</div>
 </div>
 
-
-
 <style>
 	.container {
 		display: flex;
@@ -59,7 +60,7 @@
 		gap: 15px;
 	}
 
-	h3{
+	h3 {
 		font-size: 2.5rem;
 		text-align: center;
 	}
@@ -81,11 +82,13 @@
 		font-weight: 700;
 		letter-spacing: 1.2px;
 		border: none;
-		box-shadow: 5px 5px 5px #0000008e, inset 0px 0px 3px white;
+		box-shadow:
+			5px 5px 5px #0000008e,
+			inset 0px 0px 3px white;
 		border-radius: 8px;
 	}
 
-	button:hover{
+	button:hover {
 		opacity: 0.9;
 		transform: translateY(-2px);
 	}
@@ -104,11 +107,21 @@
 		gap: 10px;
 	}
 
-	input{
-		margin-bottom: 10px;
+	label{
+		margin-bottom: 5px;
+		padding: 8px;
+		background-color: #00000028;
+		max-width: max-content;
+		border-radius: 8px;
 	}
 
-	.mapa__sector{
+	input {
+		margin-bottom: 10px;
+		display: none;
+		
+	}
+
+	.mapa__sector {
 		margin-top: 10px;
 		display: flex;
 		flex-direction: column;
@@ -132,9 +145,8 @@
 		text-decoration: none;
 	}
 
-
 	@media (width <=600px) {
-		img{
+		img {
 			width: 320px;
 			height: min-content;
 		}
