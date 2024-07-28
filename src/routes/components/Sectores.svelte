@@ -1,0 +1,140 @@
+<script>
+    import sectores from './eucaliptos.js'
+
+    //Mostrar mapa zona
+	let visible = false;
+
+	//Selector sector
+	let sectorSelect = sectores[0].sector;
+</script>
+
+
+
+<div class="selector">
+    {#each sectores as sector}
+        <button on:click={() => (sectorSelect = sector.sector)}>{sector.sector}</button>
+    {/each}
+</div>
+
+
+<div class="grid">
+    {#each sectores as sector}
+        {#if sector.sector === sectorSelect}
+            <div class="sector__box">
+                <h4><u>{sector.sector}</u></h4>
+                <!-- <p>{sector.descripcion}</p> -->
+                <p><strong>Orientación: </strong>{sector.orientacion}</p>
+                <p><strong>Aproximación: </strong>{sector.aproximacion}</p>
+                <a target="_blank" href={sector.ubicacion}>{sector.cordenadas}</a>
+                <div class="mapa__sector">
+                    <label>
+                        <input type="checkbox" bind:checked={visible}/>
+                        {#if (visible == true) }
+                            Ocultar mapa
+                        {:else}
+                            Mostar mapa
+                        {/if}
+                    </label>
+                    {#if visible}
+                        <img src={sector.mapa} alt="Mapa" />
+                    {/if}
+                </div>
+                <div class="sector__croquis">
+                    {#each sector.src as imaxe}
+                        <img src={imaxe} alt="Sector {sector.sector}" />
+                    {/each}
+                </div>
+            </div>
+        {/if}
+    {/each}
+</div>
+
+<style>
+    .selector {
+		display: flex;
+		gap: 5px;
+		justify-content: center;
+		flex-wrap: wrap;
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+	button {
+		width: 90px;
+		height: 40px;
+		background-color: #000;
+		color: #fff;
+		font-weight: 700;
+		letter-spacing: 1.2px;
+		border: none;
+		box-shadow:
+			5px 5px 5px #0000008e,
+			inset 0px 0px 3px white;
+		border-radius: 8px;
+	}
+
+	button:hover {
+		opacity: 0.9;
+		transform: translateY(-2px);
+	}
+
+	.grid {
+		margin: 0 auto;
+		max-width: 500px;
+		min-height: 500px;
+	}
+
+	.sector__croquis {
+		margin-top: 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+	}
+
+	label{
+		margin-bottom: 5px;
+		padding: 8px;
+		background-color: #00000028;
+		max-width: max-content;
+		border-radius: 8px;
+		user-select: none;
+	}
+
+	input {
+		margin-bottom: 10px;
+		display: none;
+		
+	}
+
+	.mapa__sector {
+		margin-top: 10px;
+		display: flex;
+		flex-direction: column;
+	}
+
+	img {
+		max-width: 100%;
+		width: 500px;
+		min-height: 250px;
+		margin: 0 auto;
+		box-shadow: 0px 0px 10px 2px #000;
+	}
+
+	h4 {
+		text-align: center;
+		font-size: 1.5rem;
+	}
+
+	a {
+		color: #000;
+		text-decoration: none;
+	}
+
+	@media (width <=600px) {
+		img {
+			width: 320px;
+			height: min-content;
+		}
+	}
+</style>

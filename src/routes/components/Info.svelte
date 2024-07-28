@@ -66,5 +66,6 @@
         width: 500px;
         max-width: 90%;
         text-align: center;
+		user-select: none;
     }
 </style>

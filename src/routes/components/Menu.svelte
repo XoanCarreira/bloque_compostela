@@ -44,7 +44,7 @@
 		color: #fff;
 		width: 50px;
 		height: 50px;
-		padding: 5px 10px;
+		padding: 3px 10px;
 	}
 
 	.span__x {
@@ -55,11 +55,12 @@
 		text-align: center;
 		font-weight: 600;
 		color: #000;
-		transform: translateY(-6px);
+		transform: translateY(-4px);
 	}
 
 	label{
 		cursor: pointer;
+		user-select: none;
 	}
 
 	input {

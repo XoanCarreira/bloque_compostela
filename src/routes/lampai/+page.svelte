@@ -113,6 +113,7 @@
 		background-color: #00000028;
 		max-width: max-content;
 		border-radius: 8px;
+		user-select: none;
 	}
 
 	input {

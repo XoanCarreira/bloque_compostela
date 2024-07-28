@@ -72,15 +72,16 @@
 	}
 
 	.grados{
-		margin: 0 auto;
+		margin: 15px auto;
 		padding: 0;
 	}
 
 	label{
-		background-color: #ffffff28;
+		border: 1px inset white;
 		padding: 8px;
-		border-radius: 10px;
-
+		border-radius: 8px;
+        color: #fff;
+		user-select: none;
 	}
 
 	input{
@@ -112,9 +113,4 @@
 		font-size: 1.2rem;
 	}
 
-	label {
-		width: 100%;
-		text-align: center;
-        color: #fff;
-	}
 </style>
