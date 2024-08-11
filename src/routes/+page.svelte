@@ -25,7 +25,7 @@
         background-color: rgb(0, 0, 0);
         border-radius: 10px;
         text-decoration: none;
-        color: #ffffff;
+        color: #ccc;
     }
 
 </style>

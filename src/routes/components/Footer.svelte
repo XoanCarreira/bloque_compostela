@@ -5,32 +5,38 @@
 <footer>
 	<label>
 		<input type="checkbox" bind:checked={visible} />
-		Ten en conta que os grados son orientativos
+		{#if (visible == true) }
+			Ocultar grados
+		{:else}
+			Mostrar grados
+		{/if}
 	</label>
-
 	{#if visible}
-		<div>
-			<p>
-				<span class="azul">-</span>
-				6a+ ou inferior
-			</p>
-			<p>
-				<span class="amarelo">-</span>
-				6b a 6c+
-			</p>
-			<p>
-				<span class="verde">-</span>
-				7a a 7b+
-			</p>
-			<p>
-				<span class="vermello">-</span>
-				7c ou superior
-			</p>
-			<p>
-				<span class="blanco">-</span>
-				Proxecto
-			</p>
-		</div>
+	<div class="grados">
+		<p>Ten en conta que os grados son orientativos</p>
+	</div>
+	<div>
+		<p>
+			<span class="azul">-</span>
+			6a+ ou inferior
+		</p>
+		<p>
+			<span class="amarelo">-</span>
+			6b a 6c+
+		</p>
+		<p>
+			<span class="verde">-</span>
+			7a a 7b+
+		</p>
+		<p>
+			<span class="vermello">-</span>
+			7c ou superior
+		</p>
+		<p>
+			<span class="blanco">-</span>
+			Proxecto
+		</p>
+	</div>
 	{/if}
 </footer>
 
@@ -65,6 +71,23 @@
 		top: 10px;
 	}
 
+	.grados{
+		margin: 15px auto;
+		padding: 0;
+	}
+
+	label{
+		border: 1px inset white;
+		padding: 8px;
+		border-radius: 8px;
+        color: #fff;
+		user-select: none;
+	}
+
+	input{
+		display: none;
+	}
+
 	.azul {
 		color: #0000ff;
 	}
@@ -90,9 +113,4 @@
 		font-size: 1.2rem;
 	}
 
-	label {
-		width: 100%;
-		text-align: center;
-        color: #fff;
-	}
 </style>
