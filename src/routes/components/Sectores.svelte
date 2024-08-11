@@ -1,5 +1,5 @@
 <script>
-    import sectores from './eucaliptos.js'
+    import sectores from '../eucaliptos.js'
 
     //Mostrar mapa zona
 	let visible = false;
