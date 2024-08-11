@@ -1,6 +1,6 @@
 <script>
 	import Info from '../components/Info.svelte';
-	import sectores from './eucaliptos.js';
+	// import sectores from './eucaliptos.js';
 	import Sector from '../components/Sectores.svelte'
 
 	// //Mostrar mapa zona
