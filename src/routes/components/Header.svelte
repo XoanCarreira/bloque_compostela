@@ -11,9 +11,9 @@
 	<div class="header">
 		<a href="/">
 			<img src="/favicon_limpio.svg" alt="Logo de persoa practicando boulder" />
+			
+			<h1>Boulder Compostela</h1>
 		</a>
-	
-		<h1>Boulder Compostela</h1>
 	</div>
 </header>
 
@@ -35,6 +35,16 @@
 		font-weight: 800;
 		min-height: 80px;
 		max-width: 85%;
+	}
+
+	a{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 15px;
+		text-decoration: none;
+		color: black;
+		flex-wrap: wrap;
 	}
 
 	h1 {

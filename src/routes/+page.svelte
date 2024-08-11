@@ -3,7 +3,7 @@
 </script>
 
 <main>
-    <a href="/eucaliptos"><Card tittle="Eucaliptos-free"/></a>
+    <!-- <a href="/eucaliptos"><Card tittle="Eucaliptos-free"/></a> -->
     <!-- <a href="/"><Card tittle="Figueiras"/></a> -->
     <a href="/lampai"><Card tittle="Lampai"/></a>
     <!-- <a href="/"><Card tittle="Sura"/></a>
@@ -25,7 +25,7 @@
         background-color: rgb(0, 0, 0);
         border-radius: 10px;
         text-decoration: none;
-        color: #ffffff;
+        color: #ccc;
     }
 
 </style>
