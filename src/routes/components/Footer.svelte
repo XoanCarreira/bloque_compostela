@@ -47,12 +47,6 @@
 		background-color: #000;
 	}
 
-	@media (width < 500px){
-		footer{
-			min-height:120px;
-		}
-	}
-
 	div {
 		width: 100%;
 		display: flex;
@@ -60,7 +54,6 @@
 		justify-content: space-evenly;
 		align-items: center;
 		column-gap: 10px;
-		padding-bottom: 50px;
 	}
 
 	span {

@@ -70,9 +70,13 @@
 	}
 
 	.mapa {
-		display: flex;
-		justify-content: center;
+		margin: 0 auto;
+		max-width: 99%;
 		overflow-x: scroll;
+	}
+
+	img{
+		margin: 0 auto;
 	}
 
 	input {
