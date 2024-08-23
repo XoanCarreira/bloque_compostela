@@ -11,8 +11,9 @@
 		<input type="checkbox" bind:checked={visible} />
 		{#if visible}
 			<span class="span__x" in:fade out:fade>X</span>
-		{/if}
+		{:else}
 		<span>&#9776;</span>
+		{/if}
 	</label>
 
 	<!--Menú despregable-->
@@ -42,9 +43,9 @@
 		border-radius: 5px;
 		background-color: #000;
 		color: #fff;
+		padding: 3px 10px;
 		width: 50px;
 		height: 50px;
-		padding: 3px 10px;
 	}
 
 	.span__x {
@@ -73,6 +74,8 @@
 		background-color: #000;
 		z-index: 500;
 		border-radius: 5px;
+		position: relative;
+		top: 45px;
 	}
 
 	ul,

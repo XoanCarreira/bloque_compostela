@@ -19,6 +19,7 @@
 	}
 	h4 {
 		font-size: 28px;
+		text-align: center;
 	}
 
 	li {

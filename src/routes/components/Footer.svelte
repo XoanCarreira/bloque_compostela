@@ -17,23 +17,23 @@
 	</div>
 	<div>
 		<p>
-			<span class="azul">-</span>
+			<span class="azul">_</span>
 			6a+ ou inferior
 		</p>
 		<p>
-			<span class="amarelo">-</span>
+			<span class="amarelo">_</span>
 			6b a 6c+
 		</p>
 		<p>
-			<span class="verde">-</span>
+			<span class="verde">_</span>
 			7a a 7b+
 		</p>
 		<p>
-			<span class="vermello">-</span>
+			<span class="vermello">_</span>
 			7c ou superior
 		</p>
 		<p>
-			<span class="blanco">-</span>
+			<span class="blanco">_</span>
 			Proxecto
 		</p>
 	</div>
@@ -57,11 +57,11 @@
 	}
 
 	span {
-		font-size: 4rem;
+		font-size: 3rem;
 		font-weight: 800;
 		line-height: 30px;
 		position: relative;
-		top: 10px;
+		top: -10px;
 	}
 
 	.grados{
@@ -103,7 +103,7 @@
 
 	p {
 		color: #fff;
-		font-size: 1.2rem;
+		font-size: 1rem;
 	}
 
 </style>
