@@ -1,12 +1,14 @@
 <script>
-	import Menu from "./Menu.svelte";
+	// import Menu from "./Menu.svelte";
+	import Hamburger from "./Hamburger.svelte";
 
 	
 </script>
 
 <header>
 	<!--Boton menú-->
-	<Menu/>
+	<!-- <Menu/> -->
+	 <Hamburger/>
 
 	<div class="header">
 		<a href="/">
@@ -21,7 +23,7 @@
 	header{
 		display: flex;
 		align-items: center;
-		justify-content: space-evenly;
+		justify-content: center;
 		background: linear-gradient(rgba(0, 0, 0, 0.788), #1f3a37 10%, #5daca3 90%);
 	}
 
