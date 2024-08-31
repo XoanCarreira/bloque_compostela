@@ -1,4 +1,4 @@
-<div class="movil">
+<div>
     <!--Botón hamburguesa-->
     <input type="checkbox" id="btn_menu">
     <label for="btn_menu" class="btn_menu">
@@ -59,6 +59,7 @@
     .btn_menu{
         width: 40px;
         height: 40px;
+        transition: all .3s ease;
     }
 
     .btn_span{
@@ -68,7 +69,7 @@
         width: 30px;
         height: 5px;
         background-color: #000;
-        transition: all .3s ease;
+        transition: all .3s 0.1s ease;
     }
 
     .btn_span:nth-child(2){
