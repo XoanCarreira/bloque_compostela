@@ -5,7 +5,7 @@ export default [
         descripcion: "Gran concentración de bloques con variedade de grados",
         aproximacion: "5 minutos",
         orientacion: "Sur/Oeste",
-        src: ["/lampai/campo_01.jpg", "/lampai/campo_02.jpg", "/lampai/campo_03.jpg", "/lampai/campo_04.jpg", "/lampai/campo_05.jpg"],
+        src: ["/lampai/campo_01.jpg", "/lampai/campo_02.jpg", "/lampai/campo_03.jpg", "/lampai/campo_04.jpg", "/lampai/campo_05.jpg", "/lampai/campo_06.jpg", "/lampai/campo_07.jpg", "/lampai/campo_08.jpg", "/lampai/campo_09.jpg"],
         ubicacion: "https://maps.app.goo.gl/78zD2reLPzufME6h7",
         cordenadas: `42°46'49.9"N 8°37'34.0"W`,
         mapa: "/lampai/mapa_oriente.jpg"
