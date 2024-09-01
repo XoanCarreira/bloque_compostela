@@ -45,7 +45,7 @@ export default [
         descripcion: "Numerosas liñas en bloques de non mais de 3,5 metros de altura.",
         aproximacion: "25 minutos",
         orientacion: "Todas",
-        src: ["/lampai/mangui_00.jpg", "/lampai/mangui_01.jpg", "/lampai/mangui_02.jpg", "/lampai/mangui_03.jpg", "/lampai/mangui_04.jpg", "/lampai/mangui_05.jpg"],
+        src: ["/lampai/mangui_00.jpg", "/lampai/mangui_01.jpg", "/lampai/mangui_02.jpg", "/lampai/mangui_03.jpg", "/lampai/mangui_04.jpg", "/lampai/mangui_05.jpg", "/lampai/mangui_06.jpg" ],
         ubicacion: "https://maps.app.goo.gl/4aAogHw9658esDeh8",
         cordenadas: `42°45'47.0"N 8°37'46.5"W`,
         mapa: "/lampai/mapa_mangui.jpg"
