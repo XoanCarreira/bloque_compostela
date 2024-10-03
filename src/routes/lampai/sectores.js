@@ -35,7 +35,7 @@ export default [
         descripcion: "Varios bloques abertos con liñas en xeral de grado medio-baixo. Mais posibilidades.",
         aproximacion: "10 minutos",
         orientacion: "Sur/Oeste",
-        src: ["/lampai/ladeira_01.jpg", "/lampai/ladeira_02.jpg", "/lampai/ladeira_03.jpg"],
+        src: ["/lampai/ladeira_01.jpg", "/lampai/ladeira_02.jpg", "/lampai/ladeira_03.jpg", "/lampai/ladeira_04.jpg", "/lampai/ladeira_06.jpg", "/lampai/ladeira_07.jpg" ],
         ubicacion: "https://maps.app.goo.gl/yU2Fwu9MC62vx1h4A",
         cordenadas: `42°47'31.6"N 8°38'02.6"W`,
         mapa: "/lampai/mapa_ladeira.jpg"
