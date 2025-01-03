@@ -12,13 +12,11 @@
 	{#if ver_info}
 		<div class="descripcion">
 			<p>
-				Zona con un número considerable de liñas abertas, aínda que na maioría dos casos os bloques
-				están dispersos. En xeral a calidade da pedra é boa, con un gran fino e compacto.
-				Podemos atopar placas, desplomes, adherencias e incluso algún teito.
+				Gran número de liñas abertas pero con moitas posibilidades de novas aperturas.
 			</p>
-			<p>Predomina o grao medio-baixo pero tamén hai liñas duras como por exemplo "Gaia".</p>
+			<p>Predomina o grao medio-baixo, pero tamén hai liñas duras como por exemplo "Gaia".</p>
 			<p>
-				A orientación é maiormente sur e oeste, aínda que en sectores como Mangui ou Fortaleza podemos atopar sombra todo o día.
+				Buscando, podemos atopar tódalas orientacións, aínda que predominan sur e oeste.
 			</p>
 			<p>As aproximacións van dende 1 minuto, caso do Mirador, ata 25 minutos no caso do Mangui.</p>
 		</div>

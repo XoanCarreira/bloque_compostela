@@ -14,9 +14,9 @@
 			<p>
 				Bloque aislado pero con liñas de gran calidade.
 			</p>
-			<p>Podemos facer convos e comezos sentados, dando pasos realmente duros.</p>
+			<p>Pódense combinar pasos para sacar mais liñas duras.</p>
 			<p>
-				A orientación é suroeste.
+				Orientación suroeste.
 			</p>
 			<p>Aproximación corta duns 5 minutos.</p>
 		</div>
