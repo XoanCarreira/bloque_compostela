@@ -26,7 +26,6 @@
  * ```
  */
 declare module '$env/static/private' {
-	export const GJS_DEBUG_TOPICS: string;
 	export const LESSOPEN: string;
 	export const USER: string;
 	export const npm_config_user_agent: string;
@@ -37,7 +36,6 @@ declare module '$env/static/private' {
 	export const GTK_EXE_PREFIX_VSCODE_SNAP_ORIG: string;
 	export const npm_node_execpath: string;
 	export const GDK_BACKEND_VSCODE_SNAP_ORIG: string;
-	export const CLUTTER_DISABLE_MIPMAPPED_TEXT: string;
 	export const SHLVL: string;
 	export const npm_config_noproxy: string;
 	export const HOME: string;
@@ -46,7 +44,9 @@ declare module '$env/static/private' {
 	export const TERM_PROGRAM_VERSION: string;
 	export const DESKTOP_SESSION: string;
 	export const GTK_PATH: string;
+	export const NVM_BIN: string;
 	export const npm_package_json: string;
+	export const NVM_INC: string;
 	export const XDG_DATA_HOME_VSCODE_SNAP_ORIG: string;
 	export const GTK_IM_MODULE_FILE: string;
 	export const GIO_LAUNCHED_DESKTOP_FILE: string;
@@ -58,6 +58,7 @@ declare module '$env/static/private' {
 	export const MANAGERPID: string;
 	export const npm_config_userconfig: string;
 	export const npm_config_local_prefix: string;
+	export const DBUS_STARTER_BUS_TYPE: string;
 	export const SYSTEMD_EXEC_PID: string;
 	export const IM_CONFIG_CHECK_ENV: string;
 	export const VSCODE_PYTHON_AUTOACTIVATE_GUARD: string;
@@ -67,14 +68,15 @@ declare module '$env/static/private' {
 	export const COLORTERM: string;
 	export const GIO_LAUNCHED_DESKTOP_FILE_PID: string;
 	export const COLOR: string;
+	export const NVM_DIR: string;
 	export const DEBUGINFOD_URLS: string;
-	export const npm_config_metrics_registry: string;
 	export const IM_CONFIG_PHASE: string;
 	export const WAYLAND_DISPLAY: string;
 	export const LOGNAME: string;
 	export const JOURNAL_STREAM: string;
 	export const _: string;
 	export const npm_config_prefix: string;
+	export const npm_config_npm_version: string;
 	export const XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG: string;
 	export const MEMORY_PRESSURE_WATCH: string;
 	export const XDG_SESSION_CLASS: string;
@@ -119,7 +121,6 @@ declare module '$env/static/private' {
 	export const GTK_PATH_VSCODE_SNAP_ORIG: string;
 	export const FONTCONFIG_FILE: string;
 	export const GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG: string;
-	export const GJS_DEBUG_OUTPUT: string;
 	export const CLASSPATH: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const QT_IM_MODULE: string;
@@ -127,9 +128,10 @@ declare module '$env/static/private' {
 	export const npm_config_init_module: string;
 	export const JAVA_HOME: string;
 	export const PWD: string;
-	export const npm_config_globalignorefile: string;
 	export const npm_execpath: string;
 	export const XDG_CONFIG_DIRS: string;
+	export const NVM_CD_FLAGS: string;
+	export const DBUS_STARTER_ADDRESS: string;
 	export const XDG_DATA_DIRS: string;
 	export const npm_config_global_prefix: string;
 	export const npm_command: string;
@@ -166,7 +168,6 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
-		GJS_DEBUG_TOPICS: string;
 		LESSOPEN: string;
 		USER: string;
 		npm_config_user_agent: string;
@@ -177,7 +178,6 @@ declare module '$env/dynamic/private' {
 		GTK_EXE_PREFIX_VSCODE_SNAP_ORIG: string;
 		npm_node_execpath: string;
 		GDK_BACKEND_VSCODE_SNAP_ORIG: string;
-		CLUTTER_DISABLE_MIPMAPPED_TEXT: string;
 		SHLVL: string;
 		npm_config_noproxy: string;
 		HOME: string;
@@ -186,7 +186,9 @@ declare module '$env/dynamic/private' {
 		TERM_PROGRAM_VERSION: string;
 		DESKTOP_SESSION: string;
 		GTK_PATH: string;
+		NVM_BIN: string;
 		npm_package_json: string;
+		NVM_INC: string;
 		XDG_DATA_HOME_VSCODE_SNAP_ORIG: string;
 		GTK_IM_MODULE_FILE: string;
 		GIO_LAUNCHED_DESKTOP_FILE: string;
@@ -198,6 +200,7 @@ declare module '$env/dynamic/private' {
 		MANAGERPID: string;
 		npm_config_userconfig: string;
 		npm_config_local_prefix: string;
+		DBUS_STARTER_BUS_TYPE: string;
 		SYSTEMD_EXEC_PID: string;
 		IM_CONFIG_CHECK_ENV: string;
 		VSCODE_PYTHON_AUTOACTIVATE_GUARD: string;
@@ -207,14 +210,15 @@ declare module '$env/dynamic/private' {
 		COLORTERM: string;
 		GIO_LAUNCHED_DESKTOP_FILE_PID: string;
 		COLOR: string;
+		NVM_DIR: string;
 		DEBUGINFOD_URLS: string;
-		npm_config_metrics_registry: string;
 		IM_CONFIG_PHASE: string;
 		WAYLAND_DISPLAY: string;
 		LOGNAME: string;
 		JOURNAL_STREAM: string;
 		_: string;
 		npm_config_prefix: string;
+		npm_config_npm_version: string;
 		XDG_CONFIG_DIRS_VSCODE_SNAP_ORIG: string;
 		MEMORY_PRESSURE_WATCH: string;
 		XDG_SESSION_CLASS: string;
@@ -259,7 +263,6 @@ declare module '$env/dynamic/private' {
 		GTK_PATH_VSCODE_SNAP_ORIG: string;
 		FONTCONFIG_FILE: string;
 		GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG: string;
-		GJS_DEBUG_OUTPUT: string;
 		CLASSPATH: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		QT_IM_MODULE: string;
@@ -267,9 +270,10 @@ declare module '$env/dynamic/private' {
 		npm_config_init_module: string;
 		JAVA_HOME: string;
 		PWD: string;
-		npm_config_globalignorefile: string;
 		npm_execpath: string;
 		XDG_CONFIG_DIRS: string;
+		NVM_CD_FLAGS: string;
+		DBUS_STARTER_ADDRESS: string;
 		XDG_DATA_DIRS: string;
 		npm_config_global_prefix: string;
 		npm_command: string;

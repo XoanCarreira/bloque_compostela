@@ -1,6 +1,4 @@
 <script>
-    // import eucalipto from '../eucaliptos.js'
-
     //Mostrar mapa zona
 	let visible = false;
 
@@ -9,20 +7,19 @@
 </script>
 
 
-
+<!--Selector de sectores-->
 <div class="selector">
     {#each eucalipto as sector}
         <button on:click={() => (sectorSelect = sector.sector)}>{sector.sector}</button>
     {/each}
 </div>
 
-
+<!--Mostrar sector seleccionado-->
 <div class="grid">
     {#each eucalipto as sector}
         {#if sector.sector === sectorSelect}
             <div class="sector__box">
                 <h4><u>{sector.sector}</u></h4>
-                <!-- <p>{sector.descripcion}</p> -->
                 <p><strong>Orientación: </strong>{sector.orientacion}</p>
                 <p><strong>Aproximación: </strong>{sector.aproximacion}</p>
                 <a target="_blank" href={sector.ubicacion}>{sector.cordenadas}</a>

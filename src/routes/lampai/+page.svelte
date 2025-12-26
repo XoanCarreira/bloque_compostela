@@ -1,13 +1,13 @@
 <script>
 	import Info from '../components/Info.svelte';
-	import sectores from './sectores.js';
+	import lampai from './lampai.js';
 
 	//Mostrar mapa zona
 	import { fade } from 'svelte/transition';
 	let visible = false;
 
 	//Selector sector
-	let sectorSelect = sectores[0].sector;
+	let sectorSelect = lampai[0].sector;
 </script>
 
 <div class="container">
@@ -15,13 +15,13 @@
 
 	<Info/>
 	<div class="selector">
-		{#each sectores as sector}
+		{#each lampai as sector}
 			<button on:click={() => (sectorSelect = sector.sector)}>{sector.sector}</button>
 		{/each}
 	</div>
 
 	<div class="grid">
-		{#each sectores as sector}
+		{#each lampai as sector}
 			{#if sector.sector === sectorSelect}
 				<div class="sector__box">
 					<h4><u>{sector.sector}</u></h4>

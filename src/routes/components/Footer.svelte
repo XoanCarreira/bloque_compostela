@@ -38,6 +38,10 @@
 		</p>
 	</div>
 	{/if}
+	<div>
+		<p class="version">Boulder Compostela 2.0.1</p>
+
+	</div>
 </footer>
 
 <style>
@@ -104,6 +108,17 @@
 	p {
 		color: #fff;
 		font-size: 1rem;
+	}
+
+
+	.version{
+		border-top: 3px solid #5DACA3;
+		width: 100%;
+		padding: 15px;
+		text-align: center;
+		margin-top: 25px;
+		font-size: 0.9rem;
+		color: #5DACA3;
 	}
 
 </style>

@@ -1,6 +1,6 @@
 {
 	"name": "bloque-compostela",
-	"version": "0.0.1",
+	"version": "1.0.1",
 	"private": true,
 	"scripts": {
 		"dev": "vite dev",
@@ -23,5 +23,11 @@
 		"svelte": "^4.2.7",
 		"vite": "^5.0.3"
 	},
-	"type": "module"
+	"overrides": {
+		"esbuild": ">=0.25.0"
+	},
+	"type": "module",
+	"dependencies": {
+		"gsap": "^3.14.2"
+	}
 }
