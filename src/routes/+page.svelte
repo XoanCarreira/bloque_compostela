@@ -4,12 +4,8 @@
 </script>
 
 <main>
-    <!-- <a href="/eucaliptos"><Card tittle="Eucaliptos-free"/></a> -->
-    <!-- <a href="/"><Card tittle="Figueiras"/></a> -->
 
-    <!-- <a href="/"><Card tittle="Sura"/></a>
-    <a href="/"><Card tittle="Vilas"/></a> -->
-
+    <!--Xeración de tarxetas/botóns segundo a lista de zonas-->
     {#each zonas as zona}
         <a href={zona.ruta}><Card tittle={zona.escuela}/></a>
     {/each}

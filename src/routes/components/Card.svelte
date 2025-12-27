@@ -2,7 +2,7 @@
     export let tittle;
     import zonas from '../zonas.js';
 
-    //Selector de zonas: mantiene la zona activa según tittle
+    //Selector de zonas: mantén a zona activa según tittle
     let zonaSelect = zonas[0];
     $: zonaSelect = zonas.find((zona) => zona.escuela === tittle) ?? zonas[0];
 
@@ -20,14 +20,16 @@
     <div class="overlay">
         <img src={zonaSelect?.image} alt="Foto zona escalada {zonaSelect?.escuela}">
     </div>
-    <h3 class="titulo">{zonaSelect?.escuela}</h3>
     <div class="info">
-        <p>{zonaSelect?.description}</p>
+        <h3 class="titulo">{zonaSelect?.escuela}</h3>
     </div>
     <div class="footerCard">
-        <p><strong>Sectores: </strong>{zonaSelect?.sectores}</p>
-        <p><strong>Vías: </strong>{zonaSelect?.vias}</p>
-        <p><strong>Grado: </strong>{zonaSelect?.grados}</p>
+        <p class="footerDescription">{zonaSelect?.description}</p>
+        <div class="footerDetails">
+            <p><strong>Sectores: </strong>{zonaSelect?.sectores}</p>
+            <p><strong>Vías: </strong>{zonaSelect?.vias}</p>
+            <p><strong>Grado: </strong>{zonaSelect?.grados}</p>
+        </div>
     </div>
 </div>
 
@@ -41,10 +43,11 @@
         display: flex;
         place-content: center;
         flex-wrap: wrap;
-        box-shadow: 5px 5px 5px #0000008e, inset 0px 0px 3px white;
+        box-shadow: 5px 5px 5px #0000008e, inset 0px 0px 3px rgb(0, 0, 0);
         position: relative;
-        background-color: #000;
+        background-color: black; 
         color: #fff;
+        border: 5px solid #000000;
     }
 
     .card:hover{
@@ -56,39 +59,57 @@
             transform: scale(1);
         }
         to {
-            transform: scale(1.05);
+            transform: scale(1.02);
         }
     }
 
-    .titulo{
-        font-size: 30px;
-        text-align: center;
-    }
-
+    
     .overlay{
         position: absolute;
         width: 100%;
         height: 100%;
-        opacity: 0.5;
+        opacity: 0.3;
         bottom: 0;
         overflow: hidden;
         border-radius: 10px;
-        background-color: black;
-        z-index: -1;
+    }
+
+    .info{
+        position: relative;
+        z-index: 2;
+        color: rgb(255, 255, 255);
+        text-align: center;
+    }
+
+    .titulo{
+        font-size: 30px;
     }
 
     .footerCard{
         position: absolute;
         bottom: 0;
-        padding: 10px;
         font-size: 14px;
-        display: flex;
-        justify-content: space-around;
         width: 100%;
         background-color: black;
         border-radius: 0px 0px 10px 10px;
         color: #fff;
-    }   
+    }  
+    
+    .footerDescription{
+        font-size: 14px;
+        text-align: justify;
+        padding: 10px;
+        border-bottom: 2px solid #fff;
+        height: 100px;
+    }
+
+    .footerDetails{
+        margin-top: 10px;
+        padding: 0px 10px 10px 10px;
+        font-size: 13px;
+        display: flex;
+        justify-content: space-between;
+    }
 
 
 </style>

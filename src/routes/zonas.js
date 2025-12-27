@@ -2,7 +2,7 @@ export default [
 	{
 		escuela: 'Lampai',
         ruta: '/lampai',
-		image: './lampai/campo_01.jpg',
+		image: './lampai/portada_lampai.jpg',
 		description:
 			'Zona con máis de 100 liñas abertas de todos os graos nun entorno natural impresionante a 10 km de Santiago de Compostela. Posibilidade de novas liñas.',
 		vias: 120,
