@@ -1,7 +1,7 @@
 <script>
 	import Info from '../components/Info.svelte';
 	// import sectores from './eucaliptos.js';
-	import Sector from '../components/Sectores.svelte'
+	//import Sector from '../components/Sectores.svelte'
 
 	// //Mostrar mapa zona
 	// import { fade } from 'svelte/transition';
@@ -15,7 +15,7 @@
 	<h3>Eucaliptos-free</h3>
 
 	<Info/>
-	<Sector/>
+
 	<!-- <div class="selector">
 		{#each sectores as sector}
 			<button on:click={() => (sectorSelect = sector.sector)}>{sector.sector}</button>

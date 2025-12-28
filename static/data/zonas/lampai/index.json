@@ -1,0 +1,27 @@
+{
+    "slug": "lampai",
+    "nombre": "Lampai",
+    "descripcion": "Zona con varios sectores de bloque con multitude de liñas e graos variados.",
+    "sectores": [
+        {
+            "slug": "teito",
+            "nombre": "Teito",
+            "vias": 9,
+            "descripcion": "Bloque con desplomado con liñas en xeral duras"
+        },
+
+        {
+            "slug": "ladeira",
+            "nombre": "Ladeira",
+            "vias": 15,
+            "descripcion": "Sector con variedade de liñas e graos"
+        },
+
+        {
+            "slug": "verme",
+            "nombre": "Verme",
+            "vias": 3,
+            "descripcion": "Bloque aislado con varias liñas de grado baixo"
+        }
+    ]
+}

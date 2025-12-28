@@ -74,6 +74,12 @@
         border-radius: 10px;
     }
 
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }   
+
     .info{
         position: relative;
         z-index: 2;
@@ -99,7 +105,7 @@
         font-size: 14px;
         text-align: justify;
         padding: 10px;
-        border-bottom: 2px solid #fff;
+        border-bottom: 2px solid #ccc;
         height: 100px;
     }
 
@@ -110,6 +116,4 @@
         display: flex;
         justify-content: space-between;
     }
-
-
 </style>

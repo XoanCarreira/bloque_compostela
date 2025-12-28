@@ -1,0 +1,20 @@
+[
+    {
+        "slug": "lampai",
+        "nome": "Lampai",
+        "descripcion": "Máis de 100 liñas abertas con variedade de graos e tipos de escalada."
+    },
+
+    {
+        "slug": "almacen",
+        "nome": "Almacén",
+        "descripcion": "Bloque con varias liñas a 5 minutos de Compostela."
+    },
+
+    {
+        "slug": "sura",
+        "nome": "Sura",
+        "descripcion": "Zona de bloque con máis de 50 liñas."
+    }
+
+]

@@ -1,4 +1,5 @@
 <script>
+
 	import Info from '../components/Info.svelte';
 	import lampai from './lampai.js';
 

@@ -49,6 +49,7 @@
         margin-top:15px;
 		padding: 15px;
 		background-color: #000;
+		box-shadow: 0px -3px 10px #0000008e;
 	}
 
 	div {

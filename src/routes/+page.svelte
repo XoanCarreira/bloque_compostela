@@ -14,12 +14,13 @@
 
 <style>
     main{
-        background-color: #5DACA3;
+        /*background-color: #5DACA3;*/
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
         gap: 30px;
         padding: 15px;
+        min-height: 76vh;
     }
 
     a{

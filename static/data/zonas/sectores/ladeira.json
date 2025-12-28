@@ -1,0 +1,22 @@
+{
+  "slug": "ladeira",
+  "nombre": "Ladeira",
+  "descripcion": "Bloque con desplomado con liñas en xeral duras",
+  "croquis": [
+    {
+      "thumb": "/croquis/valle-del-agua/thumbs/ladeira-1-thumb.jpg",
+      "full": "/croquis/valle-del-agua/full/ladeira-1.jpg",
+      "alt": "Croquis Ladeira 1"
+    },
+    {
+      "thumb": "/croquis/valle-del-agua/thumbs/ladeira-2-thumb.jpg",
+      "full": "/croquis/valle-del-agua/full/ladeira-2.jpg",
+      "alt": "Croquis Ladeira 2"
+    },
+    {
+      "thumb": "/croquis/valle-del-agua/thumbs/ladeira-3-thumb.jpg",
+      "full": "/croquis/valle-del-agua/full/ladeira-3.jpg",
+      "alt": "Croquis Ladeira 3"
+    }
+  ]
+}

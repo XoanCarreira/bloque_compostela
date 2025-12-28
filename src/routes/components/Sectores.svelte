@@ -1,15 +1,30 @@
 <script>
+	export let tittle;
+
+	import Info from "./Info.svelte";
+
+
+	import zonas from '/home/xoan/Proxectos VSCode/bloque_compostela/src/routes/zonas.js';
+	import eucalipto from "/home/xoan/Proxectos VSCode/bloque_compostela/src/routes/eucaliptos/eucaliptos.js";
+	import lampai from "/home/xoan/Proxectos VSCode/bloque_compostela/src/routes/lampai/lampai.js";
+
+
     //Mostrar mapa zona
 	let visible = false;
 
+	//Selector de zonas: mantén a zona activa según tittle
+    let zonaSelect = zonas[0];
+    $: zonaSelect = zonas.find((zona) => zona.escuela === tittle) ?? zonas[0];
+
 	//Selector sector
-	let sectorSelect = eucalipto[0].sector;
+	let sectorSelect = zonaSelect.escuela;
 </script>
 
 
 <!--Selector de sectores-->
+
 <div class="selector">
-    {#each eucalipto as sector}
+    {#each zonaSelect.sectores as sector}
         <button on:click={() => (sectorSelect = sector.sector)}>{sector.sector}</button>
     {/each}
 </div>
