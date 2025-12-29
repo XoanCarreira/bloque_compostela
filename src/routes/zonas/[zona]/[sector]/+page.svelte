@@ -1,53 +1,86 @@
 <script>
-  import Modal from '$lib/Modal.svelte';
-  export let data;
+	import Modal from '$lib/modal.svelte';
+	export let data;
 
-  let modalOpen = false;
-  let modalSrc = '';
-  let modalAlt = '';
+	// convertir croquis a formato esperado por Modal
+	const images = (data.sector.croquis || []).map((i) => ({ full: i.full, alt: i.alt }));
 
-  function openImage(item) {
-    modalSrc = item.full;
-    modalAlt = item.alt || '';
-    modalOpen = true;
-  }
+	let modalOpen = false;
+	let modalIndex = 0;
 
-  function closeModal() {
-    modalOpen = false;
-    modalSrc = '';
-    modalAlt = '';
-  }
+	function openImageAt(i) {
+		modalIndex = i;
+		modalOpen = true;
+	}
+
+	function onModalChange(e) {
+		// sincroniza índice si el modal emite change
+		modalIndex = e.detail.index;
+	}
 </script>
 
-<style>
-  .gallery { display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr)); gap:8px; }
-  .thumb { display:block; width:100%; height:120px; object-fit:cover; border-radius:6px; cursor:pointer; }
-  .card { padding:.5rem; border:1px solid #eee; border-radius:6px; background:#fff; }
-</style>
-
 <article>
-  <h3>{data.sector.nombre}</h3>
-  <p>{data.sector.descripcion}</p>
+	<div class="sector_info">
+		<h3>{data.sector.nombre}</h3>
+		<p>{data.sector.descripcion}</p>
 
-  <h4>Croquis</h4>
-  <div class="gallery" role="list">
-    {#each data.sector.croquis as item (item.full)}
-      <figure class="card" role="listitem">
-        <img
-          class="thumb"
-          src={item.thumb}
-          alt={item.alt}
-          loading="lazy"
-          width="320"
-          height="200"
-          on:click={() => openImage(item)}
-          on:keydown={(e) => e.key === 'Enter' && openImage(item)}
-          tabindex="0"
-          />
-        <figcaption>{item.alt}</figcaption>
-      </figure>
-    {/each}
-  </div>
+	</div>
+
+	<div class="gallery" role="list">
+		{#each data.sector.croquis as item, i (item.full)}
+			<figure class="card" role="listitem">
+				<img
+					class="thumb"
+					src={item.thumb}
+					alt={item.alt}
+					loading="lazy"
+					on:click={() => openImageAt(i)}
+					tabindex="0"
+					on:keydown={(e) => e.key === 'Enter' && openImageAt(i)}
+				/>
+				<figcaption>{item.alt}</figcaption>
+			</figure>
+		{/each}
+	</div>
 </article>
 
-<Modal bind:open={modalOpen} src={modalSrc} alt={modalAlt} on:close={closeModal} />
+<Modal
+	bind:open={modalOpen}
+	{images}
+	bind:index={modalIndex}
+	on:close={() => (modalOpen = false)}
+	on:change={onModalChange}
+/>
+
+<style>
+	.sector_info{
+		display: flex;	
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+		margin-bottom: 25px;
+	}
+
+	.gallery {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		margin-bottom: 2rem;
+		justify-content: center;
+
+	}
+	.thumb {
+		width: 100%;
+		height: 110px;
+		object-fit: cover;
+		border-radius: 6px;
+		cursor: pointer;
+	}
+	.card {
+		padding: 0.4rem;
+		border: 1px solid #eee;
+		border-radius: 6px;
+		background: #ffffff;
+	}
+</style>

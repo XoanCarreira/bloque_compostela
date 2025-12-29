@@ -11,7 +11,7 @@
 	 <Hamburger/>
 
 	<div class="header">
-		<a href="/">
+		<a href="/zonas/">
 			<img src="/favicon_limpio.svg" alt="Logo de persoa practicando boulder" />
 			
 			<h1>Boulder Compostela</h1>

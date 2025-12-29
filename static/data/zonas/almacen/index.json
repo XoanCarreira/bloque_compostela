@@ -1,0 +1,13 @@
+{
+    "slug": "almacen",
+    "nombre": "Almacén",
+    "descripcion": "Zona con varios sectores de bloque con multitude de liñas e graos variados.",
+    "sectores": [
+        {
+            "slug": "principal",
+            "nombre": "Principal",
+            "vias": 9,
+            "descripcion": "Variedade de graos"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "principal",
+  "nombre": "Principal",
+  "descripcion": "Bloque con varias liñas a 5 minutos de Compostela",
+  "croquis": [
+    {
+      "thumb": "/croquis/valle-del-agua/thumbs/ladeira-1-thumb.jpg",
+      "full": "/croquis/valle-del-agua/full/ladeira-1.jpg",
+      "alt": "Croquis Ladeira 1"
+    }
+  ]
+}

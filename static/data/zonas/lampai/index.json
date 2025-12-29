@@ -7,21 +7,27 @@
             "slug": "teito",
             "nombre": "Teito",
             "vias": 9,
-            "descripcion": "Bloque con desplomado con liñas en xeral duras"
+            "aproximacion": 10,
+            "descripcion": "Bloque con desplomado con liñas en xeral duras",
+            "portada": "/lampai/teito_01.jpg"
         },
 
         {
             "slug": "ladeira",
             "nombre": "Ladeira",
             "vias": 15,
-            "descripcion": "Sector con variedade de liñas e graos"
+            "aproximacion": 10,
+            "descripcion": "Sector con variedade de liñas e graos",
+            "portada": "/lampai/ladeira_01.jpg"
         },
 
         {
             "slug": "verme",
             "nombre": "Verme",
             "vias": 3,
-            "descripcion": "Bloque aislado con varias liñas de grado baixo"
+            "aproximacion": 5,
+            "descripcion": "Bloque aislado con varias liñas de grado baixo",
+            "portada": "/lampai/verme_01.jpg"
         }
     ]
 }

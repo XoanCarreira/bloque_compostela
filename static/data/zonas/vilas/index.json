@@ -1,0 +1,13 @@
+{
+    "slug": "vilas",
+    "nombre": "Vilas",
+    "descripcion": "Zona con varios sectores de bloque con multitude de liñas e graos variados.",
+    "sectores": [
+        {
+            "slug": "principal",
+            "nombre": "Principal",
+            "vias": 9,
+            "descripcion": "Bloque con desplomado con liñas en xeral duras"
+        }
+    ]
+}
