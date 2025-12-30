@@ -1,0 +1,22 @@
+{
+  "slug": "mirador",
+  "nombre": "Mirador",
+  "descripcion": "Aparcar e blocar",
+  "croquis": [
+    {
+      "thumb": "/lampai/mirador_01.jpg",
+      "full": "/lampai/mirador_01.jpg",
+      "alt": "Bloque Mirador 1"
+    },
+    {
+      "thumb": "/lampai/mirador_02.jpg",
+      "full": "/lampai/mirador_02.jpg",
+      "alt": "Bloque Mirador 2"
+    },
+    {
+      "thumb": "/lampai/mirador_03.jpg",
+      "full": "/lampai/mirador_03.jpg",
+      "alt": "Bloque Mirador 3"
+    }
+  ]
+}

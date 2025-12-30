@@ -6,8 +6,9 @@
         {
             "slug": "teito",
             "nombre": "Teito",
-            "vias": 9,
+            "vias": 8,
             "aproximacion": 10,
+            "grados": "6a~7a+",
             "descripcion": "Bloque con desplomado con liñas en xeral duras",
             "portada": "/lampai/teito_01.jpg"
         },
@@ -15,8 +16,9 @@
         {
             "slug": "ladeira",
             "nombre": "Ladeira",
-            "vias": 15,
+            "vias": 11,
             "aproximacion": 10,
+            "grados": "IV~7a",
             "descripcion": "Sector con variedade de liñas e graos",
             "portada": "/lampai/ladeira_01.jpg"
         },
@@ -24,10 +26,80 @@
         {
             "slug": "verme",
             "nombre": "Verme",
-            "vias": 3,
+            "vias": 2,
             "aproximacion": 5,
+            "grados": "6a~6b+",
             "descripcion": "Bloque aislado con varias liñas de grado baixo",
             "portada": "/lampai/verme_01.jpg"
+        },
+
+        {
+            "slug": "oriente",
+            "nombre": "Oriente",
+            "vias": 9,
+            "aproximacion": 5,
+            "grados": "V~7a",
+            "descripcion": "Bloque principal con liñas de gran calidade",
+            "portada": "/lampai/oriente_01.jpg"
+        },
+        {
+            "slug": "mole",
+            "nombre": "Mole",
+            "vias": 15,
+            "aproximacion": 10,
+            "grados": "V~7a+",
+            "descripcion": "Sector con multitude de liñas e graos variados",
+            "portada": "/lampai/mole_01.jpg"
+        },
+
+        {
+            "slug": "campo",
+            "nombre": "Campo",
+            "vias": 22,
+            "aproximacion": 5,
+            "grados": "IV~7a",
+            "descripcion": "Sector con varios bloques e multitude de liñas",
+            "portada": "/lampai/campo_01.jpg"
+        },
+
+        {
+            "slug": "mirador",
+            "nombre": "Mirador",
+            "vias": 11,
+            "aproximacion": 1,
+            "grados": "6a~7a+",
+            "descripcion": "Aparcar e blocar",
+            "portada": "/lampai/mirador_01.jpg"
+        },
+
+        {
+            "slug": "mangui",
+            "nombre": "Mangui",
+            "vias": 16,
+            "aproximacion": 25,
+            "grados": "V~7b",
+            "descripcion": "Todos os graos e estilos nunha zona con varios bloques",
+            "portada": "/lampai/mangui_01.jpg"
+        },
+
+        {
+            "slug": "congrio",
+            "nombre": "Congrio",
+            "vias": 4,
+            "aproximacion": 20,
+            "grados": "6a~7a+",
+            "descripcion": "Bloque o pé do camiño direción sector Mangui",
+            "portada": "/lampai/congrio_01.jpg"
+        },
+
+        {
+            "slug": "gaia",
+            "nombre": "Gaia",
+            "vias": 3,
+            "aproximacion": 5,
+            "grados": "6b~?",
+            "descripcion": "Enorme bloque con liñas de grao alto e calidade",
+            "portada": "/lampai/gaia_01.jpg"
         }
     ]
 }

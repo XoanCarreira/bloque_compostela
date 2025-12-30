@@ -11,9 +11,11 @@
 	h1 {
 		font-size: 2rem;
 		margin-bottom: 1rem;
+		color: #fff;
 	}
 	p {
 		margin-bottom: 1rem;
+		color: #fff
 	}
 	a {
 		color: #0070f3;

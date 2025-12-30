@@ -1,0 +1,42 @@
+{
+  "slug": "mangui",
+  "nombre": "Mangui",
+  "descripcion": "Sector que merece a pena a camiñada pola súa variedade e calidade de liñas",
+  "croquis": [
+    {
+      "thumb": "/lampai/mangui_00.jpg",
+      "full": "/lampai/mangui_00.jpg",
+      "alt": "Bloque Mangui 0"
+    },
+    {
+      "thumb": "/lampai/mangui_01.jpg",
+      "full": "/lampai/mangui_01.jpg",
+      "alt": "Bloque Mangui 1"
+    },
+    {
+      "thumb": "/lampai/mangui_02.jpg",
+      "full": "/lampai/mangui_02.jpg",
+      "alt": "Bloque Mangui 2"
+    },
+    {
+      "thumb": "/lampai/mangui_03.jpg",
+      "full": "/lampai/mangui_03.jpg",
+      "alt": "Bloque Mangui 3"
+    },
+    {
+      "thumb": "/lampai/mangui_04.jpg",
+      "full": "/lampai/mangui_04.jpg",
+      "alt": "Bloque Mangui 4"
+    },
+    {
+      "thumb": "/lampai/mangui_05.jpg",
+      "full": "/lampai/mangui_05.jpg",
+      "alt": "Bloque Mangui 5"
+    },
+    {
+      "thumb": "/lampai/mangui_06.jpg",
+      "full": "/lampai/mangui_06.jpg",
+      "alt": "Bloque Mangui 6"
+    }
+  ]
+}

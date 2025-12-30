@@ -2,7 +2,7 @@
     {
         "slug": "lampai",
         "nome": "Lampai",
-        "sectores": 9,
+        "sectores": 10,
         "vias": 120,
         "aproximacion": "1~30 min",
         "portada": "lampai/portada_lampai.jpg",

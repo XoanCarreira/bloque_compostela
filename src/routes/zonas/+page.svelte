@@ -4,6 +4,8 @@
 
 	onMount(() => {
 		const carousel = document.querySelector('.grid');
+		const prevBtn = document.querySelector('#prevBtn');
+		const nextBtn = document.querySelector('#nextBtn');
 		let items = Array.from(carousel.querySelectorAll('.card'));
 		
 		// Clonar elementos para crear efecto infinito
@@ -30,6 +32,7 @@
 		let ticking = false;
 		let centralItem = null;
 		let isResetting = false;
+		const scrollAmount = 350; // Píxeles a desplazar con los botones
 		
 		let lastScrollLeft = 0;
 		
@@ -92,8 +95,13 @@
 			if (closestItem && closestItem !== centralItem) {
 				if (centralItem) {
 					centralItem.style.border = '2px solid #ccc';
+					centralItem.style.boxShadow = `
+						5px 5px 5px #000000cb,
+						inset 0px 0px 3px rgb(0, 0, 0)
+					`;
 				}
 				closestItem.style.border = '2px solid #000';
+				closestItem.style.boxShadow = '0px 0px 35px 2px #ffffff55';
 				centralItem = closestItem;
 			}
 			
@@ -127,6 +135,26 @@
 		// Inicializar
 		update();
 
+		// Función para desplazar izquierda
+		function scrollLeft() {
+			carousel.scrollBy({
+				left: -scrollAmount,
+				behavior: 'smooth'
+			});
+		}
+
+		// Función para desplazar derecha
+		function scrollRight() {
+			carousel.scrollBy({
+				left: scrollAmount,
+				behavior: 'smooth'
+			});
+		}
+
+		// Escuchar eventos de los botones
+		prevBtn.addEventListener('click', scrollLeft);
+		nextBtn.addEventListener('click', scrollRight);
+
 		// Escuchar scroll y resize
 		carousel.addEventListener('scroll', onScroll, { passive: true });
 		window.addEventListener('resize', onScroll);
@@ -153,18 +181,20 @@
 				<div class="footerCard">
 					<p class="footerDescription">{z.descripcion}</p>
 					<div class="footerDetails">
-						<p><strong>Sectores: </strong>{z.sectores}</p>
-						<p><strong>Vías: </strong>{z.vias}</p>
-						<p><strong>Aprox.: </strong>{z.aproximacion}</p>
+						<p><img class="icona" src="/iconas/sectores.png" alt="Icona sectores">{z.sectores}</p>
+						<hr>
+						<p><img class="icona" src="/iconas/vias.png" alt="Icona vias">{z.vias}</p>
+						<hr>
+						<p><img class="icona" src="/iconas/aproximacion.png" alt="Icona aproximacion">{z.aproximacion}</p>
 					</div>
 				</div>
 			</a>
 		{/each}
 	</div>
 	<div class="controls" aria-hidden="false">
-		<button class="btn" id="prevBtn" aria-label="Anterior">Prev</button>
-		<div class="hint">Desplaza horizontalmente o usa los botones. El elemento central destaca.</div>
-		<button class="btn" id="nextBtn" aria-label="Siguiente">Next</button>
+		<button class="btn" id="prevBtn" aria-label="Anterior">Anterior</button>
+		<div class="hint">Despraza horizontalmente ou usa os botóns.</div>
+		<button class="btn" id="nextBtn" aria-label="Siguiente">Seguinte</button>
 	</div>
 </div>
 
@@ -203,12 +233,18 @@
 		will-change: transform, opacity, filter;
 	}
 
-    /*En pantallas pequenas ver o 100% da pantalla, xa non molestan os l*/
-    @media (max-width: 600px) {
-        .grid {
-            width: 100%;
-        }
-    }
+	
+
+	/* Oculta botóns en pantallas pequenas */
+	@media (max-width: 600px) {
+		.controls .btn {
+			display: none;
+		}
+
+		.grid {
+			width: 100%;
+	}
+}
 
 	.card {
 		text-decoration: none;
@@ -250,10 +286,15 @@
 		z-index: 2;
 		color: rgb(255, 255, 255);
 		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.titulo {
-		font-size: 30px;
+		font-size: 3rem;
+		text-shadow: 0 0 15px #ffffff86;
+	;
 	}
 
 	.footerCard {
@@ -276,10 +317,62 @@
 
 	.footerDetails {
 		margin-top: 10px;
-		padding: 0px 10px 10px 10px;
-		font-size: 13px;
+		padding: 5px 20px 15px 20px;
+		font-size: 1rem;
+		font-weight: bold;
 		display: flex;
 		justify-content: space-between;
+		color: var(--corAzul);
 	}
+
+	.icona {
+		width: 24px;
+		height: 24px;
+		margin-right: 5px;
+		vertical-align: middle;
+		position: relative;
+		top: -2px;
+	}
+
+	.controls {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 30px;
+		margin: 30px 0;
+		flex-wrap: wrap;
+		padding: 0 20px;
+	}
+
+	.btn {
+		padding: 12px 30px;
+		font-size: 16px;
+		font-weight: bold;
+		border: 2px solid #000;
+		border-radius: 8px;
+		background-color: #fff;
+		color: #000;
+		cursor: pointer;
+		transition: all 0.3s ease;
+	}
+
+	.btn:hover {
+		background-color: #302f2f;
+		color: #fff;
+		transform: scale(1.05);
+	}
+
+	.btn:active {
+		transform: scale(0.95);
+	}
+
+	.hint {
+		font-size: 14px;
+		color: #666;
+		text-align: center;
+		max-width: 300px;
+	}
+
+	
 
 </style>

@@ -11,7 +11,7 @@
     <div class="container_flex">
         <nav>
             <ul class="container_menu flex_column">
-                <li><a href="../">Inicio</a></li>
+                <li><a href="../zonas">Inicio</a></li>
 				<li><a href="../recorda">Recorda</a></li>
 				<li><a href="../novas">Novas</a></li>
 				<li><a href="../boulder_compostela">Boulder Compostela</a></li>

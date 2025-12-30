@@ -8,9 +8,10 @@ import Recorda from "../components/Recorda.svelte";
 
 <style>
     div{
-        padding: 15px 0;
         max-width: 95%;
         width: 500px;
         margin: 0 auto;
+        color: #fff;
+        padding: 25px 10px;
     }
 </style>

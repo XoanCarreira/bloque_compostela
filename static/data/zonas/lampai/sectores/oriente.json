@@ -1,0 +1,17 @@
+{
+  "slug": "oriente",
+  "nombre": "Oriente",
+  "descripcion": "Bloque principal con liñas de gran calidade",
+  "croquis": [
+    {
+      "thumb": "/lampai/oriente_01.jpg",
+      "full": "/lampai/oriente_01.jpg",
+      "alt": "Bloque Oriente 1"
+    },
+    {
+      "thumb": "/lampai/oriente_02.jpg",
+      "full": "/lampai/oriente_02.jpg",
+      "alt": "Bloque Oriente 2"
+    }
+  ]
+}

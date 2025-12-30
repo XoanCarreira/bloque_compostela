@@ -1,0 +1,37 @@
+{
+  "slug": "mole",
+  "nombre": "Mole",
+  "descripcion": "Variedade de liñas e graos.",
+  "croquis": [
+    {
+      "thumb": "/lampai/mole_01.jpg",
+      "full": "/lampai/mole_01.jpg",
+      "alt": "Bloque Mole 1"
+    },
+    {
+      "thumb": "/lampai/mole_02.jpg",
+      "full": "/lampai/mole_02.jpg",
+      "alt": "Bloque Mole 2"
+    },
+    {
+      "thumb": "/lampai/mole_03.jpg",
+      "full": "/lampai/mole_03.jpg",
+      "alt": "Bloque Mole 3"
+    },
+    {
+      "thumb": "/lampai/mole_04.jpg",
+      "full": "/lampai/mole_04.jpg",
+      "alt": "Bloque Mole 4"
+    },
+    {
+      "thumb": "/lampai/mole_05.jpg",
+      "full": "/lampai/mole_05.jpg",
+      "alt": "Bloque Mole 5"
+    },
+    {
+      "thumb": "/lampai/mole_06.jpg",
+      "full": "/lampai/mole_06.jpg",
+      "alt": "Bloque Mole 6"
+    }
+  ]
+}

@@ -6,8 +6,7 @@
 </script>
 
 <header>
-	<!--Boton menú-->
-	<!-- <Menu/> -->
+	<!--Componente menú hamburguesa-->
 	 <Hamburger/>
 
 	<div class="header">
@@ -24,7 +23,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background: linear-gradient(rgba(0, 0, 0, 0.788), #1f3a37 10%, #5daca3 90%);
+		background-color: rgba(255, 255, 255, 0.89);
 	}
 
 	.header {

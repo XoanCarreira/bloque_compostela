@@ -60,6 +60,12 @@
 		justify-content: center;
 		gap: 10px;
 		margin-bottom: 25px;
+		color: #fff;
+		padding: 25px 10px;
+	}
+
+	h3{
+		font-size: var(--tamanhoTitulo);
 	}
 
 	.gallery {
@@ -82,5 +88,7 @@
 		border: 1px solid #eee;
 		border-radius: 6px;
 		background: #ffffff;
+		width: 200px;
+		height: auto;
 	}
 </style>

@@ -7,7 +7,9 @@
             "slug": "principal",
             "nombre": "Principal",
             "vias": 9,
-            "descripcion": "Variedade de graos"
+            "descripcion": "Variedade de graos",
+            "aproximacion": 5,
+            "portada": "/almacen/almacen_01.jpg"
         }
     ]
 }

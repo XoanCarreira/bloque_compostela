@@ -24,8 +24,9 @@
 	div {
 		width: 500px;
 		margin: 0 auto;
-		padding: 0 10px;
+		padding: 15px 10px;
 		max-width: 95%;
+		color: #fff;
 	}
 
 	h3 {

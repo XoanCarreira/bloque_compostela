@@ -4,19 +4,35 @@
   "descripcion": "Bloque con desplomado con liñas en xeral duras",
   "croquis": [
     {
-      "thumb": "/croquis/valle-del-agua/thumbs/ladeira-1-thumb.jpg",
-      "full": "/croquis/valle-del-agua/full/ladeira-1.jpg",
-      "alt": "Croquis Ladeira 1"
+      "thumb": "/lampai/ladeira_01.jpg",
+      "full": "/lampai/ladeira_01.jpg",
+      "alt": "Bloque Ladeira 1"
     },
     {
-      "thumb": "/croquis/valle-del-agua/thumbs/ladeira-2-thumb.jpg",
-      "full": "/croquis/valle-del-agua/full/ladeira-2.jpg",
-      "alt": "Croquis Ladeira 2"
+      "thumb": "/lampai/ladeira_02.jpg",
+      "full": "/lampai/ladeira_02.jpg",
+      "alt": "Bloque Ladeira 2"
     },
     {
-      "thumb": "/croquis/valle-del-agua/thumbs/ladeira-3-thumb.jpg",
-      "full": "/croquis/valle-del-agua/full/ladeira-3.jpg",
-      "alt": "Croquis Ladeira 3"
+      "thumb": "/lampai/ladeira_03.jpg",
+      "full": "/lampai/ladeira_03.jpg",
+      "alt": "Bloque Ladeira 3"
+    },
+    {
+      "thumb": "/lampai/ladeira_04.jpg",
+      "full": "/lampai/ladeira_04.jpg",
+      "alt": "Bloque Ladeira 4"
+    },
+
+    {
+      "thumb": "/lampai/ladeira_06.jpg",
+      "full": "/lampai/ladeira_06.jpg",
+      "alt": "Bloque Ladeira 6"
+    },
+    {
+      "thumb": "/lampai/ladeira_07.jpg",
+      "full": "/lampai/ladeira_07.jpg",
+      "alt": "Bloque Ladeira 7"
     }
   ]
 }

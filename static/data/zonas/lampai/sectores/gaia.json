@@ -1,0 +1,17 @@
+{
+  "slug": "gaia",
+  "nombre": "Gaia",
+  "descripcion": "Enorme bloque con varias liñas de calidade e grao alto",
+  "croquis": [
+    {
+      "thumb": "/lampai/gaia_01.jpg",
+      "full": "/lampai/gaia_01.jpg",
+      "alt": "Bloque Gaia 1"
+    },
+    {
+      "thumb": "/lampai/gaia_02.jpg",
+      "full": "/lampai/gaia_02.jpg",
+      "alt": "Bloque Gaia 2"
+    }
+  ]
+}

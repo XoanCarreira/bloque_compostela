@@ -1,0 +1,17 @@
+{
+  "slug": "congrio",
+  "nombre": "Congrio",
+  "descripcion": "Bloque divertido de camiño ao sector Mangui",
+  "croquis": [
+    {
+      "thumb": "/lampai/congrio_01.jpg",
+      "full": "/lampai/congrio_01.jpg",
+      "alt": "Bloque Congrio 1"
+    },
+    {
+      "thumb": "/lampai/congrio_02.jpg",
+      "full": "/lampai/congrio_02.jpg",
+      "alt": "Bloque Congrio 2"
+    }
+  ]
+}

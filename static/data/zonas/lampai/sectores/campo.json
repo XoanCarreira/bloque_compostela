@@ -1,0 +1,52 @@
+{
+  "slug": "campo",
+  "nombre": "Campo",
+  "descripcion": "Bloque con desplomado con liñas en xeral duras",
+  "croquis": [
+    {
+      "thumb": "/lampai/campo_01.jpg",
+      "full": "/lampai/campo_01.jpg",
+      "alt": "Bloque Campo 1"
+    },
+    {
+      "thumb": "/lampai/campo_02.jpg",
+      "full": "/lampai/campo_02.jpg",
+      "alt": "Bloque Campo 2"
+    },
+    {
+      "thumb": "/lampai/campo_03.jpg",
+      "full": "/lampai/campo_03.jpg",
+      "alt": "Bloque Campo 3"
+    },
+    {
+      "thumb": "/lampai/campo_04.jpg",
+      "full": "/lampai/campo_04.jpg",
+      "alt": "Bloque Campo 4"
+    },
+    {
+      "thumb": "/lampai/campo_05.jpg",
+      "full": "/lampai/campo_05.jpg",
+      "alt": "Bloque Campo 5"
+    },
+    {
+      "thumb": "/lampai/campo_06.jpg",
+      "full": "/lampai/campo_06.jpg",
+      "alt": "Bloque Campo 6"
+    },
+    {
+      "thumb": "/lampai/campo_07.jpg",
+      "full": "/lampai/campo_07.jpg",
+      "alt": "Bloque Campo 7"
+    },
+    {
+      "thumb": "/lampai/campo_08.jpg",
+      "full": "/lampai/campo_08.jpg",
+      "alt": "Bloque Campo 8"
+    },
+    {
+      "thumb": "/lampai/campo_09.jpg",
+      "full": "/lampai/campo_09.jpg",
+      "alt": "Bloque Campo 9"
+    }
+  ]
+}
