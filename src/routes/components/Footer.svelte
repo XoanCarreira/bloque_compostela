@@ -73,6 +73,7 @@
 	footer {
         margin-top:15px;
 		padding: 15px;
+		background-color: var(--corFondo);
 
 	}
 

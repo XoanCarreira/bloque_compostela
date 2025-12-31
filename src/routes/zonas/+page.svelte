@@ -2,7 +2,9 @@
 	export let data;
 	import { onMount } from 'svelte';
 
+	// Lóxica do carrusel 3D carga unha vez montado o compoñente
 	onMount(() => {
+		// Selección de elementos
 		const carousel = document.querySelector('.grid');
 		const prevBtn = document.querySelector('#prevBtn');
 		const nextBtn = document.querySelector('#nextBtn');
@@ -15,10 +17,10 @@
 			carousel.appendChild(clone);
 		});
 
-		// Actualizar la lista de items con los originales + clonados
+		// Actualiza a lista de items cos orixinais + clonados
 		items = Array.from(carousel.querySelectorAll('.card'));
 
-		// Parámetros de ajuste
+		// Parámetros de axuste visual copoñentes
 		const minScale =
 			parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--min-scale')) ||
 			0.62;
@@ -34,8 +36,10 @@
 		let isResetting = false;
 		const scrollAmount = 350; // Píxeles a desplazar con los botones
 
+		// Variables para detectar dirección de scroll
 		let lastScrollLeft = 0;
 
+		// Función para resetear scroll ao inicio ou final
 		function resetScroll() {
 			isResetting = true;
 			carousel.scrollLeft = 0;
@@ -51,12 +55,14 @@
 			isResetting = false;
 		}
 
+		// Función para actualizar transformación dos elementos
 		function update() {
 			const rect = carousel.getBoundingClientRect();
 			const centerX = rect.left + rect.width / 2;
 			let closestItem = null;
 			let minDistance = Infinity;
 
+			// Actualizar cada item
 			items.forEach((item) => {
 				const r = item.getBoundingClientRect();
 				const itemCenter = r.left + r.width / 2;
@@ -77,21 +83,21 @@
 				const gray = 0.2 + 0.8 * norm;
 
 				// Aplicar transformación 3D simplificada
-				// Solo rotateY para crear el efecto de noria
+				// Solo rotateY para crear o efecto de noria
 				const translateZ = Math.cos((rotationAngle * Math.PI) / 180) * 100 - 100;
 
 				item.style.transform = `rotateY(${rotationAngle}deg) translateZ(${translateZ}px) scale(${scale})`;
 				item.style.opacity = opacity;
 				item.style.filter = `grayscale(${gray}) contrast(${1 - 0.15 * norm}) saturate(${1 - 0.25 * norm})`;
 
-				// Encontrar el elemento más cercano al centro
+				// Encontrar o elemento máis cercano ao centro
 				if (distance < minDistance) {
 					minDistance = distance;
 					closestItem = item;
 				}
 			});
 
-			// Aplicar estilo al elemento central de forma reactiva
+			// Aplicar estilo ao elemento central de forma reactiva
 			if (closestItem && closestItem !== centralItem) {
 				if (centralItem) {
 					centralItem.style.border = '2px solid #ccc';
@@ -108,22 +114,23 @@
 			ticking = false;
 		}
 
+		// Función para manexar scroll con requestAnimationFrame
 		function onScroll() {
 			if (!ticking) {
 				window.requestAnimationFrame(update);
 				ticking = true;
 			}
 
-			// Detectar scroll infinito en ambas direcciones
+			// Detectar scroll infinito en ambas direccións
 			if (!isResetting) {
 				const maxScroll = carousel.scrollWidth - carousel.clientWidth;
 				const threshold = 100; // Píxeles de margen
 
-				// Si scrollea hacia la derecha y llega al final
+				// Se scrollea hacia a dereita e chega ao final
 				if (carousel.scrollLeft >= maxScroll - threshold && lastScrollLeft < carousel.scrollLeft) {
 					resetScroll();
 				}
-				// Si scrollea hacia la izquierda y llega al inicio
+				// Se scrollea hacia a esquerda e chega ao inicio
 				else if (carousel.scrollLeft <= threshold && lastScrollLeft > carousel.scrollLeft) {
 					resetScrollToEnd();
 				}
@@ -135,7 +142,7 @@
 		// Inicializar
 		update();
 
-		// Función para desplazar izquierda
+		// Función para desprazar esquerda
 		function scrollLeft() {
 			carousel.scrollBy({
 				left: -scrollAmount,
@@ -143,7 +150,7 @@
 			});
 		}
 
-		// Función para desplazar derecha
+		// Función para desprazar dereita
 		function scrollRight() {
 			carousel.scrollBy({
 				left: scrollAmount,
@@ -151,18 +158,18 @@
 			});
 		}
 
-		// Escuchar eventos de los botones
+		// Escoitar eventos dos botóns
 		prevBtn.addEventListener('click', scrollLeft);
 		nextBtn.addEventListener('click', scrollRight);
 
-		// Escuchar scroll y resize
+		// Escoitar scroll e resize
 		carousel.addEventListener('scroll', onScroll, { passive: true });
 		window.addEventListener('resize', onScroll);
 
-		// (Opcional) centrar el primer elemento al cargar en pantallas pequeñas
-		window.addEventListener('load', () => {
-			carousel.scrollLeft = 0;
-		});
+		// (Opcional) centrar o primeiro elemento ao cargar en pantallas pequenas
+		//window.addEventListener('load', () => {
+		//	carousel.scrollLeft = 0;
+		//});
 	});
 </script>
 
