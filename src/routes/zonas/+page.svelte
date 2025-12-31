@@ -7,17 +7,17 @@
 		const prevBtn = document.querySelector('#prevBtn');
 		const nextBtn = document.querySelector('#nextBtn');
 		let items = Array.from(carousel.querySelectorAll('.card'));
-		
+
 		// Clonar elementos para crear efecto infinito
 		const originalItems = [...items];
-		originalItems.forEach(item => {
+		originalItems.forEach((item) => {
 			const clone = item.cloneNode(true);
 			carousel.appendChild(clone);
 		});
-		
+
 		// Actualizar la lista de items con los originales + clonados
 		items = Array.from(carousel.querySelectorAll('.card'));
-		
+
 		// Parámetros de ajuste
 		const minScale =
 			parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--min-scale')) ||
@@ -33,16 +33,16 @@
 		let centralItem = null;
 		let isResetting = false;
 		const scrollAmount = 350; // Píxeles a desplazar con los botones
-		
+
 		let lastScrollLeft = 0;
-		
+
 		function resetScroll() {
 			isResetting = true;
 			carousel.scrollLeft = 0;
 			lastScrollLeft = 0;
 			isResetting = false;
 		}
-		
+
 		function resetScrollToEnd() {
 			isResetting = true;
 			const maxScroll = carousel.scrollWidth - carousel.clientWidth;
@@ -50,47 +50,47 @@
 			lastScrollLeft = maxScroll;
 			isResetting = false;
 		}
-		
+
 		function update() {
 			const rect = carousel.getBoundingClientRect();
 			const centerX = rect.left + rect.width / 2;
 			let closestItem = null;
 			let minDistance = Infinity;
-			
+
 			items.forEach((item) => {
 				const r = item.getBoundingClientRect();
 				const itemCenter = r.left + r.width / 2;
 				const distance = Math.abs(centerX - itemCenter);
-				
+
 				// Normalizar distancia: 0 (centro) -> 1 (muy lejos)
 				const maxDist = rect.width / 2 + r.width;
 				const norm = Math.min(distance / maxDist, 1);
-				
+
 				// Calcular ángulo basado en la distancia normalizada (-90 a 90 grados)
 				const angle = norm * 60; // Máximo 60 grados de rotación
 				const direction = itemCenter > centerX ? 1 : -1; // Dirección derecha o izquierda
 				const rotationAngle = angle * direction;
-				
+
 				// Interpolar escala y opacidad
 				const scale = maxScale - (maxScale - minScale) * norm;
 				const opacity = maxOpacity - (maxOpacity - minOpacity) * norm;
 				const gray = 0.2 + 0.8 * norm;
-				
+
 				// Aplicar transformación 3D simplificada
 				// Solo rotateY para crear el efecto de noria
 				const translateZ = Math.cos((rotationAngle * Math.PI) / 180) * 100 - 100;
-				
+
 				item.style.transform = `rotateY(${rotationAngle}deg) translateZ(${translateZ}px) scale(${scale})`;
 				item.style.opacity = opacity;
 				item.style.filter = `grayscale(${gray}) contrast(${1 - 0.15 * norm}) saturate(${1 - 0.25 * norm})`;
-				
+
 				// Encontrar el elemento más cercano al centro
 				if (distance < minDistance) {
 					minDistance = distance;
 					closestItem = item;
 				}
 			});
-			
+
 			// Aplicar estilo al elemento central de forma reactiva
 			if (closestItem && closestItem !== centralItem) {
 				if (centralItem) {
@@ -104,21 +104,21 @@
 				closestItem.style.boxShadow = '0px 0px 35px 2px #ffffff55';
 				centralItem = closestItem;
 			}
-			
+
 			ticking = false;
 		}
-		
+
 		function onScroll() {
 			if (!ticking) {
 				window.requestAnimationFrame(update);
 				ticking = true;
 			}
-			
+
 			// Detectar scroll infinito en ambas direcciones
 			if (!isResetting) {
 				const maxScroll = carousel.scrollWidth - carousel.clientWidth;
 				const threshold = 100; // Píxeles de margen
-				
+
 				// Si scrollea hacia la derecha y llega al final
 				if (carousel.scrollLeft >= maxScroll - threshold && lastScrollLeft < carousel.scrollLeft) {
 					resetScroll();
@@ -128,10 +128,10 @@
 					resetScrollToEnd();
 				}
 			}
-			
+
 			lastScrollLeft = carousel.scrollLeft;
 		}
-		
+
 		// Inicializar
 		update();
 
@@ -163,7 +163,6 @@
 		window.addEventListener('load', () => {
 			carousel.scrollLeft = 0;
 		});
-
 	});
 </script>
 
@@ -181,11 +180,17 @@
 				<div class="footerCard">
 					<p class="footerDescription">{z.descripcion}</p>
 					<div class="footerDetails">
-						<p><img class="icona" src="/iconas/sectores.png" alt="Icona sectores">{z.sectores}</p>
-						<hr>
-						<p><img class="icona" src="/iconas/vias.png" alt="Icona vias">{z.vias}</p>
-						<hr>
-						<p><img class="icona" src="/iconas/aproximacion.png" alt="Icona aproximacion">{z.aproximacion}</p>
+						<p><img class="icona" src="/iconas/sectores.png" alt="Icona sectores" />{z.sectores}</p>
+						<hr />
+						<p><img class="icona" src="/iconas/vias.png" alt="Icona vias" />{z.vias}</p>
+						<hr />
+						<p>
+							<img
+								class="icona"
+								src="/iconas/aproximacion.png"
+								alt="Icona aproximacion"
+							/>{z.aproximacion}
+						</p>
 					</div>
 				</div>
 			</a>
@@ -193,7 +198,12 @@
 	</div>
 	<div class="controls" aria-hidden="false">
 		<button class="btn" id="prevBtn" aria-label="Anterior">Anterior</button>
-		<div class="hint">Despraza horizontalmente ou usa os botóns.</div>
+		<a
+			class="btn"
+			target="_blank"
+			href="https://www.google.com/maps/d/edit?mid=1EdHLPGe4VpsVlhtqUt8S6xjXnfJwr9o&usp=sharing"
+			>Ver mapa</a
+		>
 		<button class="btn" id="nextBtn" aria-label="Siguiente">Seguinte</button>
 	</div>
 </div>
@@ -223,7 +233,7 @@
 		flex-shrink: 0;
 		scroll-snap-type: x mandatory;
 		overflow-x: scroll;
-		scrollbar-width: none;;
+		scrollbar-width: none;
 		perspective: 1200px;
 		transform-style: preserve-3d;
 		transition:
@@ -233,18 +243,16 @@
 		will-change: transform, opacity, filter;
 	}
 
-	
-
 	/* Oculta botóns en pantallas pequenas */
 	@media (max-width: 600px) {
-		.controls .btn {
+		button {
 			display: none;
 		}
 
 		.grid {
 			width: 100%;
+		}
 	}
-}
 
 	.card {
 		text-decoration: none;
@@ -294,7 +302,6 @@
 	.titulo {
 		font-size: 3rem;
 		text-shadow: 0 0 15px #ffffff86;
-	;
 	}
 
 	.footerCard {
@@ -366,13 +373,9 @@
 		transform: scale(0.95);
 	}
 
-	.hint {
-		font-size: 14px;
-		color: #666;
+	a {
+		text-decoration: none;
+		min-width: 200px;
 		text-align: center;
-		max-width: 300px;
 	}
-
-	
-
 </style>

@@ -1,3 +1,3 @@
-import * as universal from "../../../../src/routes/zonas/+page.js";
+import * as universal from "../../../../src/routes/zonas/[zona]/[sector]/+page.js";
 export { universal };
-export { default as component } from "../../../../src/routes/zonas/+page.svelte";
+export { default as component } from "../../../../src/routes/zonas/[zona]/[sector]/+page.svelte";
