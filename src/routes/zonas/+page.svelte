@@ -243,17 +243,6 @@
 		will-change: transform, opacity, filter;
 	}
 
-	/* Oculta botóns en pantallas pequenas */
-	@media (max-width: 600px) {
-		button {
-			display: none;
-		}
-
-		.grid {
-			width: 100%;
-		}
-	}
-
 	.card {
 		text-decoration: none;
 		width: 300px;
@@ -347,21 +336,25 @@
 		align-items: center;
 		gap: 30px;
 		margin: 30px 0;
-		flex-wrap: wrap;
 		padding: 0 20px;
+	}
+
+	.controls a{
+		background-color: var(--corAzul);
 	}
 
 	.btn {
 		padding: 12px 30px;
-		font-size: 16px;
+		font-size: var(--tamanhoIcona);
 		font-weight: bold;
-		border: 2px solid #000;
 		border-radius: 8px;
 		background-color: #fff;
 		color: #000;
 		cursor: pointer;
 		transition: all 0.3s ease;
+		max-width: fit-content;
 	}
+
 
 	.btn:hover {
 		background-color: #302f2f;
@@ -375,7 +368,41 @@
 
 	a {
 		text-decoration: none;
-		min-width: 200px;
+		width: 150px;
 		text-align: center;
+	}
+
+	/* Oculta botóns en pantallas pequenas */
+	@media (max-width: 600px) {
+		button {
+			display: block;
+		}
+
+		.grid {
+			width: 100%;
+		}
+
+		.controls {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 10px;
+			margin: 30px 0;
+			padding: 0 20px;
+			max-width: 100vw;
+			overflow-x: hidden;
+		}
+
+		.btn {
+			padding: 10px 15px;
+			font-size: var(--tamanhoIcona);
+			font-weight: bold;
+			border-radius: 8px;
+			background-color: #fff;
+			color: #000;
+			cursor: pointer;
+			transition: all 0.3s ease;
+			max-width: fit-content;
+		}
 	}
 </style>

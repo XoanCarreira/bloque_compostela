@@ -13,11 +13,10 @@
 	</label>
 	{#if visible}
 	
-	<div>
+	<div class="lenda">
 		<table class="grados">
 			<tr>
-				<th>Cor</th>
-				<th>Grado</th>
+				<th colspan="2">Grados</th>
 			</tr>
 			<tr>
 				<td><span class="azul">_</span></td>
@@ -42,8 +41,7 @@
 		</table>
 		<table>
 			<tr>
-				<th>Icona</th>
-				<th>Significado</th>
+				<th colspan="2">Símbolos</th>
 			</tr>
 			<tr>
 				<td><img class="icona" src="/iconas/sectores.png" alt="Icona sectores"></td>
@@ -94,6 +92,17 @@
 		line-height: 30px;
 		position: relative;
 		top: -20px;
+	}
+
+	.lenda {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		column-gap: 30px;
+		row-gap: 15px;
+		margin-top: 15px;
 	}
 
 	table{
