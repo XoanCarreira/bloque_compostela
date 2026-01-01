@@ -11,7 +11,7 @@
 		'boulder_compostela': 'Boulder Compostela',
 		'almacen': 'Almacén',
 		'eucaliptos': 'Eucaliptos',
-		'lampai': 'Lampaí',
+		'lampai': 'Lampai',
 		'pedroso': 'Pedroso',
 		'sura': 'Sura',
 		'vilas': 'Vilas',
@@ -51,8 +51,7 @@
 <style>
 	.breadcrumbs {
 		padding: 0px 20px;
-		background-color: #e3e3e3;
-		border-bottom: 1px solid #ddd;
+		background-color: transparent;
 	}
 
 	ol {
@@ -73,7 +72,7 @@
 	}
 
 	a {
-		color: #0066cc;
+		color: var(--corAzul);
 		text-decoration: none;
 		transition: color 0.2s ease;
 	}
@@ -90,13 +89,13 @@
 	}
 
 	.current {
-		color: #333;
+		color: #cacaca;
 		font-weight: 600;
 	}
 
 	@media (max-width: 600px) {
 		.breadcrumbs {
-			padding: 10px 15px;
+			padding: 0px 15px;
 		}
 
 		li {

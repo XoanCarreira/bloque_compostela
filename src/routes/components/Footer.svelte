@@ -88,7 +88,7 @@
 	}
 
 	span {
-		font-size: 3rem;
+		font-size: var(--tamanhoTitulo);
 		font-weight: 800;
 		line-height: 30px;
 		position: relative;
@@ -101,8 +101,7 @@
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		column-gap: 30px;
-		row-gap: 15px;
+		gap: 15px;
 		margin-top: 15px;
 	}
 
@@ -115,7 +114,7 @@
 	td, th{
 		padding: 10px 10px;
 		text-align: center;
-		font-size: var(--tamanhoInfoIcona);
+		font-size: var(--tamanhoPequeno);
 		border: 1px solid #ffffffd0;
 	}
 

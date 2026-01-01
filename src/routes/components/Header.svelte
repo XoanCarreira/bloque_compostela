@@ -23,7 +23,8 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		background-color: rgba(255, 255, 255, 0.89);
+		/*background-color: rgb(220, 220, 220);*/
+		background: linear-gradient(180deg, rgba(0, 0, 0, 0.716) 0%, rgba(255, 255, 255, 1) 100%);
 	}
 
 	.header {

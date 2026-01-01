@@ -341,34 +341,33 @@
 		top: -2px;
 	}
 
+
+	/* Estilos dos controles */
 	.controls {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		gap: 30px;
-		margin: 30px 0;
-		padding: 0 20px;
-	}
 
-	.controls a{
-		background-color: var(--corAzul);
 	}
 
 	.btn {
 		padding: 12px 30px;
 		font-size: var(--tamanhoIcona);
 		font-weight: bold;
-		border-radius: 8px;
 		background-color: #fff;
 		color: #000;
 		cursor: pointer;
 		transition: all 0.3s ease;
-		max-width: fit-content;
+		border: none;
+	}
+	.btn:nth-child(2) {
+		background-color: #000;
+		color: #fff;
+		box-shadow: inset 0 0 5px #fff;
 	}
 
-
 	.btn:hover {
-		background-color: #302f2f;
+		background-color: var(--corAzul);
 		color: #fff;
 		transform: scale(1.05);
 	}
@@ -383,11 +382,15 @@
 		text-align: center;
 	}
 
-	/* Oculta botóns en pantallas pequenas */
+	#prevBtn{
+		border-radius: 100% 0% 0% 100%;
+	}
+	#nextBtn{
+		border-radius: 0% 100% 100% 0%;
+	}
+
+	/* Modifica botóns en pantallas pequenas */
 	@media (max-width: 600px) {
-		button {
-			display: block;
-		}
 
 		.grid {
 			width: 100%;
@@ -395,25 +398,29 @@
 
 		.controls {
 			display: flex;
-			justify-content: center;
-			align-items: center;
-			gap: 10px;
-			margin: 30px 0;
-			padding: 0 20px;
-			max-width: 100vw;
-			overflow-x: hidden;
+			gap: 0px;
+			position: absolute;
+			top: 10px;
+			opacity: 0.6;
+		}
+
+		.controls a {
+			background-color: #000000;
+			color: #fff;
+			box-shadow: inset 0 0 2px #fff;
 		}
 
 		.btn {
 			padding: 10px 15px;
 			font-size: var(--tamanhoIcona);
 			font-weight: bold;
-			border-radius: 8px;
+			border-radius: 0px;
 			background-color: #fff;
 			color: #000;
 			cursor: pointer;
 			transition: all 0.3s ease;
 			max-width: fit-content;
+			border: none;
 		}
 	}
 </style>
