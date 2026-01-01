@@ -395,15 +395,7 @@
 		.grid {
 			width: 100%;
 		}
-
-		.controls {
-			display: flex;
-			gap: 0px;
-			position: absolute;
-			top: 10px;
-			opacity: 0.6;
-		}
-
+		
 		.controls a {
 			background-color: #000000;
 			color: #fff;
