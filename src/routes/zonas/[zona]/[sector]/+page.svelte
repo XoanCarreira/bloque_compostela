@@ -3,7 +3,7 @@
 	export let data;
 
 	// convertir croquis a formato esperado por Modal
-	const images = (data.sector.croquis || []).map((i) => ({ full: i.full, alt: i.alt }));
+	const images = (data?.sector?.croquis || []).map((i) => ({ full: i.full, alt: i.alt }));
 
 	let modalOpen = false;
 	let modalIndex = 0;
@@ -21,13 +21,13 @@
 
 <article>
 	<div class="sector_info">
-		<h3>{data.sector.nombre}</h3>
-		<p>{data.sector.descripcion}</p>
+		<h3>{data?.sector?.nombre}</h3>
+		<p>{data?.sector?.descripcion}</p>
 
 	</div>
 
 	<div class="gallery" role="list">
-		{#each data.sector.croquis as item, i (item.full)}
+		{#each data?.sector?.croquis || [] as item, i (item.full)}
 			<figure class="card" role="listitem">
 				<img
 					class="thumb"

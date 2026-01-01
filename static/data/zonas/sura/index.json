@@ -8,6 +8,20 @@
             "nombre": "Principal",
             "vias": 9,
             "descripcion": "Bloque con desplomado con liñas en xeral duras"
+        },
+
+        {
+            "slug": "muro",
+            "nombre": "Muro",
+            "vias": 7,
+            "descripcion": "Zona con bloques de grao medio e alto, con algunha liña máis fácil."
+        },
+
+        {
+            "slug": "ola",
+            "nombre": "La Ola",
+            "vias": 6,
+            "descripcion": "Sector con bloques máis fáciles, ideais para iniciarse."
         }
     ]
 }

@@ -45,7 +45,7 @@
         "sectores": 1,
         "vias": 10,
         "aproximacion": "10 min",
-        "portada": "pedroso/portada_pedroso.jpg",
+        "portada": "biofilia/portada_biofilia.jpg",
         "descripcion": "Poucas liñas pero de calidade."
     },
 
@@ -65,7 +65,7 @@
         "sectores": 3,
         "vias": 25,
         "aproximacion": "20 min",
-        "portada": "pedroso/portada_pedroso.jpg",
+        "portada": "vilas/portada_vilas.jpg",
         "descripcion": "Bloque preto dunha fermosa fervenza."
     }
 

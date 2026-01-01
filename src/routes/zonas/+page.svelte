@@ -4,6 +4,7 @@
 
 	// Lóxica do carrusel 3D carga unha vez montado o compoñente
 	onMount(() => {
+		if (typeof window === 'undefined') return;
 		// Selección de elementos
 		const carousel = document.querySelector('.grid');
 		const prevBtn = document.querySelector('#prevBtn');

@@ -4,8 +4,8 @@
     "descripcion": "Zona con varios sectores e unhas magníficas vistas de Compostela.",
     "sectores": [
         {
-            "slug": "zipi_zape",
-            "nombre": "Zipi Zape",
+            "slug": "bobmarley",
+            "nombre": "Bob Marley",
             "vias": 9,
             "aproximacion": 5,
             "descripcion": "Pasos divertidos en bloques de granito.",

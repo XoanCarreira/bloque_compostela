@@ -137,13 +137,17 @@
 	}
 
 	onMount(() => {
-		window.addEventListener('keydown', onKey);
-		window.addEventListener('wheel', onWheel, { passive: false });
+		if (typeof window !== 'undefined') {
+			window.addEventListener('keydown', onKey);
+			window.addEventListener('wheel', onWheel, { passive: false });
+		}
 	});
 
 	onDestroy(() => {
-		window.removeEventListener('keydown', onKey);
-		window.removeEventListener('wheel', onWheel);
+		if (typeof window !== 'undefined') {
+			window.removeEventListener('keydown', onKey);
+			window.removeEventListener('wheel', onWheel);
+		}
 	});
 
 	// sincronizar cambios de current al index externo (bind:index)
