@@ -5,21 +5,32 @@
 	// Lóxica do carrusel 3D carga unha vez montado o compoñente
 	onMount(() => {
 		if (typeof window === 'undefined') return;
+
 		// Selección de elementos
 		const carousel = document.querySelector('.grid');
 		const prevBtn = document.querySelector('#prevBtn');
 		const nextBtn = document.querySelector('#nextBtn');
-		let items = Array.from(carousel.querySelectorAll('.card'));
+		let items = carousel ? Array.from(carousel.querySelectorAll('.card')) : [];
 
-		// Clonar elementos para crear efecto infinito
+		if (!carousel || !items.length) return;
+
+		// Clonar elementos para crear efecto infinito (dobre copia: diante e detrás)
 		const originalItems = [...items];
 		originalItems.forEach((item) => {
 			const clone = item.cloneNode(true);
 			carousel.appendChild(clone);
 		});
+		originalItems.forEach((item) => {
+			const clone = item.cloneNode(true);
+			carousel.insertBefore(clone, carousel.firstChild);
+		});
 
 		// Actualiza a lista de items cos orixinais + clonados
 		items = Array.from(carousel.querySelectorAll('.card'));
+
+		// Ancho dun bloque completo (unha volta) medido entre o inicio da copia 1 e o inicio da copia 2
+		const setWidth = items[originalItems.length].offsetLeft - items[0].offsetLeft;
+		const buffer = Math.min(120, setWidth * 0.25);
 
 		// Parámetros de axuste visual copoñentes
 		const minScale =
@@ -38,23 +49,7 @@
 		const scrollAmount = 350; // Píxeles a desplazar con los botones
 
 		// Variables para detectar dirección de scroll
-		let lastScrollLeft = 0;
-
-		// Función para resetear scroll ao inicio ou final
-		function resetScroll() {
-			isResetting = true;
-			carousel.scrollLeft = 0;
-			lastScrollLeft = 0;
-			isResetting = false;
-		}
-
-		function resetScrollToEnd() {
-			isResetting = true;
-			const maxScroll = carousel.scrollWidth - carousel.clientWidth;
-			carousel.scrollLeft = maxScroll;
-			lastScrollLeft = maxScroll;
-			isResetting = false;
-		}
+		let lastScrollLeft = setWidth;
 
 		// Función para actualizar transformación dos elementos
 		function update() {
@@ -124,23 +119,31 @@
 
 			// Detectar scroll infinito en ambas direccións
 			if (!isResetting) {
-				const maxScroll = carousel.scrollWidth - carousel.clientWidth;
-				const threshold = 100; // Píxeles de margen
-
-				// Se scrollea hacia a dereita e chega ao final
-				if (carousel.scrollLeft >= maxScroll - threshold && lastScrollLeft < carousel.scrollLeft) {
-					resetScroll();
+				if (carousel.scrollLeft <= buffer) {
+					isResetting = true;
+					const target = carousel.scrollLeft + setWidth;
+					carousel.scrollLeft = target;
+					lastScrollLeft = target;
+					isResetting = false;
+					return;
 				}
-				// Se scrollea hacia a esquerda e chega ao inicio
-				else if (carousel.scrollLeft <= threshold && lastScrollLeft > carousel.scrollLeft) {
-					resetScrollToEnd();
+
+				const rightEdge = setWidth * 2;
+				if (carousel.scrollLeft >= rightEdge - buffer) {
+					isResetting = true;
+					const target = carousel.scrollLeft - setWidth;
+					carousel.scrollLeft = target;
+					lastScrollLeft = target;
+					isResetting = false;
+					return;
 				}
 			}
 
 			lastScrollLeft = carousel.scrollLeft;
 		}
 
-		// Inicializar
+		// Posicionar no bloque central para evitar saltos iniciais
+		carousel.scrollLeft = setWidth;
 		update();
 
 		// Función para desprazar esquerda
@@ -178,7 +181,7 @@
 <div class="container">
 	<div class="grid">
 		{#each data.zonas as z}
-			<a class="card" href={`/zonas/${z.slug}`}>
+			<a class="card" draggable="false" href={`/zonas/${z.slug}`}>
 				<div class="overlay">
 					<img src={z.portada} alt="Foto zona escalada {z.nome}" />
 				</div>
