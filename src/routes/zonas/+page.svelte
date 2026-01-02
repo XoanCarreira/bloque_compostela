@@ -46,7 +46,7 @@
 		let ticking = false;
 		let centralItem = null;
 		let isResetting = false;
-		const scrollAmount = 370; // Píxeles a desplazar con los botones
+		const scrollAmount = 310; // Píxeles a desplazar con los botones
 
 		// Variables para detectar dirección de scroll
 		let lastScrollLeft = setWidth;
@@ -235,11 +235,12 @@
 	.grid {
 		width: 80%;
 		display: flex;
-		gap: 20px;
+		gap: 10px;
 		padding: 40px 20px;
 		margin-top: 20px;
 		flex-shrink: 0;
 		scroll-snap-type: x mandatory;
+		scroll-snap-stop: always;
 		overflow-x: scroll;
 		scrollbar-width: none;
 		perspective: 1200px;
@@ -260,14 +261,15 @@
 		display: flex;
 		place-content: center;
 		box-shadow:
-			5px 5px 5px #000000cb,
-			inset 0px 0px 3px rgb(0, 0, 0);
+		5px 5px 5px #000000cb,
+		inset 0px 0px 3px rgb(0, 0, 0);
 		position: relative;
 		background-color: black;
 		color: #fff;
 		border: 2px solid #ccc;
 		flex-shrink: 0;
-		scroll-snap-align: center;
+		scroll-snap-stop: always;
+		/*scroll-snap-align: center;*/
 	}
 
 	.overlay {
