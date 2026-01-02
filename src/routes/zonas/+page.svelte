@@ -236,11 +236,10 @@
 		width: 80%;
 		display: flex;
 		gap: 10px;
-		padding: 40px 20px;
+		padding: 40px 0px;
 		margin-top: 20px;
 		flex-shrink: 0;
 		scroll-snap-type: x mandatory;
-		scroll-snap-stop: always;
 		overflow-x: scroll;
 		scrollbar-width: none;
 		perspective: 1200px;
@@ -250,6 +249,10 @@
 			opacity 300ms cubic-bezier(0.2, 0.9, 0.2, 1),
 			filter 300ms cubic-bezier(0.2, 0.9, 0.2, 1);
 		will-change: transform, opacity, filter;
+	}
+
+	.grid > .card{
+		scroll-snap-stop: always;
 	}
 
 	.card {
@@ -268,8 +271,7 @@
 		color: #fff;
 		border: 2px solid #ccc;
 		flex-shrink: 0;
-		scroll-snap-stop: always;
-		/*scroll-snap-align: center;*/
+		scroll-snap-align: center;
 	}
 
 	.overlay {
