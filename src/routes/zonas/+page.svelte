@@ -46,6 +46,7 @@
 		let ticking = false;
 		let centralItem = null;
 		let isResetting = false;
+		const scrollAmount = 370; // Píxeles a desplazar con los botones
 
 		// Variables para detectar dirección de scroll
 		let lastScrollLeft = setWidth;
@@ -144,11 +145,6 @@
 
 		// Función para desprazar esquerda
 		function scrollLeft() {
-			// Calcular ancho de tarjeta + gap
-			const cardWidth = items[0].offsetWidth;
-			const gap = 20;
-			const scrollAmount = cardWidth + gap;
-			
 			carousel.scrollBy({
 				left: -scrollAmount,
 				behavior: 'smooth'
@@ -157,11 +153,6 @@
 
 		// Función para desprazar dereita
 		function scrollRight() {
-			// Calcular ancho de tarjeta + gap
-			const cardWidth = items[0].offsetWidth;
-			const gap = 20;
-			const scrollAmount = cardWidth + gap;
-			
 			carousel.scrollBy({
 				left: scrollAmount,
 				behavior: 'smooth'
