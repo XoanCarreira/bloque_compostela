@@ -23,7 +23,7 @@
         "slug": "sura",
         "nome": "Sura",
         "sectores": 3,
-        "vias": 50,
+        "vias": 57,
         "aproximacion": "1~10 min",
         "portada": "sura/portada_sura.jpg",
         "descripcion": "Unhas 50 liñas nun granito de gran calidade"
@@ -43,8 +43,8 @@
         "slug": "biofilia",
         "nome": "Biofilia",
         "sectores": 1,
-        "vias": 10,
-        "aproximacion": "10 min",
+        "vias": 15,
+        "aproximacion": "5 min",
         "portada": "biofilia/portada_biofilia.jpg",
         "descripcion": "Poucas liñas pero de calidade."
     },
@@ -54,7 +54,7 @@
         "nome": "Eucaliptos",
         "sectores": 1,
         "vias": 15,
-        "aproximacion": "15 min",
+        "aproximacion": "10 min",
         "portada": "pedroso/portada_pedroso.jpg",
         "descripcion": "Zona tranquila con variedade de grados e estilos."
     },
@@ -62,9 +62,9 @@
     {
         "slug": "vilas",
         "nome": "Vilas",
-        "sectores": 3,
-        "vias": 25,
-        "aproximacion": "20 min",
+        "sectores": 1,
+        "vias": 20,
+        "aproximacion": "5 min",
         "portada": "vilas/portada_vilas.jpg",
         "descripcion": "Varias liñas en xeral de grado medio-baixo con recepción cómoda. Ideal para iniciarse."
     }

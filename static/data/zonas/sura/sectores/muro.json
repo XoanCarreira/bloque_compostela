@@ -1,17 +1,37 @@
 {
-  "slug": "principal",
-  "nombre": "Principal",
-  "descripcion": "Bloque desplomado con liñas grao medio",
+  "slug": "muro",
+  "nombre": "Muro",
+  "descripcion": "Varias liñas",
   "croquis": [
     {
-      "thumb": "/lampai/teito_01.jpg",
-      "full": "/lampai/teito_01.jpg",
-      "alt": "Croquis Teito 1"
+      "thumb": "/sura/mapa_muro.jpg",
+      "full": "/sura/mapa_muro.jpg",
+      "alt": "Mapa zona"
     },
     {
-      "thumb": "/lampai/teito_02.jpg",
-      "full": "/lampai/teito_02.jpg",
-      "alt": "Croquis Teito 2"
+      "thumb": "/sura/muro_01.jpg",
+      "full": "/sura/muro_01.jpg",
+      "alt": "Croquis Muro 1"
+    },
+    {
+      "thumb": "/sura/muro_02.jpg",
+      "full": "/sura/muro_02.jpg",
+      "alt": "Croquis Muro 2"
+    },
+    {
+      "thumb": "/sura/muro_03.jpg",
+      "full": "/sura/muro_03.jpg",
+      "alt": "Croquis Muro 3"
+    },
+    {
+      "thumb": "/sura/muro_04.jpg",
+      "full": "/sura/muro_04.jpg",
+      "alt": "Croquis Muro 4"
+    },
+    {
+      "thumb": "/sura/muro_05.jpg",
+      "full": "/sura/muro_05.jpg",
+      "alt": "Croquis Muro 5"
     }
   ]
 }

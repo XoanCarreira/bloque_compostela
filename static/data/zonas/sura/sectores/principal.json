@@ -1,17 +1,37 @@
 {
   "slug": "principal",
   "nombre": "Principal",
-  "descripcion": "Bloque desplomado con liñas grao medio",
+  "descripcion": "Varios bloques na mesma zona con variedade de grados",
   "croquis": [
     {
-      "thumb": "/lampai/teito_01.jpg",
-      "full": "/lampai/teito_01.jpg",
-      "alt": "Croquis Teito 1"
+      "thumb": "/sura/mapa_principal.jpg",
+      "full": "/sura/mapa_principal.jpg",
+      "alt": "Mapa zona"
     },
     {
-      "thumb": "/lampai/teito_02.jpg",
-      "full": "/lampai/teito_02.jpg",
-      "alt": "Croquis Teito 2"
+      "thumb": "/sura/principal_01.jpg",
+      "full": "/sura/principal_01.jpg",
+      "alt": "Croquis Principal 1"
+    },
+    {
+      "thumb": "/sura/principal_02.jpg",
+      "full": "/sura/principal_02.jpg",
+      "alt": "Croquis Principal 2"
+    },
+    {
+      "thumb": "/sura/principal_03.jpg",
+      "full": "/sura/principal_03.jpg",
+      "alt": "Croquis Principal 3"
+    },
+    {
+      "thumb": "/sura/principal_04.jpg",
+      "full": "/sura/principal_04.jpg",
+      "alt": "Croquis Principal 4"
+    },
+    {
+      "thumb": "/sura/principal_05.jpg",
+      "full": "/sura/principal_05.jpg",
+      "alt": "Croquis Principal 5"
     }
   ]
 }

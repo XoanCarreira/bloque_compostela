@@ -272,6 +272,7 @@
 		border: 2px solid #ccc;
 		flex-shrink: 0;
 		scroll-snap-align: center;
+		user-select: none;
 	}
 
 	.overlay {
@@ -373,6 +374,7 @@
 	}
 
 	.btn:hover {
+		opacity: 0.6;
 		background-color: var(--corAzul);
 		color: #fff;
 		transform: scale(1.05);

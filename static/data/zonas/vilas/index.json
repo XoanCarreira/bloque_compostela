@@ -6,8 +6,10 @@
         {
             "slug": "principal",
             "nombre": "Principal",
-            "vias": 9,
-            "descripcion": "Bloque con desplomado con liñas en xeral duras"
+            "vias": 20,
+            "aproximacion": 5,
+            "grados": "6a~7a",
+            "portada": "/vilas/vilas_01.jpg"
         }
     ]
 }

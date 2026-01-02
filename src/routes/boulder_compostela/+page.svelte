@@ -1,28 +1,24 @@
 <div>
 	<h3>Boulder Compostela</h3>
 	<p>
-		Este proxecto nace coa intención de recopilar as distintas zonas para a práctica do boulder na
-		contorna de Compostela, nunha aplicación sinxela e con info práctica.
+		<i>Boulder Compostela</i> un proxecto persoal sen ánimo de lucro e baséase en información recollida de diversas fontes públicas e
+		privadas, así como na experiencia persoal do autor.
 	</p>
 	<p>
-		Aínda que non hai grandes concentracións, si existe un gran número de pequenas zonas nun radio
-		duns 15km dende Compostela que, en conxunto, forman unha zona interesante para a práctica do
-		boulder con algunhas liñas de gran calidade.
+		Esta aplicación está en constante evolución, e a información que contén é susceptible de
+		ser modificada ou ampliada. Aínda que se intentou ser o máis preciso posible, poden existir
+		erros ou información desactualizada.
 	</p>
+
 	<p>
-		Hai que agraceder o gran traballo de busqueda e limpeza de novas liñas e sectores por unha parte
-		da comunidade escaladora, e recordar que é moi importante que entre tod@s manteñamos vivas estas
-		zonas axudando nas limpezas periódicas e mantendo os acesos nun estado aceptable.
-	</p>
-	<p>
-		Se tes algunha proposta que queiras incluir nesta recopilación, ou crees que algo se debería modificar,
-		podes contactar pinchando <a href="mailto:juancn84@hotmail.com">aquí</a>
+		Se tes algunha proposta que queiras incluir, ou crees que algo se debería modificar,
+		podes contactar en <i>bouldercompostela@xoancoder.com</i>.
 	</p>
 </div>
 
 <style>
 	div {
-		width: 500px;
+		width: 800px;
 		margin: 0 auto;
 		padding: 15px 10px;
 		max-width: 95%;
@@ -32,10 +28,17 @@
 	h3 {
 		text-align: center;
 		margin-bottom: 15px;
-		font-size: 2rem;
+		font-size: var(--tamanhoTitulo);
 	}
 
 	p {
 		margin-bottom: 10px;
+		font-size: var(--tamanhoSubtitulo);
+	}
+
+	@media (max-width: 600px) {
+		p {
+			font-size: var(--tamanhoTexto);
+		}
 	}
 </style>

@@ -1,17 +1,27 @@
 {
   "slug": "principal",
   "nombre": "Principal",
-  "descripcion": "Bloque desplomado con liñas grao medio",
+  "descripcion": "Plaza con varios bloques nunha zona cómoda.",
   "croquis": [
     {
-      "thumb": "/lampai/teito_01.jpg",
-      "full": "/lampai/teito_01.jpg",
-      "alt": "Croquis Teito 1"
+      "thumb": "/vilas/mapa_vilas.jpg",
+      "full": "/vilas/mapa_vilas.jpg",
+      "alt": "Mapa da zona"
     },
     {
-      "thumb": "/lampai/teito_02.jpg",
-      "full": "/lampai/teito_02.jpg",
-      "alt": "Croquis Teito 2"
+      "thumb": "/vilas/vilas_01.jpg",
+      "full": "/vilas/vilas_01.jpg",
+      "alt": "Croquis Principal 1"
+    },
+    {
+      "thumb": "/vilas/vilas_02.jpg",
+      "full": "/vilas/vilas_02.jpg",
+      "alt": "Croquis Principal 2"
+    },
+    {
+      "thumb": "/vilas/vilas_03.jpg",
+      "full": "/vilas/vilas_03.jpg",
+      "alt": "Croquis Principal 3"
     }
   ]
 }

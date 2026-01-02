@@ -6,22 +6,26 @@
         {
             "slug": "principal",
             "nombre": "Principal",
-            "vias": 9,
-            "descripcion": "Bloque con desplomado con liñas en xeral duras"
+            "vias": 33,
+            "aproximacion": 1,
+            "grados": "V~7a",
+            "portada": "/sura/principal_01.jpg"
         },
-
         {
             "slug": "muro",
             "nombre": "Muro",
-            "vias": 7,
-            "descripcion": "Zona con bloques de grao medio e alto, con algunha liña máis fácil."
+            "vias": 11,
+            "aproximacion": 5,
+            "grados": "V-7a",
+            "portada": "/sura/muro_01.jpg"
         },
-
         {
             "slug": "ola",
             "nombre": "La Ola",
-            "vias": 6,
-            "descripcion": "Sector con bloques máis fáciles, ideais para iniciarse."
+            "vias": 13,
+            "aproximacion": 10,
+            "grados": "6a-7a",
+            "portada": "/sura/ola_01.jpg"
         }
     ]
 }

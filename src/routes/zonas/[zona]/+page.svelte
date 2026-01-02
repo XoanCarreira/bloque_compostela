@@ -9,7 +9,7 @@
 
 <nav>
 	{#each data.zona.sectores as s}
-		<a class="sector-btn" href={`/zonas/${data.zona.slug}/${s.slug}`}>
+		<a class="sector-btn" draggable="false" href={`/zonas/${data.zona.slug}/${s.slug}`}>
 			<img class="overlay" src={s.portada} alt="Foto sector {s.nombre}" />
 			<h3>{s.nombre}</h3>
 			<div class="footer">
@@ -73,6 +73,7 @@
 		align-items: center;
 		gap: 10px;
 		position: relative;
+		user-select: none;
 	}
 
 	.overlay {
