@@ -46,7 +46,7 @@
 		let ticking = false;
 		let centralItem = null;
 		let isResetting = false;
-		const scrollAmount = 350; // Píxeles a desplazar con los botones
+		const scrollAmount = 370; // Píxeles a desplazar con los botones
 
 		// Variables para detectar dirección de scroll
 		let lastScrollLeft = setWidth;
@@ -97,13 +97,10 @@
 			if (closestItem && closestItem !== centralItem) {
 				if (centralItem) {
 					centralItem.style.border = '2px solid #ccc';
-					centralItem.style.boxShadow = `
-						5px 5px 5px #000000cb,
-						inset 0px 0px 3px rgb(0, 0, 0)
-					`;
+
 				}
-				closestItem.style.border = '2px solid #000';
-				closestItem.style.boxShadow = '0px 0px 35px 2px #ffffff55';
+				closestItem.style.border = 'none';
+				closestItem.style.boxShadow = '0px 0px 55px 2px rgba(71, 99, 146, 0.5), inset 0 0 10px #ffffffff';
 				centralItem = closestItem;
 			}
 
@@ -277,7 +274,7 @@
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		opacity: 0.3;
+		opacity: 0.5;
 		bottom: 0;
 		overflow: hidden;
 		border-radius: 10px;
@@ -312,14 +309,15 @@
 		background-color: black;
 		border-radius: 0px 0px 10px 10px;
 		color: #fff;
+		box-shadow: inset 0 -2px 5px rgba(255, 255, 255, 0.599);
 	}
 
 	.footerDescription {
 		font-size: 14px;
 		text-align: justify;
-		padding: 10px;
+		padding: 25px 15px;
 		border-bottom: 2px solid #ccc;
-		height: 100px;
+		min-height: 100px;
 	}
 
 	.footerDetails {
