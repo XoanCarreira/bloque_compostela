@@ -1,7 +1,7 @@
 {
     "slug": "lampai",
     "nombre": "Lampai",
-    "descripcion": "Zona con varios sectores de bloque con multitude de liñas e graos variados.",
+    "descripcion": "Maiormente orientación sur e oeste, pero en sectores como Mangui podemos atopar todas as orientacións.",
     "sectores": [
         {
             "slug": "teito",
@@ -9,7 +9,7 @@
             "vias": 8,
             "aproximacion": 10,
             "grados": "6a~7a+",
-            "descripcion": "Bloque con desplomado con liñas en xeral duras",
+            "descripcion": "Bloque desplomado con liñas en xeral duras",
             "portada": "/lampai/teito_01.jpg"
         },
 
@@ -19,7 +19,7 @@
             "vias": 11,
             "aproximacion": 10,
             "grados": "IV~7a",
-            "descripcion": "Sector con variedade de liñas e graos",
+            "descripcion": "Sector con variedade de liñas e grados",
             "portada": "/lampai/ladeira_01.jpg"
         },
 
@@ -48,7 +48,7 @@
             "vias": 15,
             "aproximacion": 10,
             "grados": "V~7a+",
-            "descripcion": "Sector con multitude de liñas e graos variados",
+            "descripcion": "Sector con multitude de liñas e grados variados",
             "portada": "/lampai/mole_01.jpg"
         },
 
@@ -78,7 +78,7 @@
             "vias": 16,
             "aproximacion": 25,
             "grados": "V~7b",
-            "descripcion": "Todos os graos e estilos nunha zona con varios bloques",
+            "descripcion": "Todos os grados e estilos nunha zona con todas as orientacións",
             "portada": "/lampai/mangui_01.jpg"
         },
 
@@ -98,7 +98,7 @@
             "vias": 3,
             "aproximacion": 5,
             "grados": "6b~?",
-            "descripcion": "Enorme bloque con liñas de grao alto e calidade",
+            "descripcion": "Enorme bloque con liñas para os máis fortes",
             "portada": "/lampai/gaia_01.jpg"
         }
     ]

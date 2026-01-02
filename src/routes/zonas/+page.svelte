@@ -405,7 +405,8 @@
 		.controls a {
 			background-color: #000000;
 			color: #fff;
-			box-shadow: inset 0 0 2px #fff;
+			box-shadow: inset 0 0 2px #ffffff86;
+			border-radius: 10px;
 		}
 
 		.btn {
@@ -419,6 +420,10 @@
 			transition: all 0.3s ease;
 			max-width: fit-content;
 			border: none;
+		}
+
+		button{
+			display: none;
 		}
 	}
 </style>

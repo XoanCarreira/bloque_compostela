@@ -1,12 +1,27 @@
 {
   "slug": "bobmarley",
   "nombre": "Bob Marley",
-  "descripcion": "Varias liñas con variedade de graos.",
+  "descripcion": "Varias liñas para pasar unha boa tarde e desfrutar dunhas magníficas vistas de Compostela.",
   "croquis": [
+    {
+      "thumb": "/pedroso/mapa_pedroso.jpg",
+      "full": "/pedroso/mapa_pedroso.jpg",
+      "alt": "Mapa da zona"
+    },
     {
       "thumb": "/pedroso/pedroso_01.jpg",
       "full": "/pedroso/pedroso_01.jpg",
       "alt": "Croquis Bob Marley 1"
+    },
+    {
+      "thumb": "/pedroso/pedroso_02.jpg",
+      "full": "/pedroso/pedroso_02.jpg",
+      "alt": "Croquis Bob Marley 2"
+    },
+    {
+      "thumb": "/pedroso/pedroso_03.jpg",
+      "full": "/pedroso/pedroso_03.jpg",
+      "alt": "Croquis Bob Marley 3"
     }
   ]
 }

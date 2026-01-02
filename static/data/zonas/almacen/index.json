@@ -6,9 +6,10 @@
         {
             "slug": "principal",
             "nombre": "Principal",
-            "vias": 9,
-            "descripcion": "Variedade de graos",
+            "vias": 13,
             "aproximacion": 5,
+            "grados": "V~7b",
+            "descripcion": "Variedade de grados",
             "portada": "/almacen/almacen_01.jpg"
         }
     ]

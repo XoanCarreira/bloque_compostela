@@ -1,14 +1,14 @@
 {
     "slug": "pedroso",
     "nombre": "Pedroso",
-    "descripcion": "Zona con varios sectores e unhas magníficas vistas de Compostela.",
+    "descripcion": "Zona con liñas para pasar unha boa tarde e disfrutar dunhas magníficas vistas de Compostela.",
     "sectores": [
         {
             "slug": "bobmarley",
             "nombre": "Bob Marley",
-            "vias": 9,
+            "vias": 15,
             "aproximacion": 5,
-            "descripcion": "Pasos divertidos en bloques de granito.",
+            "grados": "IV~6c",
             "portada": "/pedroso/pedroso_01.jpg"
         }
     ]

@@ -4,6 +4,11 @@
   "descripcion": "Bloque con varias liñas a 5 minutos de Compostela",
   "croquis": [
     {
+      "thumb": "/almacen/mapa_almacen.jpg",
+      "full": "/almacen/mapa_almacen.jpg",
+      "alt": "Mapa zona"
+    },
+    {
       "thumb": "/almacen/almacen_01.jpg",
       "full": "/almacen/almacen_01.jpg",
       "alt": "Bloque Principal 1"

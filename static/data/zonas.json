@@ -13,7 +13,7 @@
         "slug": "almacen",
         "nome": "Almacén",
         "sectores": 1,
-        "vias": 20,
+        "vias": 13,
         "aproximacion": "5 min",
         "portada": "almacen/portada_almacen.jpg",
         "descripcion": "Bloque con varias liñas a 5 minutos de Compostela. Facendo combos saen pasos duros."
@@ -32,8 +32,8 @@
     {
         "slug": "pedroso",
         "nome": "Pedroso",
-        "sectores": 5,
-        "vias": 30,
+        "sectores": 1,
+        "vias": 15,
         "aproximacion": "5 min",
         "portada": "pedroso/portada_pedroso.jpg",
         "descripcion": "Zona de bloque próxima a Santiago con varias liñas."

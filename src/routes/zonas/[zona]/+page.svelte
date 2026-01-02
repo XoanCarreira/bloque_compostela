@@ -4,7 +4,7 @@
 
 <header>
 	<h2>{data.zona.nombre}</h2>
-	<p>{data.zona.descripcion}</p>
+	<!--<p>{data.zona.descripcion}</p>-->
 </header>
 
 <nav>

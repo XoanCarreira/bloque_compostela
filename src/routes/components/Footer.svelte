@@ -128,7 +128,7 @@
 	}
 
 	label{
-		border: 1px inset white;
+		box-shadow: inset 0 0 5px #fff ;
 		padding: 8px;
 		border-radius: 8px;
         color: #fff;
