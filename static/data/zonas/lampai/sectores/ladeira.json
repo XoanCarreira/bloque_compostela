@@ -4,6 +4,11 @@
   "descripcion": "Bloque con desplomado con liñas en xeral duras",
   "croquis": [
     {
+      "thumb": "/lampai/mapa_ladeira.jpg",
+      "full": "/lampai/mapa_ladeira.jpg",
+      "alt": "Mapa da zona"
+    },
+    {
       "thumb": "/lampai/ladeira_01.jpg",
       "full": "/lampai/ladeira_01.jpg",
       "alt": "Bloque Ladeira 1"
@@ -23,7 +28,6 @@
       "full": "/lampai/ladeira_04.jpg",
       "alt": "Bloque Ladeira 4"
     },
-
     {
       "thumb": "/lampai/ladeira_06.jpg",
       "full": "/lampai/ladeira_06.jpg",

@@ -4,6 +4,11 @@
   "descripcion": "Enorme bloque con varias liñas de calidade e grao alto",
   "croquis": [
     {
+      "thumb": "/lampai/mapa_mole.jpg",
+      "full": "/lampai/mapa_mole.jpg",
+      "alt": "Mapa da zona"
+    },
+    {
       "thumb": "/lampai/gaia_01.jpg",
       "full": "/lampai/gaia_01.jpg",
       "alt": "Bloque Gaia 1"

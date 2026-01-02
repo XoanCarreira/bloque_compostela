@@ -4,6 +4,11 @@
   "descripcion": "Sector que merece a pena a camiñada pola súa variedade e calidade de liñas",
   "croquis": [
     {
+      "thumb": "/lampai/mapa_mangui.jpg",
+      "full": "/lampai/mapa_mangui.jpg",
+      "alt": "Mapa da zona"
+    },
+    {
       "thumb": "/lampai/mangui_00.jpg",
       "full": "/lampai/mangui_00.jpg",
       "alt": "Bloque Mangui 0"

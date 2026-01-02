@@ -4,6 +4,11 @@
   "descripcion": "Bloque divertido de camiño ao sector Mangui",
   "croquis": [
     {
+      "thumb": "/lampai/mapa_mangui.jpg",
+      "full": "/lampai/mapa_mangui.jpg",
+      "alt": "Mapa da zona"
+    },
+    {
       "thumb": "/lampai/congrio_01.jpg",
       "full": "/lampai/congrio_01.jpg",
       "alt": "Bloque Congrio 1"

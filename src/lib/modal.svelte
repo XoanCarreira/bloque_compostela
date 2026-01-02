@@ -19,7 +19,7 @@
 	let containerEl;
 
 	// sincronizar index entrante
-	$: if (index !== current) index = current;
+	$: current = index;
 
 	function close() {
 		dispatch('close');
@@ -29,6 +29,7 @@
 		if (current > 0) {
 			current -= 1;
 			resetTransform();
+			index = current;
 			dispatch('change', { index: current });
 		}
 	}
@@ -37,6 +38,7 @@
 		if (current < images.length - 1) {
 			current += 1;
 			resetTransform();
+			index = current;
 			dispatch('change', { index: current });
 		}
 	}
@@ -149,21 +151,23 @@
 			window.removeEventListener('wheel', onWheel);
 		}
 	});
-
-	// sincronizar cambios de current al index externo (bind:index)
-	$: current, (index = current);
 </script>
 
 {#if open}
 	<div
 		class="backdrop"
-		role="dialog"
-		aria-modal="true"
-		aria-label="Visor de croquis"
+		role="presentation"
 		on:click|self={close}
+		on:keydown|self={(e) => {
+			if (e.key === 'Escape') close();
+		}}
+		tabindex="-1"
 	>
 		<div
 			class="modal"
+			role="dialog"
+			aria-modal="true"
+			aria-label="Visor de croquis"
 			bind:this={containerEl}
 			on:pointerdown={(e) => {
 				onPointerDownPinch(e);

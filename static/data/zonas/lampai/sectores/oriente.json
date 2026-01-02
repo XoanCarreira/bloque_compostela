@@ -4,6 +4,11 @@
   "descripcion": "Bloque principal con liñas de gran calidade",
   "croquis": [
     {
+      "thumb": "/lampai/mapa_oriente.jpg",
+      "full": "/lampai/mapa_oriente.jpg",
+      "alt": "Mapa da zona"
+    },
+    {
       "thumb": "/lampai/oriente_01.jpg",
       "full": "/lampai/oriente_01.jpg",
       "alt": "Bloque Oriente 1"

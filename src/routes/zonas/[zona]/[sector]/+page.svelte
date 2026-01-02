@@ -29,15 +29,18 @@
 	<div class="gallery" role="list">
 		{#each data?.sector?.croquis || [] as item, i (item.full)}
 			<figure class="card" role="listitem">
-				<img
+				<button
 					class="thumb"
-					src={item.thumb}
-					alt={item.alt}
-					loading="lazy"
 					on:click={() => openImageAt(i)}
-					tabindex="0"
-					on:keydown={(e) => e.key === 'Enter' && openImageAt(i)}
-				/>
+					aria-label={item.alt}
+				>
+					<img
+						src={item.thumb}
+						alt=""
+						loading="lazy"
+						draggable="false"
+					/>
+				</button>
 				<figcaption>{item.alt}</figcaption>
 			</figure>
 		{/each}
@@ -77,11 +80,19 @@
 
 	}
 	.thumb {
+		background: none;
+		border: none;
+		padding: 0;
+		cursor: pointer;
 		width: 100%;
 		height: 110px;
-		object-fit: cover;
 		border-radius: 6px;
-		cursor: pointer;
+	}
+	.thumb img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		display: block;
 	}
 	.card {
 		padding: 0.4rem;

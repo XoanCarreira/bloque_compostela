@@ -4,6 +4,11 @@
   "descripcion": "Bloque desplomado con liñas grao medio",
   "croquis": [
     {
+      "thumb": "/lampai/mapa_ladeira.jpg",
+      "full": "/lampai/mapa_ladeira.jpg",
+      "alt": "Mapa da zona"
+    },
+    {
       "thumb": "/lampai/teito_01.jpg",
       "full": "/lampai/teito_01.jpg",
       "alt": "Bloque Teito 1"

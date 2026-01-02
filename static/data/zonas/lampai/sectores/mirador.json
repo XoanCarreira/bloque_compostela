@@ -4,6 +4,11 @@
   "descripcion": "Aparcar e blocar",
   "croquis": [
     {
+      "thumb": "/lampai/mapa_mirador.jpg",
+      "full": "/lampai/mapa_mirador.jpg",
+      "alt": "Mapa da zona"
+    },
+    {
       "thumb": "/lampai/mirador_01.jpg",
       "full": "/lampai/mirador_01.jpg",
       "alt": "Bloque Mirador 1"

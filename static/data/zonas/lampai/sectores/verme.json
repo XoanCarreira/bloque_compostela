@@ -4,6 +4,11 @@
   "descripcion": "Bloque con varias liñas de grado baixo",
   "croquis": [
     {
+      "thumb": "/lampai/mapa_mole.jpg",
+      "full": "/lampai/mapa_mole.jpg",
+      "alt": "Mapa da zona"
+    },
+    {
       "thumb": "/lampai/verme_01.jpg",
       "full": "/lampai/verme_01.jpg",
       "alt": "Bloque Verme 1"

@@ -4,6 +4,11 @@
   "descripcion": "Bloque con desplomado con liñas en xeral duras",
   "croquis": [
     {
+      "thumb": "/lampai/mapa_oriente.jpg",
+      "full": "/lampai/mapa_oriente.jpg",
+      "alt": "Mapa da zona"
+    },
+    {
       "thumb": "/lampai/campo_01.jpg",
       "full": "/lampai/campo_01.jpg",
       "alt": "Bloque Campo 1"

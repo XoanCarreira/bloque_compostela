@@ -4,6 +4,11 @@
   "descripcion": "Variedade de liñas e graos.",
   "croquis": [
     {
+      "thumb": "/lampai/mapa_mole.jpg",
+      "full": "/lampai/mapa_mole.jpg",
+      "alt": "Mapa da zona"
+    },
+    {
       "thumb": "/lampai/mole_01.jpg",
       "full": "/lampai/mole_01.jpg",
       "alt": "Bloque Mole 1"
