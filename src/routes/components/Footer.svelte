@@ -71,8 +71,9 @@
 
 <style>
 	footer {
-        margin-top:15px;
-		padding: 15px;
+		border-top: 3px solid var(--corAzul);
+        margin-top:25px;
+		padding: 25px 15px 15px 15px;
 		background-color: var(--corFondo);
 
 	}
@@ -166,7 +167,6 @@
 
 
 	.version{
-		border-top: 3px solid #5DACA3;
 		width: 100%;
 		padding: 15px;
 		text-align: center;

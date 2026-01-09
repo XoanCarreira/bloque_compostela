@@ -46,7 +46,7 @@
 		let ticking = false;
 		let centralItem = null;
 		let isResetting = false;
-		const scrollAmount = 310; // Píxeles a desplazar con los botones
+		const scrollAmount = 400; // Píxeles a desplazar con los botones
 
 		// Variables para detectar dirección de scroll
 		let lastScrollLeft = setWidth;
@@ -68,12 +68,12 @@
 				const maxDist = rect.width / 2 + r.width;
 				const norm = Math.min(distance / maxDist, 1);
 
-				// Calcular ángulo basado en la distancia normalizada (-90 a 90 grados)
+				// Calcular ángulo basado na distancia normalizada (-90 a 90 grados)
 				const angle = norm * 60; // Máximo 60 grados de rotación
 				const direction = itemCenter > centerX ? 1 : -1; // Dirección derecha o izquierda
 				const rotationAngle = angle * direction;
 
-				// Interpolar escala y opacidad
+				// Interpolar escala e opacidade
 				const scale = maxScale - (maxScale - minScale) * norm;
 				const opacity = maxOpacity - (maxOpacity - minOpacity) * norm;
 				const gray = 0.2 + 0.8 * norm;
@@ -96,7 +96,7 @@
 			// Aplicar estilo ao elemento central de forma reactiva
 			if (closestItem && closestItem !== centralItem) {
 				if (centralItem) {
-					centralItem.style.border = '2px solid #ccc';
+					centralItem.style.border = 'none';
 
 				}
 				closestItem.style.border = 'none';
@@ -269,7 +269,7 @@
 		position: relative;
 		background-color: black;
 		color: #fff;
-		border: 2px solid #ccc;
+		/*border: 2px solid #ccc;*/
 		flex-shrink: 0;
 		scroll-snap-align: center;
 		user-select: none;
