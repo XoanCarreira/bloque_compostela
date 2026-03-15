@@ -46,6 +46,7 @@
 <style>
 	.construccion {
 		height: 100%;
+		max-height: 90vh;
 		object-fit: cover;
 		border-radius: 6px;
 	}
