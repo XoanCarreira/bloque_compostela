@@ -1,17 +1,12 @@
 {
-  "slug": "biofilia",
-  "nombre": "Biofilia",
-  "descripcion": "Bloque desplomado con liñas grao medio",
+  "slug": "",
+  "nombre": "",
+  "descripcion": "",
   "croquis": [
     {
-      "thumb": "/lampai/teito_01.jpg",
-      "full": "/lampai/teito_01.jpg",
-      "alt": "Croquis Teito 1"
-    },
-    {
-      "thumb": "/lampai/teito_02.jpg",
-      "full": "/lampai/teito_02.jpg",
-      "alt": "Croquis Teito 2"
+      "thumb": "",
+      "full": "",
+      "alt": ""
     }
   ]
 }

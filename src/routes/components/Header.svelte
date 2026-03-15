@@ -11,7 +11,7 @@
 
 	<div class="header">
 		<a href="/zonas/">
-			<img src="/favicon_limpio_2.0.svg" alt="Logo de persoa practicando boulder" />
+			<img src="/logo_new.svg" alt="Logo de persoa practicando boulder" />
 			
 			<h1>Boulder Compostela</h1>
 		</a>

@@ -1,15 +1,15 @@
 {
     "slug": "biofilia",
     "nombre": "Biofilia",
-    "descripcion": "Poucas liñas pero de calidade.",
+    "descripcion": "Poucas liñas pero de gran calidade.",
     "sectores": [
         {
             "slug": "biofilia",
-            "nombre": "Biofilia",
+            "nombre": "Construcción",
             "vias": 9,
             "aproximacion": 10,
-            "descripcion": "Bloque con desplomado con liñas en xeral duras",
-            "portada": "/lampai/teito_01.jpg"
+            "descripcion": "",
+            "portada": ""
         }
     ]
 }

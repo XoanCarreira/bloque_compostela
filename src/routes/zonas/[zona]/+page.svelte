@@ -8,24 +8,48 @@
 </header>
 
 <nav>
-	{#each data.zona.sectores as s}
-		<a class="sector-btn" draggable="false" href={`/zonas/${data.zona.slug}/${s.slug}`}>
-			<img class="overlay" src={s.portada} alt="Foto sector {s.nombre}" />
-			<h3>{s.nombre}</h3>
-			<div class="footer">
-				<p><img class="icona" src="/iconas/vias.png" alt="Icona vias">{s.vias}</p>
-				<hr>
-				<p><img class="icona" src="/iconas/grado.png" alt="Icona dificultad">{s.grados}</p>
-				<hr>
-				<p><img class="icona" src="/iconas/aproximacion.png" alt="Icona aproximacion">{s.aproximacion} min.</p>
-			</div>
-		</a>
-	{/each}
+	{#if (data.zona.sectores[0].nombre == "Construcción") }
+		{#each data.zona.sectores as s}
+			<a class="sector-btn" draggable="false" href={`/zonas/${data.zona.slug}`}>
+				<img class="construccion" src="/en_breve.png" alt="Imaxe que indica zona en construcción" />
+				<h3>{s.nombre}</h3>
+				<div class="footer">
+					<p><img class="icona" src="/iconas/vias.png" alt="Icona vias">{s.vias}</p>
+					<hr>
+					<p><img class="icona" src="/iconas/grado.png" alt="Icona dificultad">{s.grados}</p>
+					<hr>
+					<p><img class="icona" src="/iconas/aproximacion.png" alt="Icona aproximacion">{s.aproximacion} min.</p>
+				</div>
+			</a>
+		{/each}
+
+	{:else}
+		
+		{#each data.zona.sectores as s}
+			<a class="sector-btn" draggable="false" href={`/zonas/${data.zona.slug}/${s.slug}`}>
+				<img class="overlay" src={s.portada} alt="Foto sector {s.nombre}" />
+				<h3>{s.nombre}</h3>
+				<div class="footer">
+					<p><img class="icona" src="/iconas/vias.png" alt="Icona vias">{s.vias}</p>
+					<hr>
+					<p><img class="icona" src="/iconas/grado.png" alt="Icona dificultad">{s.grados}</p>
+					<hr>
+					<p><img class="icona" src="/iconas/aproximacion.png" alt="Icona aproximacion">{s.aproximacion} min.</p>
+				</div>
+			</a>
+		{/each}
+	{/if}
 </nav>
 
 <slot />
 
 <style>
+	.construccion {
+		height: 100%;
+		object-fit: cover;
+		border-radius: 6px;
+	}
+
 	header {
 		margin-bottom: 1rem;
 		padding: 15px;

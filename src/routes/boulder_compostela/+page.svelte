@@ -1,8 +1,8 @@
 <div>
 	<h3>Boulder Compostela</h3>
 	<p>
-		<i>Boulder Compostela</i> un proxecto persoal sen ánimo de lucro e baséase en información recollida de diversas fontes públicas e
-		privadas, así como na experiencia persoal do autor.
+		<i>Boulder Compostela</i> é un proxecto persoal que se basea en información recollida de diversas fontes públicas e
+		privadas, así como na experiencia propia do autor.
 	</p>
 	<p>
 		Esta aplicación está en constante evolución, e a información que contén é susceptible de
