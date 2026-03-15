@@ -10,26 +10,15 @@
 		const carousel = document.querySelector('.grid');
 		const prevBtn = document.querySelector('#prevBtn');
 		const nextBtn = document.querySelector('#nextBtn');
-		let items = carousel ? Array.from(carousel.querySelectorAll('.card')) : [];
+		let items = carousel ? carousel.querySelectorAll('.card') : [];
+		const originalItemCount = data?.zonas?.length ?? 0;
 
-		if (!carousel || !items.length) return;
+		if (!carousel || !items.length || originalItemCount === 0) return;
 
-		// Clonar elementos para crear efecto infinito (dobre copia: diante e detrás)
-		const originalItems = [...items];
-		originalItems.forEach((item) => {
-			const clone = item.cloneNode(true);
-			carousel.appendChild(clone);
-		});
-		originalItems.forEach((item) => {
-			const clone = item.cloneNode(true);
-			carousel.insertBefore(clone, carousel.firstChild);
-		});
-
-		// Actualiza a lista de items cos orixinais + clonados
-		items = Array.from(carousel.querySelectorAll('.card'));
+		items = Array.from(items);
 
 		// Ancho dun bloque completo (unha volta) medido entre o inicio da copia 1 e o inicio da copia 2
-		const setWidth = items[originalItems.length].offsetLeft - items[0].offsetLeft;
+		const setWidth = items[originalItemCount].offsetLeft - items[0].offsetLeft;
 		const buffer = Math.min(120, setWidth * 0.25);
 
 		// Parámetros de axuste visual copoñentes
@@ -46,10 +35,50 @@
 		let ticking = false;
 		let centralItem = null;
 		let isResetting = false;
-		const scrollAmount = 400; // Píxeles a desplazar con los botones
+		const middleStart = setWidth;
+		const middleEnd = setWidth * 2;
 
-		// Variables para detectar dirección de scroll
-		let lastScrollLeft = setWidth;
+		function getItemTargetScroll(item) {
+			return item.offsetLeft - (carousel.clientWidth - item.offsetWidth) / 2;
+		}
+
+		function normalizeScrollPosition() {
+			let target = carousel.scrollLeft;
+
+			while (target < middleStart) {
+				target += setWidth;
+			}
+
+			while (target >= middleEnd) {
+				target -= setWidth;
+			}
+
+			if (target !== carousel.scrollLeft) {
+				isResetting = true;
+				carousel.scrollLeft = target;
+				isResetting = false;
+			}
+		}
+
+		function getClosestItemIndex() {
+			const rect = carousel.getBoundingClientRect();
+			const centerX = rect.left + rect.width / 2;
+			let closestIndex = 0;
+			let minDistance = Infinity;
+
+			items.forEach((item, index) => {
+				const itemRect = item.getBoundingClientRect();
+				const itemCenter = itemRect.left + itemRect.width / 2;
+				const distance = Math.abs(centerX - itemCenter);
+
+				if (distance < minDistance) {
+					minDistance = distance;
+					closestIndex = index;
+				}
+			});
+
+			return closestIndex;
+		}
 
 		// Función para actualizar transformación dos elementos
 		function update() {
@@ -116,45 +145,40 @@
 
 			// Detectar scroll infinito en ambas direccións
 			if (!isResetting) {
-				if (carousel.scrollLeft <= buffer) {
-					isResetting = true;
-					const target = carousel.scrollLeft + setWidth;
-					carousel.scrollLeft = target;
-					lastScrollLeft = target;
-					isResetting = false;
-					return;
-				}
-
-				const rightEdge = setWidth * 2;
-				if (carousel.scrollLeft >= rightEdge - buffer) {
-					isResetting = true;
-					const target = carousel.scrollLeft - setWidth;
-					carousel.scrollLeft = target;
-					lastScrollLeft = target;
-					isResetting = false;
-					return;
+				if (carousel.scrollLeft <= buffer || carousel.scrollLeft >= middleEnd - buffer) {
+					normalizeScrollPosition();
 				}
 			}
-
-			lastScrollLeft = carousel.scrollLeft;
 		}
 
 		// Posicionar no bloque central para evitar saltos iniciais
-		carousel.scrollLeft = setWidth;
+		carousel.scrollLeft = middleStart;
 		update();
 
 		// Función para desprazar esquerda
 		function scrollLeft() {
-			carousel.scrollBy({
-				left: -scrollAmount,
+			normalizeScrollPosition();
+			const currentIndex = getClosestItemIndex();
+			const targetItem = items[currentIndex - 1] ?? items[currentIndex - 1 + originalItemCount];
+
+			if (!targetItem) return;
+
+			carousel.scrollTo({
+				left: getItemTargetScroll(targetItem),
 				behavior: 'smooth'
 			});
 		}
 
 		// Función para desprazar dereita
 		function scrollRight() {
-			carousel.scrollBy({
-				left: scrollAmount,
+			normalizeScrollPosition();
+			const currentIndex = getClosestItemIndex();
+			const targetItem = items[currentIndex + 1] ?? items[currentIndex + 1 - originalItemCount];
+
+			if (!targetItem) return;
+
+			carousel.scrollTo({
+				left: getItemTargetScroll(targetItem),
 				behavior: 'smooth'
 			});
 		}
@@ -177,6 +201,84 @@
 <!-- Lista de zonas con enlaces a sus páginas individuales -->
 <div class="container">
 	<div class="grid">
+		{#each data.zonas as z}
+			<a class="card" draggable="false" href={`/zonas/${z.slug}`}>
+				<div class="overlay">
+					<img src={z.portada} alt="Foto zona escalada {z.nome}" />
+				</div>
+				<div class="info">
+					<h3 class="titulo">{z.nome}</h3>
+				</div>
+				<div class="footerCard">
+					<p class="footerDescription">{z.descripcion}</p>
+					<div class="footerDetails">
+						<p><img class="icona" src="/iconas/sectores.png" alt="Icona sectores" />{z.sectores}</p>
+						<hr />
+						<p><img class="icona" src="/iconas/vias.png" alt="Icona vias" />{z.vias}</p>
+						<hr />
+						<p>
+							<img
+								class="icona"
+								src="/iconas/aproximacion.png"
+								alt="Icona aproximacion"
+							/>{z.aproximacion}
+						</p>
+					</div>
+				</div>
+			</a>
+		{/each}
+		{#each data.zonas as z}
+			<a class="card" draggable="false" href={`/zonas/${z.slug}`}>
+				<div class="overlay">
+					<img src={z.portada} alt="Foto zona escalada {z.nome}" />
+				</div>
+				<div class="info">
+					<h3 class="titulo">{z.nome}</h3>
+				</div>
+				<div class="footerCard">
+					<p class="footerDescription">{z.descripcion}</p>
+					<div class="footerDetails">
+						<p><img class="icona" src="/iconas/sectores.png" alt="Icona sectores" />{z.sectores}</p>
+						<hr />
+						<p><img class="icona" src="/iconas/vias.png" alt="Icona vias" />{z.vias}</p>
+						<hr />
+						<p>
+							<img
+								class="icona"
+								src="/iconas/aproximacion.png"
+								alt="Icona aproximacion"
+							/>{z.aproximacion}
+						</p>
+					</div>
+				</div>
+			</a>
+		{/each}
+		{#each data.zonas as z}
+			<a class="card" draggable="false" href={`/zonas/${z.slug}`}>
+				<div class="overlay">
+					<img src={z.portada} alt="Foto zona escalada {z.nome}" />
+				</div>
+				<div class="info">
+					<h3 class="titulo">{z.nome}</h3>
+				</div>
+				<div class="footerCard">
+					<p class="footerDescription">{z.descripcion}</p>
+					<div class="footerDetails">
+						<p><img class="icona" src="/iconas/sectores.png" alt="Icona sectores" />{z.sectores}</p>
+						<hr />
+						<p><img class="icona" src="/iconas/vias.png" alt="Icona vias" />{z.vias}</p>
+						<hr />
+						<p>
+							<img
+								class="icona"
+								src="/iconas/aproximacion.png"
+								alt="Icona aproximacion"
+							/>{z.aproximacion}
+						</p>
+					</div>
+				</div>
+			</a>
+		{/each}
 		{#each data.zonas as z}
 			<a class="card" draggable="false" href={`/zonas/${z.slug}`}>
 				<div class="overlay">
