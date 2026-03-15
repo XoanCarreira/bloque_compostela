@@ -11,7 +11,7 @@
 	{#if (data.zona.sectores[0].nombre == "Construcción") }
 		{#each data.zona.sectores as s}
 			<a class="sector-btn" draggable="false" href={`/zonas/${data.zona.slug}`}>
-				<img class="construccion" src="/en_breve.png" alt="Imaxe que indica zona en construcción" />
+				<img class="overlay" src="/en_breve.png" alt="Imaxe que indica zona en construcción" />
 				<h3>{s.nombre}</h3>
 				<div class="footer">
 					<p><img class="icona" src="/iconas/vias.png" alt="Icona vias">{s.vias}</p>
@@ -44,12 +44,7 @@
 <slot />
 
 <style>
-	.construccion {
-		height: 100%;
-		max-height: 90vh;
-		object-fit: cover;
-		border-radius: 6px;
-	}
+
 
 	header {
 		margin-bottom: 1rem;
