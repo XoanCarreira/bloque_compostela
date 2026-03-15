@@ -64,7 +64,7 @@
 	</div>
 	{/if}
 	<div>
-		<p class="version">Boulder Compostela 2.0.1</p>
+		<p class="version">Boulder Compostela 2.0.2</p>
 
 	</div>
 </footer>
