@@ -26,7 +26,6 @@
  * ```
  */
 declare module '$env/static/private' {
-	export const GJS_DEBUG_TOPICS: string;
 	export const LESSOPEN: string;
 	export const USER: string;
 	export const npm_config_user_agent: string;
@@ -37,7 +36,6 @@ declare module '$env/static/private' {
 	export const GTK_EXE_PREFIX_VSCODE_SNAP_ORIG: string;
 	export const npm_node_execpath: string;
 	export const GDK_BACKEND_VSCODE_SNAP_ORIG: string;
-	export const CLUTTER_DISABLE_MIPMAPPED_TEXT: string;
 	export const SHLVL: string;
 	export const npm_config_noproxy: string;
 	export const HOME: string;
@@ -60,6 +58,7 @@ declare module '$env/static/private' {
 	export const MANAGERPID: string;
 	export const npm_config_userconfig: string;
 	export const npm_config_local_prefix: string;
+	export const DBUS_STARTER_BUS_TYPE: string;
 	export const SYSTEMD_EXEC_PID: string;
 	export const IM_CONFIG_CHECK_ENV: string;
 	export const VSCODE_PYTHON_AUTOACTIVATE_GUARD: string;
@@ -122,7 +121,6 @@ declare module '$env/static/private' {
 	export const GTK_PATH_VSCODE_SNAP_ORIG: string;
 	export const FONTCONFIG_FILE: string;
 	export const GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG: string;
-	export const GJS_DEBUG_OUTPUT: string;
 	export const CLASSPATH: string;
 	export const VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 	export const QT_IM_MODULE: string;
@@ -133,6 +131,7 @@ declare module '$env/static/private' {
 	export const npm_execpath: string;
 	export const XDG_CONFIG_DIRS: string;
 	export const NVM_CD_FLAGS: string;
+	export const DBUS_STARTER_ADDRESS: string;
 	export const XDG_DATA_DIRS: string;
 	export const npm_config_global_prefix: string;
 	export const npm_command: string;
@@ -169,7 +168,6 @@ declare module '$env/static/public' {
  */
 declare module '$env/dynamic/private' {
 	export const env: {
-		GJS_DEBUG_TOPICS: string;
 		LESSOPEN: string;
 		USER: string;
 		npm_config_user_agent: string;
@@ -180,7 +178,6 @@ declare module '$env/dynamic/private' {
 		GTK_EXE_PREFIX_VSCODE_SNAP_ORIG: string;
 		npm_node_execpath: string;
 		GDK_BACKEND_VSCODE_SNAP_ORIG: string;
-		CLUTTER_DISABLE_MIPMAPPED_TEXT: string;
 		SHLVL: string;
 		npm_config_noproxy: string;
 		HOME: string;
@@ -203,6 +200,7 @@ declare module '$env/dynamic/private' {
 		MANAGERPID: string;
 		npm_config_userconfig: string;
 		npm_config_local_prefix: string;
+		DBUS_STARTER_BUS_TYPE: string;
 		SYSTEMD_EXEC_PID: string;
 		IM_CONFIG_CHECK_ENV: string;
 		VSCODE_PYTHON_AUTOACTIVATE_GUARD: string;
@@ -265,7 +263,6 @@ declare module '$env/dynamic/private' {
 		GTK_PATH_VSCODE_SNAP_ORIG: string;
 		FONTCONFIG_FILE: string;
 		GTK_IM_MODULE_FILE_VSCODE_SNAP_ORIG: string;
-		GJS_DEBUG_OUTPUT: string;
 		CLASSPATH: string;
 		VSCODE_GIT_ASKPASS_EXTRA_ARGS: string;
 		QT_IM_MODULE: string;
@@ -276,6 +273,7 @@ declare module '$env/dynamic/private' {
 		npm_execpath: string;
 		XDG_CONFIG_DIRS: string;
 		NVM_CD_FLAGS: string;
+		DBUS_STARTER_ADDRESS: string;
 		XDG_DATA_DIRS: string;
 		npm_config_global_prefix: string;
 		npm_command: string;

@@ -11,7 +11,7 @@
 
 	<div class="header">
 		<a href="/zonas/">
-			<img src="/favicon_limpio.svg" alt="Logo de persoa practicando boulder" />
+			<img src="/favicon_limpio_2.0.svg" alt="Logo de persoa practicando boulder" />
 			
 			<h1>Boulder Compostela</h1>
 		</a>
@@ -37,6 +37,7 @@
 		font-weight: 800;
 		min-height: 80px;
 		max-width: 85%;
+		padding: 15px 20px;
 	}
 
 	a{
@@ -47,6 +48,10 @@
 		text-decoration: none;
 		color: black;
 		flex-wrap: wrap;
+	}
+
+	img{
+		max-width: 200px;
 	}
 
 	h1 {
@@ -68,6 +73,7 @@
 
 		img{
 			z-index: 1;
+			max-width: 100px;
 		}
 
 	
