@@ -36,7 +36,7 @@
 				>
 					<img
 						src={item.thumb}
-						alt=""
+						alt={item.alt}
 						loading="lazy"
 						draggable="false"
 					/>

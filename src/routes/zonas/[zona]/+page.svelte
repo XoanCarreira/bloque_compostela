@@ -18,7 +18,7 @@
 					<hr>
 					<p><img class="icona" src="/iconas/grado.png" alt="Icona dificultad">{s.grados}</p>
 					<hr>
-					<p><img class="icona" src="/iconas/aproximacion.png" alt="Icona aproximacion">{s.aproximacion} min.</p>
+					<p><img class="icona" src="/iconas/aproximacion.png" alt="Icona aproximación">{s.aproximacion} min.</p>
 				</div>
 			</a>
 		{/each}
@@ -34,7 +34,7 @@
 					<hr>
 					<p><img class="icona" src="/iconas/grado.png" alt="Icona dificultad">{s.grados}</p>
 					<hr>
-					<p><img class="icona" src="/iconas/aproximacion.png" alt="Icona aproximacion">{s.aproximacion} min.</p>
+					<p><img class="icona" src="/iconas/aproximacion.png" alt="Icona aproximación">{s.aproximacion} min.</p>
 				</div>
 			</a>
 		{/each}
