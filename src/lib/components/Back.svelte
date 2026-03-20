@@ -44,7 +44,7 @@
 			height: 70px;
 			position: fixed;
 			right: -10px;
-			bottom: 0;
+			bottom: -10px;
 			border-radius: 100% 0 0 0;
 		}
 	}
