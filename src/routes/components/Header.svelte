@@ -2,7 +2,9 @@
 	// import Menu from "./Menu.svelte";
 	import Hamburger from "./Hamburger.svelte";
 
-	
+	import InstallButton from "../../lib/components/InstallButton.svelte";
+
+
 </script>
 
 <header>
@@ -16,6 +18,9 @@
 			<h1>Boulder Compostela</h1>
 		</a>
 	</div>
+	<!--Componente botón de instalación-->
+	<InstallButton/>
+
 </header>
 
 <style>
