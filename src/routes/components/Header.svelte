@@ -1,30 +1,27 @@
 <script>
 	// import Menu from "./Menu.svelte";
-	import Hamburger from "./Hamburger.svelte";
+	import Hamburger from './Hamburger.svelte';
 
-	import InstallButton from "../../lib/components/InstallButton.svelte";
-
-
+	import InstallButton from '../../lib/components/InstallButton.svelte';
 </script>
 
 <header>
 	<!--Componente menú hamburguesa-->
-	 <Hamburger/>
+	<Hamburger />
 
 	<div class="header">
 		<a href="/zonas/">
 			<img src="/logo_new.svg" alt="Logo de persoa practicando boulder" />
-			
+
 			<h1>Boulder Compostela</h1>
 		</a>
 	</div>
 	<!--Componente botón de instalación-->
-	<InstallButton/>
-
+	<InstallButton />
 </header>
 
 <style>
-	header{
+	header {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -45,7 +42,7 @@
 		padding: 15px 20px;
 	}
 
-	a{
+	a {
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -55,7 +52,7 @@
 		flex-wrap: wrap;
 	}
 
-	img{
+	img {
 		max-width: 200px;
 	}
 
@@ -64,23 +61,24 @@
 		font-family: Georgia, 'Times New Roman', Times, serif;
 	}
 
-	@media (width <=800px){
-		h1{
+	@media (width <=800px) {
+		h1 {
 			font-size: 3rem;
+		}
+
+		img {
+			max-width: 150px;
 		}
 	}
 
 	@media (width <= 500px) {
 		h1 {
 			display: none;
-			
 		}
 
-		img{
+		img {
 			z-index: 1;
 			max-width: 100px;
 		}
-
-	
 	}
 </style>
