@@ -1,5 +1,5 @@
 <script>
-	import Modal from '$lib/modal.svelte';
+	import Modal from '$lib/components/Modal.svelte';
 	export let data;
 
 	// convertir croquis a formato esperado por Modal

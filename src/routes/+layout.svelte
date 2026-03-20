@@ -2,10 +2,15 @@
 	import Header from './components/Header.svelte';
 	import Footer from './components/Footer.svelte';
 	import Breadcrumbs from './components/Breadcrumbs.svelte';
+	import Back from '../lib/components/Back.svelte';
+	import {page} from '$app/stores';
 </script>
 
 <Header />
-<Breadcrumbs />
+{#if $page.url.pathname !== '/zonas'}
+	<Back/>
+	<Breadcrumbs />
+{/if}
 <slot />
 <Footer/>
 
