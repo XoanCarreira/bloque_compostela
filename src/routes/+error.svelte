@@ -4,7 +4,7 @@
 </script>
 
 <h1>{status}</h1>
-<p>{error?.message ?? 'Vaia, xurdíu algún erro'}</p>
+<p>{error?.message ?? 'Vaia, xurdíu algún erro...'}</p>
 <a href="/zonas">Volver a zonas</a>
 
 <style>
