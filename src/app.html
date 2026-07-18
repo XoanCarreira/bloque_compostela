@@ -1,83 +1,64 @@
 <!DOCTYPE html>
 <html lang="gl">
-	<head>
-		<meta charset="utf-8" />
-		<!-- <link rel="icon" href="%sveltekit.assets%/favicon.png" /> -->
-		<link rel="icon" href="%sveltekit.assets%/favicon.png">
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<meta name="MobileOptimized" content="width" />
-    	<meta name="HanheldFriendly" content="true" />
+<head>
+	<meta charset="utf-8" />
+	<!-- <link rel="icon" href="%sveltekit.assets%/favicon.png" /> -->
+	<link rel="icon" href="%sveltekit.assets%/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<!-- Meta etiquetas PWA para Apple -->
+	<meta name="MobileOptimized" content="width" />
+	<meta name="HanheldFriendly" content="true" />
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta
-		  name="apple-mobile-web-app-status-bar-style"
-		  content="black-translucent"
-		/>
-		<link
-		  rel="apple-touch-startup-image"
-		  href="%sveltekit.assets%/favicon_96.png"
-		/>
-	
-		<!-- Configuración General PWA -->
-		<link rel="manifest" href="/manifest.json" />
-	
-		<!-- Favicons -->
-		<link rel="shortcut icon" href="%sveltekit.assets%/favicon_16.png" />
-		<link rel="apple-touch-icon" href="%sveltekit.assets%/favicon_32.png" />
-		<link
-		  rel="apple-touch-icon"
-		  sizes="48x48"
-		  href="%sveltekit.assets%/favicon_48.png"
-		/>
-		<link
-		  rel="apple-touch-icon"
-		  sizes="96x96"
-		  href="%sveltekit.assets%/favicon_96.png"
-		/>
-		<link
-		  rel="apple-touch-icon"
-		  sizes="152x152"
-		  href="%sveltekit.assets%/favicon_152.png"
-		/>
-		<link
-		  rel="apple-touch-icon"
-		  sizes="167x167"
-		  href="%sveltekit.assets%/favicon_167.png"
-		/>
-		<link
-		  rel="apple-touch-icon"
-		  sizes="180x180"
-		  href="%sveltekit.assets%/favicon_180.png"
-		/>
-		<link
-		  rel="icon"
-		  sizes="192x192"
-		  href="%sveltekit.assets%/favicon_192.png"
-		/>
-		<link
-		  rel="icon"
-		  sizes="512x512"
-		  href="%sveltekit.assets%/favicon_512.png"
-		/>
+	<!-- Meta etiquetas PWA para Apple -->
 
-		<title>Boulder Compostela</title>
-		<meta name="description" content="Guía das distintas zonas de escalada boulder na contorna de Santiago de Compostela">
-		%sveltekit.head%
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<link rel="apple-touch-startup-image" href="%sveltekit.assets%/favicon_96.png" />
 
-		// Indexación de Google
-		<meta name="google-site-verification" content="gf1JBv2EEMrgiH-sNf8jrn-todL415EJKKIXzORgvw4" />
-	</head>
-	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents">%sveltekit.body%</div>
-	</body>	  
+	<!-- Configuración General PWA -->
+	<link rel="manifest" href="/manifest.json" />
+
+	<!-- Favicons -->
+	<link rel="shortcut icon" href="%sveltekit.assets%/favicon_16.png" />
+	<link rel="apple-touch-icon" href="%sveltekit.assets%/favicon_32.png" />
+	<link rel="apple-touch-icon" sizes="48x48" href="%sveltekit.assets%/favicon_48.png" />
+	<link rel="apple-touch-icon" sizes="96x96" href="%sveltekit.assets%/favicon_96.png" />
+	<link rel="apple-touch-icon" sizes="152x152" href="%sveltekit.assets%/favicon_152.png" />
+	<link rel="apple-touch-icon" sizes="167x167" href="%sveltekit.assets%/favicon_167.png" />
+	<link rel="apple-touch-icon" sizes="180x180" href="%sveltekit.assets%/favicon_180.png" />
+	<link rel="icon" sizes="192x192" href="%sveltekit.assets%/favicon_192.png" />
+	<link rel="icon" sizes="512x512" href="%sveltekit.assets%/favicon_512.png" />
+
+	<title>Boulder Compostela</title>
+	<meta name="description"
+		content="Guía das distintas zonas de escalada boulder na contorna de Santiago de Compostela, con información sobre croquis, dificultades, localización e outros datos de interese." />
+	%sveltekit.head%
+
+	<!-- Indexación de Google -->
+	<meta name="google-site-verification" content="gf1JBv2EEMrgiH-sNf8jrn-todL415EJKKIXzORgvw4" />
+
+	<!-- Palabras clave -->
+	<meta name="keywords"
+		content="boulder, escalada, Santiago de Compostela, comarca, guía, zonas de escalada, bloque, cercanos, croquis, información, Lampai, Pedroso, Biofilia, Vilas, Almacén, Sura, Eucaliptos" />
+
+
+	<!-- Posicionamento -->
+	<meta name="author" content="Boulder Compostela" />
+	<meta name="robots" content="index, follow" />
+
+
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents">%sveltekit.body%</div>
+</body>
+
 </html>
 
 
 <style>
-	:root{
+	:root {
 		/*Cores*/
 		--corAzul: #5DACA3;
 		--corFondo: #000000;
@@ -94,12 +75,12 @@
 		--tamanhoInfoIcona: 0.9rem;
 		--tamanhoPequeno: 0.6rem;
 
-		
+
 
 	}
 
-	body{
-		background:var(--corFondo);
+	body {
+		background: var(--corFondo);
 		min-height: 100vh;
 		font-family: var(--fontePrincipal);
 		scroll-behavior: smooth;
